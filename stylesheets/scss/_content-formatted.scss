@@ -130,8 +130,8 @@
 
   // IMAGE CONTAINERS
   .edy-positionable-container-maxwidth {
-    .public &,
-    .blog-page & {
+    .public .post &,
+    .blog-page .post & {
       width: auto !important;
       max-width: none !important;
       margin-right: -70px !important;

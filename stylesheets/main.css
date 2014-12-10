@@ -24,7 +24,7 @@ body {
 .edy-bar-open:after {
   display: table;
   clear: both;
-  content: " ";
+  content: ' ';
 }
 
 .container {
@@ -207,7 +207,7 @@ body {
   border-right: 1px dashed #e6e6e6;
   border-left: 1px dashed #e6e6e6;
 }
-.public .content-formatted .edy-positionable-container-maxwidth, .blog-page .content-formatted .edy-positionable-container-maxwidth {
+.public .post .content-formatted .edy-positionable-container-maxwidth, .blog-page .post .content-formatted .edy-positionable-container-maxwidth {
   width: auto !important;
   max-width: none !important;
   margin-right: -70px !important;
