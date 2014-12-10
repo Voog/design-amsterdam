@@ -129,9 +129,9 @@
   }
 
   // IMAGE CONTAINERS
-  .edy-positionable-container-maxwidth {
-    .public .post &,
-    .blog-page .post & {
+  .blog-page .post-content &,
+  .post-page .post-content & {
+    .edy-positionable-container-maxwidth {
       width: auto !important;
       max-width: none !important;
       margin-right: -70px !important;
@@ -174,9 +174,9 @@
       width: 100%;
     }
 
-    .edy-positionable-container-maxwidth {
-      .public &,
-      .blog-page & {
+    .blog-page .post-content &,
+    .post-page .post-content & {
+      .edy-positionable-container-maxwidth {
         width: auto !important;
         max-width: none !important;
         margin-right: 0 !important;

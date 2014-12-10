@@ -207,7 +207,7 @@ body {
   border-right: 1px dashed #e6e6e6;
   border-left: 1px dashed #e6e6e6;
 }
-.public .post .content-formatted .edy-positionable-container-maxwidth, .blog-page .post .content-formatted .edy-positionable-container-maxwidth {
+.blog-page .post-content .content-formatted .edy-positionable-container-maxwidth, .post-page .post-content .content-formatted .edy-positionable-container-maxwidth {
   width: auto !important;
   max-width: none !important;
   margin-right: -70px !important;
@@ -239,7 +239,7 @@ body {
   .content-formatted .form_field_file {
     width: 100%;
   }
-  .public .content-formatted .edy-positionable-container-maxwidth, .blog-page .content-formatted .edy-positionable-container-maxwidth {
+  .blog-page .post-content .content-formatted .edy-positionable-container-maxwidth, .post-page .post-content .content-formatted .edy-positionable-container-maxwidth {
     width: auto !important;
     max-width: none !important;
     margin-right: 0 !important;
