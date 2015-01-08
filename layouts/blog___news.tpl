@@ -9,10 +9,12 @@
   <div class="container" data-search-indexing-allowed="false">
     {% include "header" %}
     <main class="content" role="main">
-      <div class="blog-header">
-        {% include "tags-blog" %}
-        {% if editmode %}<div class="add-post-container">{% addbutton %}</div>{% endif %}
-      </div>
+      {% if editmode or site.has_language_tags? %}
+        <div class="blog-header">
+          {% include "tags-blog" %}
+          {% if editmode %}<div class="add-post-container">{% addbutton %}</div>{% endif %}
+        </div>
+      {% endif %}
 
       {% for article in articles %}
         <article class="post">

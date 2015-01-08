@@ -148,7 +148,14 @@
 
 .blog-header {
   position: relative;
+  min-height: 46px;
   margin-top: -15px;
+  margin-bottom: 35px;
+
+  @include query($mobile) {
+    min-height: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 .add-post-container {
@@ -161,7 +168,6 @@
 .tags-container {
   z-index: 10;
   margin-top: 0;
-  margin-bottom: 35px;
   margin-left: 100px;
   text-align: right;
 }
