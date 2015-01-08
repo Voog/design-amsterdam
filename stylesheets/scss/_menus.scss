@@ -57,11 +57,16 @@
 
 .sub-menu {
   li {
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     line-height: .85;
 
     &:last-child {
       padding-bottom: 0;
+    }
+
+    &.active {
+      font-weight: 600;
+      text-transform: uppercase;
     }
 
     a {

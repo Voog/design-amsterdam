@@ -291,11 +291,15 @@ body {
 }
 
 .sub-menu li {
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   line-height: .85;
 }
 .sub-menu li:last-child {
   padding-bottom: 0;
+}
+.sub-menu li.active {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .sub-menu li a {
   -moz-hyphens: auto;
@@ -941,10 +945,6 @@ body {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
-}
-
-.sidebar-header {
-  padding-bottom: 7px;
 }
 
 @media screen and (max-width: 999px) {

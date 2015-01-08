@@ -19,10 +19,6 @@
   }
 }
 
-.sidebar-header {
-  padding-bottom: 7px;
-}
-
 @include query($tablet) {
   .sidebar-left {
     position: relative;
