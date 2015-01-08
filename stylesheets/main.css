@@ -1136,6 +1136,12 @@ body {
   max-width: 580px;
   vertical-align: top;
 }
+@media screen and (max-width: 640px) {
+  .post-page .post-excerpt,
+  .post-page .post-body {
+    margin: 0 0 20px;
+  }
+}
 .post-page .image-container {
   margin-bottom: 25px;
 }

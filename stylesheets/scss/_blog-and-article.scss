@@ -141,6 +141,13 @@
     vertical-align: top;
   }
 
+  .post-excerpt,
+  .post-body {
+    @include query($mobile) {
+      margin: 0 0 20px;
+    }
+  }
+
   .image-container {
     margin-bottom: 25px;
   }
