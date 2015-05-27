@@ -64,15 +64,32 @@
     width: 30px;
     height: 30px;
     margin-top: -15px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .search-submit {
     display: block;
-    background: url('../images/search.png') no-repeat center center;
+
+    .no-svg & {
+      background-image: url('../images/search.png');
+    }
+
+    .svg & {
+      background-image: url('../assets/search.svg');
+      background-size: 16px;
+    }
   }
 
   .search-close {
-    background: url('../images/search-close.png') no-repeat center center;
+    .no-svg & {
+      background-image: url('../images/ico-close.png');
+    }
+
+    .svg & {
+      background-image: url('../assets/ico-close.svg');
+      background-size: 12px;
+    }
   }
 
   &:after {

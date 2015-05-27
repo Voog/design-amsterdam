@@ -1325,13 +1325,25 @@ body {
   width: 30px;
   height: 30px;
   margin-top: -15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .search .search-submit {
   display: block;
-  background: url("../images/search.png") no-repeat center center;
 }
-.search .search-close {
-  background: url("../images/search-close.png") no-repeat center center;
+.no-svg .search .search-submit {
+  background-image: url("../images/search.png");
+}
+.svg .search .search-submit {
+  background-image: url("../assets/search.svg");
+  background-size: 16px;
+}
+.no-svg .search .search-close {
+  background-image: url("../images/ico-close.png");
+}
+.svg .search .search-close {
+  background-image: url("../assets/ico-close.svg");
+  background-size: 12px;
 }
 .search:after {
   position: absolute;
