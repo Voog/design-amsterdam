@@ -44,20 +44,20 @@
   var editmode = $('html').hasClass('editmode');
 
   // Function to limit the rate at which a function can fire.
-  var debounce = function(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
+  // var debounce = function(func, wait, immediate) {
+  //   var timeout;
+  //   return function() {
+  //     var context = this, args = arguments;
+  //     var later = function() {
+  //       timeout = null;
+  //       if (!immediate) func.apply(context, args);
+  //     };
+  //     var callNow = immediate && !timeout;
+  //     clearTimeout(timeout);
+  //     timeout = setTimeout(later, wait);
+  //     if (callNow) func.apply(context, args);
+  //   };
+  // };
 
   // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
@@ -102,16 +102,10 @@
     });
   };
 
-  var handleSubMenuLocation = function() {
-    if($(window).width() <= 999){
-      $('.sidebar-left').prependTo('.content-top .content-first');
-    } else {
-      $('.sidebar-left').prependTo('.content-top');
-    }
-  };
-
   var handleWindowResize = function() {
-    $(window).resize(debounce(handleSubMenuLocation, 1000));
+    // Add functions that should be trgiggered while resizing the window here.
+    // Example:
+    // $(window).resize(debounce(yourFunctionName, 3000));
   };
 
   var handlePostMinHeight = function() {
