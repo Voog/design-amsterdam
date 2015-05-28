@@ -799,8 +799,6 @@ body {
   margin: 0 auto;
 }
 .header .header-inner .header-title {
-  display: table-cell;
-  max-width: 810px;
   margin: 0;
   margin-right: 13px;
   font-size: 24px;
@@ -812,6 +810,23 @@ body {
 .editmode .header .header-inner .header-title {
   min-width: 100px;
 }
+.flexbox .header .header-inner .header-title {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+.no-flexbox .header .header-inner .header-title {
+  float: left;
+}
+@media screen and (max-width: 640px) {
+  .no-flexbox .header .header-inner .header-title {
+    float: none;
+  }
+}
 .header .header-inner .header-title a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
@@ -819,7 +834,37 @@ body {
 .header .header-inner .header-title a:hover {
   color: rgba(0, 0, 0, 0.75);
 }
-.header .header-top {
+.editmode.flexbox .header .header-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+@media screen and (max-width: 640px) {
+  .editmode.flexbox .header .header-top {
+    display: block;
+  }
+}
+.editmode.no-flexbox .header .header-top, .public .header .header-top {
   display: table;
 }
 

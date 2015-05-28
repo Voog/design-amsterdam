@@ -38,8 +38,8 @@
     margin: 0 auto;
 
     .header-title {
-      display: table-cell;
-      max-width: 810px;
+      // display: table-cell;
+      // max-width: 810px;
       margin: 0;
       margin-right: 13px;
       font-size: 24px;
@@ -50,6 +50,18 @@
 
       .editmode & {
         min-width: 100px;
+      }
+
+      .flexbox & {
+        @include flex(1 0 auto);
+      }
+
+      .no-flexbox & {
+        float: left;
+
+        @include query($mobile) {
+          float: none;
+        }
       }
 
       a {
@@ -64,7 +76,20 @@
   }
 
   .header-top {
-    display: table;
+    .editmode.flexbox & {
+        @include display(flex);
+        @include flex-wrap(wrap);
+        @include justify-content(flex-end);
+
+        @include query($mobile) {
+          display: block;
+        }
+      }
+
+    .editmode.no-flexbox &,
+    .public & {
+      display: table;
+    }
   }
 }
 

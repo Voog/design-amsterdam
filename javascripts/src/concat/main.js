@@ -142,6 +142,17 @@
     });
   };
 
+  var bindFallbackHeaderLeftWidthCalculation = function() {
+    var headerWidth = $('.js-header-inner').width(),
+        headerRight = $('.js-lang-menu'),
+        headerRightWidth = headerRight.width(),
+        headerRightMargin = parseInt(headerRight.css('margin-left')) + 1;
+
+        console.log(headerRightMargin);
+
+    $('.js-header-title').css('min-width', headerWidth - headerRightWidth - headerRightMargin);
+  };
+
   // Initiations
   var initFrontPage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;
@@ -406,6 +417,10 @@
     $(window).load(function() {
       $('input, textarea').placeholder();
     });
+
+    if (!Modernizr.flexbox && editmode) {
+      bindFallbackHeaderLeftWidthCalculation();
+    };
   };
 
   window.site = $.extend(window.site || {}, {
