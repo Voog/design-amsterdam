@@ -94,31 +94,9 @@
     }
   };
 
-  var checkScrollBar = function() {
-    jQuery.fn.hasScrollBar = function(direction) {
-      if (direction == 'vertical') {
-        return this.get(0).scrollHeight > this.innerHeight();
-      } else if (direction == 'horizontal') {
-        return this.get(0).scrollWidth > this.innerWidth();
-      }
-      return false;
-    };
-  };
-
-  var handleTableHorizontalScrolling = function() {
-    $.each($('.table-container'), function() {
-      if ($(this).hasScrollBar('horizontal') === true) {
-        $(this).addClass('horizontal-scroll');
-      } else {
-        $(this).removeClass('horizontal-scroll');
-      }
-    });
-  };
-
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleSubMenuLocation();
-      handleTableHorizontalScrolling();
     });
   };
 
@@ -409,10 +387,6 @@
     handlePopoverMenuHide();
     handleWindowResize();
     wrapTables();
-    if ($('.table-container').length > 0) {
-      checkScrollBar();
-      handleTableHorizontalScrolling();
-    }
     $('.content form').edicyFormPlaceholders();
     $(window).load(function() {
       $('input, textarea').placeholder();

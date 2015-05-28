@@ -203,10 +203,6 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-.content-formatted .horizontal-scroll {
-  border-right: 1px dashed #e6e6e6;
-  border-left: 1px dashed #e6e6e6;
-}
 .blog-page .post-content .content-formatted .edy-positionable-container-maxwidth, .post-page .post-content .content-formatted .edy-positionable-container-maxwidth {
   width: auto !important;
   max-width: none !important;
