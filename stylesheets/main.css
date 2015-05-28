@@ -209,20 +209,32 @@ body {
   margin-right: -70px !important;
   margin-left: -70px !important;
 }
+.content-formatted .edy-positionable-container-center,
+.content-formatted .edy-positionable-container-left-block,
+.content-formatted .edy-positionable-container-right-block,
+.content-formatted .edy-texteditor-container-wrapper-center,
+.content-formatted .edy-texteditor-container-wrapper-left-block,
+.content-formatted .edy-texteditor-container-wrapper-right-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
   width: 45%;
 }
-.content-formatted .edy-positionable-container-left {
+.content-formatted .edy-positionable-container-left,
+.content-formatted .edy-texteditor-container-wrapper-left {
   margin-right: 25px;
 }
-.content-formatted .edy-positionable-container-right {
+.content-formatted .edy-positionable-container-right,
+.content-formatted .edy-texteditor-container-wrapper-right {
   margin-left: 25px;
 }
 .content-formatted .edy-image-container-with-title:after {
   display: block;
-  padding: 2px;
-  font-size: .75em;
+  padding: 4px;
+  font-size: 16px;
+  line-height: 1.3em;
   content: attr(data-title);
 }
 
