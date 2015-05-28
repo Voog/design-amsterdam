@@ -237,6 +237,38 @@ body {
   line-height: 1.3em;
   content: attr(data-title);
 }
+.content-formatted .edys-gallery-area,
+.content-formatted .edy-gallery-area {
+  margin-left: -6px;
+  font-size: 0;
+  line-height: 1em;
+}
+.content-formatted .edys-gallery-area .edys-gallery-item,
+.content-formatted .edy-gallery-area .edys-gallery-item {
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+.content-formatted .edys-gallery-area .edys-gallery-item.inactive,
+.content-formatted .edy-gallery-area .edys-gallery-item.inactive {
+  opacity: .6;
+}
+.content-formatted .edys-gallery-area .edys-gallery-item:hover,
+.content-formatted .edy-gallery-area .edys-gallery-item:hover {
+  opacity: 1;
+}
+.content-formatted .edys-gallery-area .edys-gallery-item,
+.content-formatted .edys-gallery-area .edy-gallery-item,
+.content-formatted .edys-gallery-area .edy-gallery-sortable-placeholder,
+.content-formatted .edy-gallery-area .edys-gallery-item,
+.content-formatted .edy-gallery-area .edy-gallery-item,
+.content-formatted .edy-gallery-area .edy-gallery-sortable-placeholder {
+  display: inline-block;
+  float: none;
+  margin: 3px 0 3px 6px;
+}
 
 @media screen and (max-width: 640px) {
   .content-formatted .edy-img-container {
