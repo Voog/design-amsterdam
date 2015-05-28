@@ -10818,6 +10818,22 @@ return jQuery;
 
   var editmode = $('html').hasClass('editmode');
 
+  // Function to limit the rate at which a function can fire.
+  var debounce = function(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
   // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
     if (!editmode) {
@@ -10870,9 +10886,7 @@ return jQuery;
   };
 
   var handleWindowResize = function() {
-    $(window).resize(function() {
-      handleSubMenuLocation();
-    });
+    $(window).resize(debounce(handleSubMenuLocation, 1000));
   };
 
   var handlePostMinHeight = function() {
