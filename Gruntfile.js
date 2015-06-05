@@ -36,11 +36,11 @@ module.exports = function(grunt) {
     concat: {
       build: {
         src: [
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/overthrow/src/overthrow-polyfill.js',
-        'javascripts/src/concat/*.js',
-        '!javascripts/src/concat/main.js',
-        'javascripts/src/concat/main.js'
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/overthrow/src/overthrow-polyfill.js',
+          'javascripts/src/concat/*.js',
+          '!javascripts/src/concat/main.js',
+          'javascripts/src/concat/main.js'
         ],
         dest: 'javascripts/application.js'
       }
@@ -171,7 +171,6 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -182,7 +181,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-scss-lint');
 
-  grunt.registerTask('default', ['modernizr', 'copy', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
+  grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
