@@ -139,17 +139,6 @@
     $('.js-header-title').css('min-width', headerWidth - headerRightWidth - headerRightMargin);
   };
 
-  // Reduces opacity of the gallery images that are not under the cursor.
-  var handleGalleryHover = function() {
-    $('.edys-gallery').mouseover(function() {
-      $(this).find('.edys-gallery-item').addClass('inactive');
-    });
-
-    $('.edys-gallery').mouseout(function() {
-      $(this).find('.edys-gallery-item').removeClass('inactive');
-    });
-  };
-
   // Initiations
   var initFrontPage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;
@@ -406,7 +395,6 @@
     handlePopoverMenuHide();
     handleWindowResize();
     wrapTables();
-    handleGalleryHover();
     $('.content form').edicyFormPlaceholders();
     $(window).load(function() {
       $('input, textarea').placeholder();
