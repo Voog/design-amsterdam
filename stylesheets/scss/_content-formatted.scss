@@ -141,6 +141,14 @@
   .edy-texteditor-container-wrapper-right-block {
     margin-top: 20px;
     margin-bottom: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .edy-positionable-container-left,
