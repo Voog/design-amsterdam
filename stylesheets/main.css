@@ -321,8 +321,14 @@ body {
 .main-menu li {
   display: inline-block;
   margin-right: 5px;
+  line-height: 1;
 }
 .main-menu li a {
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word;
   text-transform: uppercase;
 }
 .main-menu li a.untranslated {

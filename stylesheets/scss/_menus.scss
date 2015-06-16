@@ -40,8 +40,10 @@
   li {
     display: inline-block;
     margin-right: 5px;
+    line-height: 1;
 
     a {
+      @include hyphenate(true);
       text-transform: uppercase;
 
       &.untranslated {
