@@ -172,7 +172,7 @@
       display: block;
       padding: 4px;
       font-size: 16px;
-      line-height: 1.3em;
+      line-height: 1.3;
       content: attr(data-title);
     }
   }
@@ -181,7 +181,7 @@
   .edy-gallery-area {
     margin-left: -6px;
     font-size: 0;
-    line-height: 1em;
+    line-height: 1;
 
     .edys-gallery-item,
     .edy-gallery-item,

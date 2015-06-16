@@ -252,14 +252,14 @@ body {
   display: block;
   padding: 4px;
   font-size: 16px;
-  line-height: 1.3em;
+  line-height: 1.3;
   content: attr(data-title);
 }
 .content-formatted .edys-gallery-area,
 .content-formatted .edy-gallery-area {
   margin-left: -6px;
   font-size: 0;
-  line-height: 1em;
+  line-height: 1;
 }
 .content-formatted .edys-gallery-area .edys-gallery-item,
 .content-formatted .edys-gallery-area .edy-gallery-item,
@@ -1308,7 +1308,7 @@ body {
 }
 .post-page .tags .tags-list {
   margin-left: 30px;
-  line-height: 20px;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 640px) {
@@ -1808,7 +1808,7 @@ body.mobilesearch-open {
 }
 
 .comment-header {
-  line-height: 22px;
+  line-height: 1.6;
 }
 .comment-header .edy-btn-removecomment {
   vertical-align: -1px;
