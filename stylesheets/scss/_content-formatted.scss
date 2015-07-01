@@ -176,21 +176,6 @@
       content: attr(data-title);
     }
   }
-
-  .edys-gallery-area,
-  .edy-gallery-area {
-    margin-left: -6px;
-    font-size: 0;
-    line-height: 1;
-
-    .edys-gallery-item,
-    .edy-gallery-item,
-    .edy-gallery-sortable-placeholder {
-      display: inline-block;
-      float: none;
-      margin: 3px 0 3px 6px
-    }
-  }
 }
 
 @include query($mobile) {
