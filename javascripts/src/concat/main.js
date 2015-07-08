@@ -151,6 +151,7 @@
       });
     }
     handlePostMinHeight();
+    focusCommentsWithErrors();
   };
   var initCommonPage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;
@@ -170,7 +171,6 @@
         $('.content-header').hide();
       }
     });
-    focusCommentsWithErrors();
   };
   var initArticlePage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;
@@ -185,7 +185,6 @@
     if ($.fn.autogrow) {
       $('.form_field_textarea').autogrow();
     }
-    focusCommentsWithErrors();
   };
   var initBlogPage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;

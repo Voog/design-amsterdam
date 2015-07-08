@@ -10931,6 +10931,7 @@ return jQuery;
       });
     }
     handlePostMinHeight();
+    focusCommentsWithErrors();
   };
   var initCommonPage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;
@@ -10950,7 +10951,6 @@ return jQuery;
         $('.content-header').hide();
       }
     });
-    focusCommentsWithErrors();
   };
   var initArticlePage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;
@@ -10965,7 +10965,6 @@ return jQuery;
     if ($.fn.autogrow) {
       $('.form_field_textarea').autogrow();
     }
-    focusCommentsWithErrors();
   };
   var initBlogPage = function(animation) {
     animation = typeof animation == 'undefined' ? false : animation;
