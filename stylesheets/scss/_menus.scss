@@ -52,8 +52,24 @@
     }
   }
 
-  .add-page-btn {
-    margin-left: 5px;
+  .editmode-button {
+    margin-left: 10px;
+
+    @include query($mobile) {
+      margin-top: 7px;
+      margin-left: 0;
+      margin-bottom: 7px;
+
+      &:last-child {
+        margin-top: 18px;
+      }
+
+      a {
+        padding: 10px 15px!important;
+        background-color: #838383 !important;
+        vertical-align: middle !important;
+      }
+    }
   }
 }
 
@@ -79,6 +95,12 @@
 
       &.untranslated {
         color: #c33;
+      }
+    }
+
+    &.editmode-button {
+      @include query($tablet) {
+        margin-right: 5px;
       }
     }
   }

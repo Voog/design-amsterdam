@@ -13,9 +13,9 @@
 
   {% if editmode %}
     {% if site.hidden_menuitems.size > 0 %}
-      <li>{% menubtn site.hidden_menuitems %}</li>
+      <li class="editmode-button">{% menubtn site.hidden_menuitems %}</li>
     {% endif %}
 
-    <li class="add-page-btn">{% menuadd %}</li>
+    <li class="editmode-button">{% menuadd %}</li>
   {% endif %}
 </ul>

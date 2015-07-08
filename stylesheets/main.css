@@ -321,8 +321,23 @@ body {
 .main-menu li a.untranslated {
   color: #c33;
 }
-.main-menu .add-page-btn {
-  margin-left: 5px;
+.main-menu .editmode-button {
+  margin-left: 10px;
+}
+@media screen and (max-width: 640px) {
+  .main-menu .editmode-button {
+    margin-top: 7px;
+    margin-left: 0;
+    margin-bottom: 7px;
+  }
+  .main-menu .editmode-button:last-child {
+    margin-top: 18px;
+  }
+  .main-menu .editmode-button a {
+    padding: 10px 15px !important;
+    background-color: #838383 !important;
+    vertical-align: middle !important;
+  }
 }
 
 .sub-menu li {
@@ -349,6 +364,11 @@ body {
 }
 .sub-menu li a.untranslated {
   color: #c33;
+}
+@media screen and (max-width: 999px) {
+  .sub-menu li.editmode-button {
+    margin-right: 5px;
+  }
 }
 
 .mobile-menu {
