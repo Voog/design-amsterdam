@@ -384,6 +384,9 @@ body {
 .flags-enabled .lang-menu-toggle .ico-popover-toggle {
   display: none;
 }
+.editmode .lang-menu-toggle.open {
+  margin-right: 90px;
+}
 
 .lang-menu-toggle:before, .lang-menu-toggle:after,
 .lang-menu li a.lang-flag:before,

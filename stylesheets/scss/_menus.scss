@@ -121,6 +121,12 @@
       display: none;
     }
   }
+
+  .editmode & {
+    &.open {
+      margin-right: 90px;
+    }
+  }
 }
 
 .lang-menu-toggle,
