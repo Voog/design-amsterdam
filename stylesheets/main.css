@@ -810,8 +810,10 @@ body {
   .lang-menu .add-lang-btn {
     top: 0;
     left: 0;
-    padding: 8px 15px 12px;
+    padding: 7px 15px 11px;
     margin: 0;
+    background-color: #838383;
+    opacity: .95;
   }
   .lang-menu .add-lang-btn a {
     width: auto;
