@@ -1,3 +1,16 @@
+/* FONTS */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-regular.woff2") format("woff2"), url("../assets/montserrat-regular.woff") format("woff"), url("../assets/montserrat-regular.ttf") format("truetype"), url("../assets/montserrat-regular.svg#Montserrat") format("svg");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/montserrat-bold.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-bold.woff2") format("woff2"), url("../assets/montserrat-bold.woff") format("woff"), url("../assets/montserrat-bold.ttf") format("truetype"), url("../assets/montserrat-bold.svg#Montserrat") format("svg");
+}
 .scrollpos {
   position: fixed;
   top: 0;
