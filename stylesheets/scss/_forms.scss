@@ -112,4 +112,8 @@
   cursor: pointer;
   background: #dadada;
   border: 0;
+
+  &:hover {
+    color: rgba(0,0,0,.8);
+  }
 }

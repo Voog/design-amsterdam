@@ -10821,7 +10821,9 @@ return jQuery;
 /* General JS */
 ;(function($) {
 
-  var editmode = $('html').hasClass('editmode');
+  var editmode = function () {
+    return $('html').hasClass('editmode');
+  };
 
   // Function to limit the rate at which a function can fire.
   // var debounce = function(func, wait, immediate) {
@@ -10841,7 +10843,7 @@ return jQuery;
 
   // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
-    if (!editmode) {
+    if (!editmode()) {
       $.each($('.content-formatted table'), function() {
         $(this).wrap('<div class="table-container overthrow"></div>');
       });
@@ -11168,7 +11170,15 @@ return jQuery;
     });
   };
 
+  var bindCustomTexteditorStyles = function() {
+    window.edy = window.edy || [];
+    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+  };
+
   var init = function() {
+    if (editmode()) {
+      bindCustomTexteditorStyles();
+    }
     toggleMainMenu();
     toggleLangMenu();
     handlePopoverMenuHide();
@@ -11179,7 +11189,7 @@ return jQuery;
       $('input, textarea').placeholder();
     });
 
-    if (!Modernizr.flexbox && editmode) {
+    if (!Modernizr.flexbox && editmode()) {
       bindFallbackHeaderLeftWidthCalculation();
     };
   };

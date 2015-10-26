@@ -220,6 +220,15 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+.content-formatted .custom-btn {
+  display: inline-block;
+  padding: 5px 12px;
+  margin-bottom: 20px;
+  color: #888;
+  cursor: pointer;
+  background: #dadada;
+  border: 0;
+}
 .blog-page .post-content .content-formatted .edy-positionable-container-maxwidth, .post-page .post-content .content-formatted .edy-positionable-container-maxwidth {
   width: auto !important;
   max-width: none !important;
@@ -1825,6 +1834,9 @@ body.mobilesearch-open {
   cursor: pointer;
   background: #dadada;
   border: 0;
+}
+.form_submit input:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .comments {
