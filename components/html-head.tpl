@@ -15,14 +15,14 @@
 {% comment %}TODO: Add functionality after the CMS is going to support it{% endcomment %}
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
-{% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
-<script src="{{ javascripts_path }}/modernizr.min.js?4"></script>
 
 {% comment %}STYLESHEETS{% endcomment %}
-
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 {% stylesheet_link "main.min.css" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
+
+{% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
+<script src="{{ javascripts_path }}/modernizr.min.js?4"></script>
 
 {% comment %}SITE TITLE{% endcomment %}
 {% capture page_title %}{% if article %}{{ article.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% else %}{% if site.root_item.selected? and page.site_title != "" %}{{ page.site_title }}{% else %}{{ page.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% endif %}{% endif %}{% endcapture %}
