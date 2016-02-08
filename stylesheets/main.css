@@ -862,14 +862,12 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   background: rgba(255, 255, 255, 0.95);
-  -webkit-box-shadow: 0 0 10px 0 #888;
   box-shadow: 0 0 10px 0 #888;
 }
 .voog-search-visible .header.header-fixed {
   display: none;
 }
 .header.header-animated {
-  -webkit-transition: top .3s ease-in-out;
   transition: top .3s ease-in-out;
 }
 .header .header-inner {
@@ -890,8 +888,6 @@ body {
   min-width: 100px;
 }
 .flexbox .header .header-inner .header-title {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1 0 auto;
   -moz-flex: 1 0 auto;
@@ -925,11 +921,8 @@ body {
   -moz-box-lines: multiple;
   box-lines: multiple;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
   box-pack: end;
   -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
@@ -1527,8 +1520,6 @@ body {
   display: block;
   width: 300px;
   opacity: 1;
-  -moz-box-shadow: 10px 0 10px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 10px 0 10px rgba(0, 0, 0, 0.05);
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -1552,7 +1543,6 @@ body {
   overflow: hidden;
   background: #e5e5e5;
   opacity: 0;
-  -webkit-transition: opacity .1s ease-in, width .3s ease-in;
   transition: opacity .1s ease-in, width .3s ease-in;
 }
 .editmode .voog-search-container {
@@ -1678,20 +1668,18 @@ body.mobilesearch-open {
   width: 20px;
   height: 3px;
   background: #222;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   content: '';
 }
 .mobilesearch-open .mobile-search-toggler:before {
-  -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 .mobilesearch-open .mobile-search-toggler:after {
-  -moz-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 
 #mobile-search {
@@ -1779,8 +1767,6 @@ body.mobilesearch-open {
   margin: 0;
   border: 0;
   outline: none;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1797,7 +1783,6 @@ body.mobilesearch-open {
 .form_field_textarea,
 .form_field_textfield,
 .form_submit input {
-  -webkit-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
 }
@@ -1958,7 +1943,6 @@ body.mobilesearch-open {
   display: none;
 }
 .footer.footer-animated {
-  -webkit-transition: bottom .35s ease-in-out;
   transition: bottom .35s ease-in-out;
 }
 .footer .gradient-overlay {
@@ -1971,7 +1955,6 @@ body.mobilesearch-open {
   background: transparent;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 0%, white 50%, white 100%);
   opacity: 0;
-  -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
 }
 .footer .search {
