@@ -18,7 +18,7 @@
 
 {% comment %}STYLESHEETS{% endcomment %}
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-{% stylesheet_link "main.min.css" %}
+{% stylesheet_link "main.css?1" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
 
 {% comment %}Custom fonts{% endcomment %}
@@ -27,16 +27,16 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-header" %}
+
+  {% comment %}
   {% include "template-cs-headings" %}
-  {% if html-head == "blog_listing_page" %}
-    {% include "template-cs-blog-list" %}
-  {% else %}
-    {% include "template-cs-content" %}
-  {% endif %}
-  {% comment %}{% include "template-cs-list" %}{% endcomment %}
+  {% include "template-cs-blog-list" %}
+  {% include "template-cs-content" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
   {% include "template-cs-footer" %}
+  {% endcomment %}
+
   {% include "template-cs-style-rules" %}
 {% endcustomstyle %}
 

@@ -16,6 +16,28 @@
 // =============================================================================
 // Default stylesheet override styles.
 // =============================================================================
+
+
+// Main styles
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-one);
+}
+
+.container,
+.header .header-inner {
+  max-width: var(--site-width);
+}
+
+.header {
+  .header-inner {
+    .header-title {
+      font-size: var(--header-site-title-font-size);
+    }
+  }
+}
+
+/*
 .main {
   background-color: var(--bg-color);
 }
@@ -463,3 +485,4 @@ label {
     }
   }
 }
+*/

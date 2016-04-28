@@ -9,7 +9,7 @@
   h5,
   h6 {
     margin: 0 0 17px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-one;
     font-weight: 300;
   }
 
@@ -18,7 +18,7 @@
   h4,
   h5,
   h6 {
-    color: #c33;
+    color: $color-three;
     text-transform: uppercase;
   }
 
@@ -47,10 +47,10 @@
   }
 
   a {
-    color: rgba(0,0,0,.5);
+    color: rgba($color-black,.5);
 
     &:hover {
-      color: rgba(0,0,0,.8);
+      color: rgba($color-black,.8);
     }
   }
 
@@ -121,7 +121,7 @@
     display: inline-block;
     padding: 5px 12px;
     margin-bottom: 20px;
-    color: #888;
+    color: $color-two;
     cursor: pointer;
     background: #dadada;
     border: 0;

@@ -4,13 +4,27 @@
 $tablet: 999px;
 $mobile: 640px;
 
+$site-width: 940px;
 
-////// temporary vars for design editor - remove unnceessary ones
-
+// Colors
 $color-white: rgb(255, 255, 255);
 $color-black: rgb(0, 0, 0);
 
-$main-color: #333;
+$color-one: #333;
+$color-two: #888;
+$color-three: #c33;
+$color-four: #919191;
+$color-five: #222;
+$color-notice: #3c3;
+
+// Fonts
+$font-main: "Montserrat", Helvetica, Arial, sans-serif;
+
+$font-one: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-two: "EB Garamond", "Georgia", serif;
+
+////// temporary vars for design editor - remove unnceessary ones
+$main-color: $color-one;
 $second-color: $color-black;
 $third-color: #818181;
 $fourth-color: $color-white;
@@ -33,8 +47,6 @@ $h2-size: 24px;
 $h3-size: 20px;
 $font-size: 18px;
 $line-height: 1.45;
-
-$font-main: "Montserrat", Helvetica, Arial, sans-serif;
 
 $main-width: 700px;
 

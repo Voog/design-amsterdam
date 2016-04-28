@@ -275,6 +275,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin', 'copy', 'clean:remove']);
 
+  /*
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
       if (action == 'added' || action == 'deleted') {
@@ -287,4 +288,5 @@ module.exports = function(grunt) {
       }
     }
   });
+  */
 };
