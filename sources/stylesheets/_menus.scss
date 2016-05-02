@@ -15,7 +15,7 @@
 
       &:hover {
         color: rgba($color-black,.8);
-        @include filter(grayscale(50%));
+        // @include filter(grayscale(50%));
 
         &:before {
           background-color: transparent;
@@ -27,7 +27,7 @@
   li.active {
     a {
       color: rgba($color-black,.8);
-      @include filter(grayscale(100%));
+      // @include filter(grayscale(100%));
 
       &:hover {
         color: rgba($color-black,.85);

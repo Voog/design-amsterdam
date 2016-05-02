@@ -1,34 +1,18 @@
 :root {
   /* VoogStyle
-  "pathI18n": ["table"],
-  "titleI18n": "background_color",
-  "editor": "colorPicker",
-  "scope": "global"
-*/
-  --table-background-color: transparent;
-  /* VoogStyle
-    "pathI18n": ["table"],
-    "titleI18n": "border_color",
-    "editor": "colorPicker",
-    "scope": "global"
-  */
-  --table-border-color: #818181;
-  /* VoogStyle
      "pathI18n": ["table"],
-     "titleI18n": "border_thickness",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 20,
-     "unit": "px",
+     "titleI18n": "border",
+     "editor": "listPicker",
+     "list": {{ base_border_style_set }},
      "scope": "global"
   */
-  --table-border-width: 1px;
+  --table-border-style: solid;
   /* VoogStyle
      "pathI18n": ["table"],
      "titleI18n": "padding",
      "editor": "rangePicker",
      "min": 0,
-     "max": 100,
+     "max": 60,
      "unit": "px",
      "scope": "global"
   */

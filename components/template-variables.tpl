@@ -50,31 +50,35 @@
       "list": [
         {
           "title": "Arvo",
-          "value": "\"Arvo\", sans-serif"
+          "value": "\"Arvo\", serif"
         },
         {
           "title": "Crimson Text",
-          "value": "\"Crimson Text\", sans-serif"
+          "value": "\"Crimson Text\", serif"
+        },
+        {
+          "title": "Garamond",
+          "value": "\"EB Garamond\", \"Georgia\", serif"
         },
         {
           "title": "Lora",
-          "value": "\"Lora\", sans-serif"
+          "value": "\"Lora\", serif"
         },
         {
           "title": "Noto Serif",
-          "value": "\"Noto Serif\", sans-serif"
+          "value": "\"Noto Serif\", serif"
         },
         {
           "title": "Playfair Display",
-          "value": "\"Playfair Display\", sans-serif"
+          "value": "\"Playfair Display\", serif"
         },
         {
           "title": "PT Serif",
-          "value": "\"PT Serif\", sans-serif"
+          "value": "\"PT Serif\", serif"
         },
         {
           "title": "Roboto Slab",
-          "value": "\"Roboto Slab\", sans-serif"
+          "value": "\"Roboto Slab\", serif"
         }
       ]
     },
@@ -120,5 +124,17 @@
     ]
   {% endcapture %}
 
+  {% capture base_border_style_set %}
+    [
+      {
+        "titleI18n": "solid",
+        "value": "solid"
+      },
+      {
+        "titleI18n": "none",
+        "value": "hidden"
+      }
+    ]
+  {% endcapture %}
 
 {% endcapture %}

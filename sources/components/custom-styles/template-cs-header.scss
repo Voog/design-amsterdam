@@ -32,6 +32,18 @@
   --header-site-title-font-size: $h2-size;
 
   /* VoogStyle
+     "pathI18n": ["header", "title"],
+     "titleI18n": "line_height",
+     "editor": "rangePicker",
+     "min": 0.8,
+     "max": 3,
+     "step": 0.1,
+     "unit": "em",
+     "scope": "global"
+  */
+  --header-site-title-line-height: 1.1em;
+
+  /* VoogStyle
     "pathI18n": ["header", "title"],
     "titleI18n": "font_weight",
     "type": "button",
@@ -43,7 +55,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --header-site-title-font-weight: 400;
+  --header-site-title-font-weight: 600;
 
   /* VoogStyle
     "pathI18n": ["header", "title"],
@@ -95,7 +107,7 @@
     "scope": "global",
     "featured": true
   */
-  --header-site-title-color: $second-color;
+  --header-site-title-color: rgba($color-black, .8);
 
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
@@ -107,7 +119,19 @@
     "scope": "global",
     "featured": true
   */
-  --header-mainmenu-font-size: $font-size - 2px;
+  --header-mainmenu-font-size: 12px;
+
+  /* VoogStyle
+     "pathI18n": ["header", "main_menu", "normal"],
+     "titleI18n": "line_height",
+     "editor": "rangePicker",
+     "min": 0.8,
+     "max": 3,
+     "step": 0.1,
+     "unit": "em",
+     "scope": "global"
+  */
+  --header-mainmenu-line-height: 1em;
 
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
@@ -301,7 +325,7 @@
     "scope": "global",
     "featured": true
   */
-  --header-mainmenu-color: $third-color;
+  --header-mainmenu-color: rgba($color-black, .5);
 
    /* VoogStyle
     "pathI18n": ["header", "main_menu", "hover"],
@@ -310,7 +334,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --header-mainmenu-hover-color: $second-color;
+  --header-mainmenu-hover-color: rgba($color-black, .8);
 
    /* VoogStyle
     "pathI18n": ["header", "main_menu", "active"],
@@ -319,7 +343,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --header-mainmenu-active-color: $second-color;
+  --header-mainmenu-active-color: $color-black;
 
   // scss-lint:enable Comment, Indentation
 }

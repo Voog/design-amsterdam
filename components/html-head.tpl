@@ -27,17 +27,21 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-header" %}
-
   {% comment %}
-  {% include "template-cs-headings" %}
-  {% include "template-cs-blog-list" %}
+  {% if blog_list_page %}
+    {% include "template-cs-blog-list" %}
+  {% endif %}
+  {% endcomment %}
   {% include "template-cs-content" %}
+  {% include "template-cs-footer" %}
+  {% include "template-cs-headings" %}
+  {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
-  {% include "template-cs-footer" %}
-  {% endcomment %}
 
   {% include "template-cs-style-rules" %}
+  {% comment %}
+  {% endcomment %}
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}

@@ -20,45 +20,16 @@
   // scss-lint:disable Comment, Indentation
 
   /* VoogStyle
-     "pathI18n": ["headings", "title"],
-     "titleI18n": "font",
-     "editor": "listPicker",
-     "list": {{ base_font_set }},
-     "featured": true,
-     "scope": "global"
+    "pathI18n": ["headings", "title"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
   */
-  --h1-font-family: $font-main;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "title"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --h1-alignment: center;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "title"],
-     "titleI18n": "padding_bottom",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 150,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h1-padding-bottom: 48px;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "title"],
-     "titleI18n": "letter_spacing",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 40,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h1-letter-spacing: 0;
+  --h1-font-size: $h1-size;
 
   /* VoogStyle
      "pathI18n": ["headings", "title"],
@@ -70,20 +41,16 @@
      "unit": "em",
      "scope": "global"
   */
-  --h1-line-height: 1.1em;
+  --h1-line-height: 1em;
 
   /* VoogStyle
-    "pathI18n": ["headings", "title"],
-    "titleI18n": "size",
-    "type": "button",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global",
-    "featured": true
+     "pathI18n": ["headings", "title"],
+     "titleI18n": "alignment",
+     "editor": "listPicker",
+     "list": {{ base_alignment_set }},
+     "scope": "global"
   */
-  --h1-font-size: $h1-size;
+  --h1-alignment: left;
 
   /* VoogStyle
     "pathI18n": ["headings", "title"],
@@ -97,7 +64,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h1-font-weight: 600;
+  --h1-font-weight: 400;
 
   /* VoogStyle
     "pathI18n": ["headings", "title"],
@@ -149,48 +116,19 @@
     "scope": "global",
     "featured": true
   */
-  --h1-color: $second-color;
+  --h1-color: #222;
 
   /* VoogStyle
-     "pathI18n": ["headings", "heading"],
-     "titleI18n": "font",
-     "editor": "listPicker",
-     "list": {{ base_font_set }},
-     "featured": true,
-     "scope": "global"
+    "pathI18n": ["headings", "heading"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
   */
-  --h2-font-family: $font-main;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "heading"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --h2-alignment: left;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "heading"],
-     "titleI18n": "padding_bottom",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 150,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h2-padding-bottom: 0px;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "heading"],
-     "titleI18n": "letter_spacing",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 40,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h2-letter-spacing: 0;
+  --h2-font-size: $h2-size;
 
   /* VoogStyle
      "pathI18n": ["headings", "heading"],
@@ -202,20 +140,16 @@
      "unit": "em",
      "scope": "global"
   */
-  --h2-line-height: 1.1em;
+  --h2-line-height: 1.4em;
 
   /* VoogStyle
-    "pathI18n": ["headings", "heading"],
-    "titleI18n": "size",
-    "type": "button",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global",
-    "featured": true
+     "pathI18n": ["headings", "heading"],
+     "titleI18n": "alignment",
+     "editor": "listPicker",
+     "list": {{ base_alignment_set }},
+     "scope": "global"
   */
-  --h2-font-size: $h2-size;
+  --h2-alignment: left;
 
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
@@ -229,7 +163,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h2-font-weight: 600;
+  --h2-font-weight: 400;
 
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
@@ -271,7 +205,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --h2-text-transform: none;
+  --h2-text-transform: uppercase;
 
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
@@ -281,59 +215,19 @@
     "scope": "global",
     "featured": true
   */
-  --h2-color: $second-color;
+  --h2-color: $color-three;
 
   /* VoogStyle
-     "pathI18n": ["headings", "subheading"],
-     "titleI18n": "font",
-     "editor": "listPicker",
-     "list": {{ base_font_set }},
-     "featured": true,
-     "scope": "global"
+    "pathI18n": ["headings", "subheading"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
   */
-  --h3-font-family: $font-main;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "subheading"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --h3-alignment: left;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "subheading"],
-     "titleI18n": "padding",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 150,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h3-margin: 20px;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "subheading"],
-     "titleI18n": "Padding bottom",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 150,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h3-padding-bottom: 0;
-
-  /* VoogStyle
-     "pathI18n": ["headings", "subheading"],
-     "titleI18n": "letter_spacing",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 40,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h3-letter-spacing: 0;
+  --h3-font-size: $font-size;
 
   /* VoogStyle
      "pathI18n": ["headings", "subheading"],
@@ -345,20 +239,16 @@
      "unit": "em",
      "scope": "global"
   */
-  --h3-line-height: 1.1em;
+  --h3-line-height: 1.4em;
 
   /* VoogStyle
-    "pathI18n": ["headings", "subheading"],
-    "titleI18n": "size",
-    "type": "button",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global",
-    "featured": true
+     "pathI18n": ["headings", "subheading"],
+     "titleI18n": "alignment",
+     "editor": "listPicker",
+     "list": {{ base_alignment_set }},
+     "scope": "global"
   */
-  --h3-font-size: $h3-size;
+  --h3-alignment: left;
 
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
@@ -372,7 +262,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h3-font-weight: 600;
+  --h3-font-weight: 400;
 
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
@@ -414,7 +304,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --h3-text-transform: none;
+  --h3-text-transform: uppercase;
 
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
@@ -424,7 +314,7 @@
     "scope": "global",
     "featured": true
   */
-  --h3-color: $second-color;
+  --h3-color: $color-three;
 
   // scss-lint:enable Comment, Indentation
 }
