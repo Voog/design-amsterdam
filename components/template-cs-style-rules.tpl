@@ -168,3 +168,21 @@ body {
   text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
 }
+
+.content-formatted .custom-btn,
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input,
+.content-formatted .form_submit input:hover {
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  font-size: var(--button-font-size);
+  font-style: var(--button-font-style);
+  font-weight: var(--button-font-weight);
+  line-height: var(--button-line-height);
+  text-decoration: var(--button-text-decoration);
+  text-transform: var(--button-text-transform);
+}
+.content-formatted .custom-btn:hover,
+.content-formatted .form_submit input:hover {
+  opacity: .75;
+}

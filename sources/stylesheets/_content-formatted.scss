@@ -118,13 +118,16 @@
   }
 
   .custom-btn {
-    display: inline-block;
-    padding: 5px 12px;
-    margin-bottom: 20px;
-    color: $color-two;
-    cursor: pointer;
     background: #dadada;
     border: 0;
+    color: $color-two;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-one;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+    padding: .31em .75em;
   }
 
   // Image container positioning

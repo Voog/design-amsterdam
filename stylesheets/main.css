@@ -216,13 +216,16 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 .content-formatted .custom-btn {
-  display: inline-block;
-  padding: 5px 12px;
-  margin-bottom: 20px;
-  color: #888;
-  cursor: pointer;
   background: #dadada;
   border: 0;
+  color: #888;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  padding: .31em .75em;
 }
 .blog-page .post-content .content-formatted .edy-positionable-container-maxwidth, .post-page .post-content .content-formatted .edy-positionable-container-maxwidth {
   width: auto !important;
@@ -1804,12 +1807,14 @@ body.mobilesearch-open {
 }
 
 .form_submit input {
-  padding: 5px 12px;
-  margin: 0;
-  color: #888;
-  cursor: pointer;
   background: #dadada;
   border: 0;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin: 0;
+  padding: .31em .75em;
 }
 .form_submit input:hover {
   color: rgba(0, 0, 0, 0.8);

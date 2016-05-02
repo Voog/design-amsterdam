@@ -25,7 +25,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --content-button-background-color: rgba($bg-color-dark, 1);
+  --button-background-color: #dadada;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -37,7 +37,7 @@
     "featured": true,
     "scope": "global"
   */
-  --content-button-font-size: 18px;
+  --button-font-size: 16px;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -49,7 +49,7 @@
     "unit": "em",
     "scope": "global"
   */
-  --content-button-line-height: 1.2em;
+  --button-line-height: 1.7em;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -63,7 +63,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --content-button-font-weight: 400;
+  --button-font-weight: 400;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -77,7 +77,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --content-button-font-style: normal;
+  --button-font-style: normal;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -91,7 +91,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-button-text-decoration: none;
+  --button-text-decoration: none;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -105,7 +105,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --content-button-text-transform: none;
+  --button-text-transform: none;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -115,7 +115,7 @@
     "featured": true,
     "scope": "global"
   */
-  --content-button-color: rgba($color-white, 1);
+  --button-color: $color-two;
 
   // scss-lint:enable Comment, Indentation
 }
