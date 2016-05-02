@@ -37,8 +37,14 @@ body {
   max-width: var(--site-width);
 }
 
-.header .header-inner .header-title {
+.header .header-inner .header-title, .header .header-inner .header-title a, .header .header-inner .header-title a:hover {
+  color: var(--header-site-title-color);
   font-size: var(--header-site-title-font-size);
+  font-style: var(--header-site-title-font-style);
+  font-weight: var(--header-site-title-font-weight);
+  line-height: var(--header-site-title-line-height);
+  text-decoration: var(--header-site-title-text-decoration);
+  text-transform: var(--header-site-title-text-transform);
 }
 
 .main-menu li a {

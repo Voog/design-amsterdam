@@ -65,7 +65,17 @@ body {
 .header {
   .header-inner {
     .header-title {
-      font-size: var(--header-site-title-font-size);
+      &, 
+      & a,
+      & a:hover {
+        color: var(--header-site-title-color);
+        font-size: var(--header-site-title-font-size);
+        font-style: var(--header-site-title-font-style);
+        font-weight: var(--header-site-title-font-weight);
+        line-height: var(--header-site-title-line-height);
+        text-decoration: var(--header-site-title-text-decoration);
+        text-transform: var(--header-site-title-text-transform);
+      }
     }
   }
 }
@@ -101,7 +111,7 @@ body {
       text-decoration: var(--header-mainmenu-active-text-decoration);
       text-transform: var(--header-mainmenu-active-text-transform);
     }
-  } 
+  }
 }
 
 // Content - Sub-menu
