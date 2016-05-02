@@ -22,14 +22,6 @@
   */
   --footer-line-height: 1.4em;
   /* VoogStyle
-     "pathI18n": ["footer", "text"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --footer-alignment: left;
-  /* VoogStyle
     "pathI18n": ["footer", "text"],
     "titleI18n": "color",
     "editor": "colorPicker",

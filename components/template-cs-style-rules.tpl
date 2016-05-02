@@ -11,10 +11,6 @@ body {
 .comment-form textarea,
 .footer,
 .voog-reference,
-.content-formatted form,
-.content-formatted .form,
-.content-formatted form input,
-.content-formatted form textarea,
 .front-page .content-body,
 .common-page .content-header,
 .header,
@@ -24,6 +20,19 @@ body {
 .voog-search-result,
 .sidebar,
 .sidebar-left .content-formatted h1 {
+  font-family: var(--font-one);
+}
+
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6,
+.content-formatted form,
+.content-formatted .form,
+.content-formatted form input,
+.content-formatted form-textarea {
   font-family: var(--font-one);
 }
 
@@ -70,6 +79,17 @@ body {
   font-weight: var(--header-mainmenu-active-font-weight);
   text-decoration: var(--header-mainmenu-active-text-decoration);
   text-transform: var(--header-mainmenu-active-text-transform);
+}
+
+.common-page .content-header,
+.post-page .post-header h1 {
+  font-size: var(--content-title-font-size);
+  line-height: var(--content-title-line-height);
+  font-weight: var(--content-title-font-weight);
+  font-style: var(--content-title-font-style);
+  text-decoration: var(--content-title-text-decoration);
+  text-transform: var(--content-title-text-transform);
+  color: var(--content-title-color);
 }
 
 .sub-menu li a {
@@ -120,7 +140,6 @@ body {
   font-style: var(--footer-font-style);
   font-weight: var(--footer-font-weight);
   line-height: var(--footer-line-height);
-  text-align: var(--footer-alignment);
   text-decoration: var(--footer-text-decoration);
   text-transform: var(--footer-text-transform);
 }
@@ -131,7 +150,6 @@ body {
 .content-formatted h1,
 .content-formatted h1 a,
 .content-formatted h1 a:hover {
-  font-family: var(--h1-font-family);
   font-size: var(--h1-font-size);
   font-style: var(--h1-font-style);
   font-weight: var(--h1-font-weight);
@@ -144,7 +162,6 @@ body {
   color: var(--h2-color);
 }
 .content-formatted h2, .content-formatted h2 a, .content-formatted h2 a:hover {
-  font-family: var(--h2-font-family);
   font-size: var(--h2-font-size);
   font-style: var(--h2-font-style);
   font-weight: var(--h2-font-weight);
@@ -159,7 +176,6 @@ body {
 .content-formatted h3,
 .content-formatted h3 a,
 .content-formatted h3 a:hover {
-  font-family: var(--h3-font-family);
   font-size: var(--h3-font-size);
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);

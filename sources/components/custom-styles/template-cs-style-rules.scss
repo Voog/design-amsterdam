@@ -32,10 +32,6 @@ body {
 .comment-form textarea,
 .footer,
 .voog-reference,
-.content-formatted form,
-.content-formatted .form,
-.content-formatted form input,
-.content-formatted form textarea,
 .front-page .content-body,
 .common-page .content-header,
 .header,
@@ -47,6 +43,21 @@ body {
 .sidebar-left .content-formatted h1
  {
   font-family: var(--font-one);
+}
+
+.content-formatted {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  form,
+  .form,
+  form input,
+  form-textarea {
+    font-family: var(--font-one);
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -114,6 +125,19 @@ body {
   }
 }
 
+// Content - Page title
+
+.common-page .content-header,
+.post-page .post-header h1 {
+  font-size: var(--content-title-font-size);
+  line-height: var(--content-title-line-height);
+  font-weight: var(--content-title-font-weight);
+  font-style: var(--content-title-font-style);
+  text-decoration: var(--content-title-text-decoration);
+  text-transform: var(--content-title-text-transform);
+  color: var(--content-title-color);
+}
+
 // Content - Sub-menu
 
 .sub-menu {
@@ -177,7 +201,6 @@ body {
   font-style: var(--footer-font-style);
   font-weight: var(--footer-font-weight);
   line-height: var(--footer-line-height);
-  text-align: var(--footer-alignment);
   text-decoration: var(--footer-text-decoration);
   text-transform: var(--footer-text-transform);
 }
@@ -190,7 +213,6 @@ body {
     &,
     a,
     a:hover {
-      font-family: var(--h1-font-family);
       font-size: var(--h1-font-size);
       font-style: var(--h1-font-style);
       font-weight: var(--h1-font-weight);
@@ -207,7 +229,6 @@ body {
     &,
     & a,
     & a:hover {
-      font-family: var(--h2-font-family);
       font-size: var(--h2-font-size);
       font-style: var(--h2-font-style);
       font-weight: var(--h2-font-weight);
@@ -224,7 +245,6 @@ body {
     &,
     a,
     a:hover {
-      font-family: var(--h3-font-family);
       font-size: var(--h3-font-size);
       font-style: var(--h3-font-style);
       font-weight: var(--h3-font-weight);
