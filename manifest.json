@@ -36,9 +36,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/search.tpl",
-      "layout_name": "search",
-      "title": "search"
+      "file": "components/sidebar-left.tpl",
+      "layout_name": "sidebar-left",
+      "title": "sidebar-left"
     },
     {
       "content_type": "component",
@@ -113,16 +113,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/comment-form.tpl",
-      "layout_name": "comment-form",
-      "title": "comment-form"
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/sidebar-left.tpl",
-      "layout_name": "sidebar-left",
-      "title": "sidebar-left"
+      "file": "components/comment-form.tpl",
+      "layout_name": "comment-form",
+      "title": "comment-form"
     },
     {
       "content_type": "component",
@@ -137,6 +137,13 @@
       "file": "components/tags-blog.tpl",
       "layout_name": "tags-blog",
       "title": "tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog-article.tpl",
+      "layout_name": "template-cs-blog-article",
+      "title": "template-cs-blog-article"
     },
     {
       "content_type": "component",

@@ -27,12 +27,12 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-header" %}
-  {% comment %}
-  {% if blog_list_page %}
-    {% include "template-cs-blog-list" %}
+  {% if blog_article %}
+    {% include "template-cs-blog-article" %}
   {% endif %}
-  {% endcomment %}
-  {% include "template-cs-content" %}
+  {% if common_page %}
+    {% include "template-cs-content" %}
+  {% endif %}
   {% include "template-cs-footer" %}
   {% include "template-cs-headings" %}
   {% include "template-cs-button" %}

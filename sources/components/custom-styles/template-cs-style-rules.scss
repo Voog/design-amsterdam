@@ -60,7 +60,7 @@ body {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: $mobile) {
   .topbar {
     font-family: var(--font-one);
   }
@@ -136,6 +136,48 @@ body {
   text-decoration: var(--content-title-text-decoration);
   text-transform: var(--content-title-text-transform);
   color: var(--content-title-color);
+}
+
+// Content - blog article margins and width / post date
+
+@media screen and (min-width: $mobile) {
+  .post-page {
+    .post-excerpt,
+    .post-body {
+      margin-left: var(--blog-article-margin);
+      margin-right: var(--blog-article-margin);
+    }
+
+    .tags {
+      margin-left: var(--blog-article-margin);
+    }
+  }
+}
+
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  .comments {
+    margin-left: var(--blog-article-margin);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .post-page {
+    .post-content {
+      max-width: calc(100% - 358px);
+    }
+  }
+}
+
+.post-page {
+  .post-date {
+    color: var(--post-date-color);
+    font-size: var(--post-date-font-size);
+    font-style: var(--post-date-font-style);
+    font-weight: var(--post-date-font-weight);
+    line-height: var(--post-date-line-height);
+    text-decoration: var(--post-date-text-decoration);
+    text-transform: var(--post-date-text-transform);
+  }
 }
 
 // Content - Sub-menu

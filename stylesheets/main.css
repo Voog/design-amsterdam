@@ -1320,7 +1320,8 @@ body {
   display: block;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 70px;
+  margin-left: 35px;
+  margin-right: 35px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .post-page .tags .tag-icon {

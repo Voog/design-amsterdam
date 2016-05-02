@@ -92,6 +92,36 @@ body {
   color: var(--content-title-color);
 }
 
+@media screen and (min-width: 640px) {
+  .post-page .post-excerpt,
+  .post-page .post-body {
+    margin-left: var(--blog-article-margin);
+    margin-right: var(--blog-article-margin);
+  }
+  .post-page .tags {
+    margin-left: var(--blog-article-margin);
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .comments {
+    margin-left: var(--blog-article-margin);
+  }
+}
+@media screen and (min-width: 999px) {
+  .post-page .post-content {
+    max-width: calc(100% - 358px);
+  }
+}
+.post-page .post-date {
+  color: var(--post-date-color);
+  font-size: var(--post-date-font-size);
+  font-style: var(--post-date-font-style);
+  font-weight: var(--post-date-font-weight);
+  line-height: var(--post-date-line-height);
+  text-decoration: var(--post-date-text-decoration);
+  text-transform: var(--post-date-text-transform);
+}
+
 .sub-menu li a {
   color: var(--content-submenu-color);
   font-size: var(--content-submenu-font-size);
