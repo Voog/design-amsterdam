@@ -18,7 +18,7 @@
   h4,
   h5,
   h6 {
-    color: $color-three;
+    color: $color-error;
     text-transform: uppercase;
   }
 
@@ -120,7 +120,7 @@
   .custom-btn {
     background: #dadada;
     border: 0;
-    color: $color-two;
+    color: $color-three;
     cursor: pointer;
     display: inline-block;
     font-family: $font-one;

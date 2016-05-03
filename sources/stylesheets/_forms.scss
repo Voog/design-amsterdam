@@ -22,7 +22,7 @@
 .form_field_error,
 .form_error {
   font-weight: 700;
-  color: $color-three;
+  color: $color-error;
   font-size: 16px;
 }
 
@@ -108,7 +108,7 @@
 .form_submit input {
   background: #dadada;
   border: 0;
-  color: $color-two;
+  color: $color-three;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.7em;

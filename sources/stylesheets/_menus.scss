@@ -47,7 +47,7 @@
       text-transform: uppercase;
 
       &.untranslated {
-        color: $color-three;
+        color: $color-error;
       }
     }
   }
@@ -91,10 +91,10 @@
       @include hyphenate(true);
       font-size: 16px;
       font-weight: 300;
-      color: $color-two;
+      color: $color-three;
 
       &.untranslated {
-        color: $color-three;
+        color: $color-error;
       }
     }
 
@@ -231,7 +231,7 @@
       position: relative;
       display: block;
       padding: 6px 4px 4px 30px;
-      color: $color-two;
+      color: $color-three;
       text-transform: uppercase;
     }
 
@@ -243,7 +243,7 @@
   li.active {
     a,
     a:hover {
-      color: $color-one;
+      color: $color-two;
     }
   }
 

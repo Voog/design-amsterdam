@@ -218,7 +218,7 @@ body {
 .content-formatted .custom-btn {
   background: #dadada;
   border: 0;
-  color: #888;
+  color: #919191;
   cursor: pointer;
   display: inline-block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -376,7 +376,7 @@ body {
   hyphens: auto;
   font-size: 16px;
   font-weight: 300;
-  color: #888;
+  color: #919191;
 }
 .sub-menu li a.untranslated {
   color: #c33;
@@ -495,7 +495,7 @@ body {
   position: relative;
   display: block;
   padding: 6px 4px 4px 30px;
-  color: #888;
+  color: #919191;
   text-transform: uppercase;
 }
 .lang-menu li .edy-menu-langadd {
@@ -861,7 +861,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 10px 0 #888;
+  box-shadow: 0 0 10px 0 #919191;
 }
 .voog-search-visible .header.header-fixed {
   display: none;
@@ -1177,7 +1177,7 @@ body {
 }
 .blog-page .post-date {
   font-size: 12px;
-  color: #888;
+  color: #919191;
 }
 .blog-page .post-content {
   position: relative;
@@ -1811,7 +1811,7 @@ body.mobilesearch-open {
 .form_submit input {
   background: #dadada;
   border: 0;
-  color: #888;
+  color: #919191;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.7em;

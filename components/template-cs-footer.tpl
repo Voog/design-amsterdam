@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --footer-line-height: 1.4em;
+  --footer-line-height: 1.4;
   /* VoogStyle
     "pathI18n": ["footer", "text"],
     "titleI18n": "color",
@@ -28,5 +28,5 @@
     "scope": "global",
     "featured": true
   */
-  --footer-color: rgba(0, 0, 0, 0.8);
+  --footer-color: #333;
 }

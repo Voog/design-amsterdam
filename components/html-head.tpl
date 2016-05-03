@@ -18,7 +18,7 @@
 
 {% comment %}STYLESHEETS{% endcomment %}
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-{% stylesheet_link "main.css?1" %}
+{% stylesheet_link "main.min.css?2" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
 
 {% comment %}Custom fonts{% endcomment %}

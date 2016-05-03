@@ -9,7 +9,7 @@
       "scope": "global",
       "featured": true
     */
-  --focus-area-title-font-size: 24px;
+  --focus-area-text-font-size: 24px;
   /* VoogStyle
      "pathI18n": ["focus_area", "text"],
      "titleI18n": "line_height",
@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --focus-area-title-line-height: 1.5em;
+  --focus-area-text-line-height: 1.5em;
   /* VoogStyle
     "pathI18n": ["focus_area", "text"],
     "titleI18n": "font_weight",
@@ -33,7 +33,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --focus-area-title-font-weight: 400;
+  --focus-area-text-font-weight: 400;
   /* VoogStyle
     "pathI18n": ["focus_area", "text"],
     "titleI18n": "font_style",
@@ -46,7 +46,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --focus-area-title-font-style: normal;
+  --focus-area-text-font-style: normal;
   /* VoogStyle
     "pathI18n": ["focus_area", "text"],
     "titleI18n": "text_decoration",
@@ -59,7 +59,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --focus-area-title-text-decoration: none;
+  --focus-area-text-text-decoration: none;
   /* VoogStyle
     "pathI18n": ["focus_area", "text"],
     "titleI18n": "text_transform",
@@ -72,7 +72,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --focus-area-title-text-transform: none;
+  --focus-area-text-text-transform: none;
   /* VoogStyle
     "pathI18n": ["focus_area", "text"],
     "titleI18n": "color",
@@ -81,7 +81,7 @@
     "scope": "global",
     "featured": true
   */
-  --focus-area-title-color: rgba(0, 0, 0, 0.5);
+  --focus-area-text-color: #919191;
   /* VoogStyle
     "pathI18n": ["focus_area", "link", "normal"],
     "titleI18n": "font_weight",
@@ -206,7 +206,7 @@
     "scope": "global",
     "featured": true
   */
-  --focus-area-links-color: rgba(0, 0, 0, 0.8);
+  --focus-area-links-color: #333;
  /* VoogStyle
   "pathI18n": ["focus_area", "link", "hover"],
   "titleI18n": "color",
@@ -215,5 +215,5 @@
   "scope": "global",
   "featured": true
 */
-  --focus-area-links-hover-color: rgba(0, 0, 0, 0.5);
+  --focus-area-links-hover-color: #919191;
 }

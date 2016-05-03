@@ -88,5 +88,5 @@
     "featured": true,
     "scope": "global"
   */
-  --button-color: #888;
+  --button-color: #919191;
 }

@@ -53,7 +53,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --blog-list-title-line-height: 1.4em;
+  --blog-list-title-line-height: $line-height;
 
   /* VoogStyle
     "pathI18n": ["blog", "title"],
@@ -119,7 +119,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-title-color: $color-one;
+  --blog-list-title-color: $color-two;
 
   /* VoogStyle
     "pathI18n": ["blog", "date"],
@@ -143,7 +143,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --blog-list-date-line-height: 1.4em;
+  --blog-list-date-line-height: $line-height;
 
   /* VoogStyle
     "pathI18n": ["blog", "date"],
@@ -209,7 +209,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-date-color: $color-two;
+  --blog-list-date-color: $color-four;
 
   /* VoogStyle
     "pathI18n": ["blog", "text"],
@@ -236,16 +236,21 @@
      "unit": "em",
      "scope": "global"
   */
-  --content-line-height: 1.4em;
+  --content-line-height: $line-height;
 
   /* VoogStyle
     "pathI18n": ["blog", "text"],
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+        "--content-title-color",
+        "--blog-list-title-color",
+        "--form-field-text-color"
+    ]
   */
-  --content-color: $color-five;
+  --content-color: $color-two;
 
 /* VoogStyle
     "pathI18n": ["blog", "link", "normal"],
@@ -379,7 +384,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-color: rgba($color-black, .5);
+  --content-links-color: $color-four;
 
    /* VoogStyle
     "pathI18n": ["blog", "link", "hover"],
@@ -389,7 +394,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-hover-color: rgba($color-black, .8);
+  --content-links-hover-color: $color-two;
 
   // scss-lint:enable Comment, Indentation
 }

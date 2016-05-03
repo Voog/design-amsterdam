@@ -10,11 +10,19 @@ $site-width: 940px;
 $color-white: rgb(255, 255, 255);
 $color-black: rgb(0, 0, 0);
 
-$color-one: #333; // rgb(51,51,51)
-$color-two: #888; // rgb(136,136,136)
-$color-three: #c33; // rgb(204,51,51)
-$color-four: #919191; // rgb(145,145,145)
-$color-five: #222; // rgb(34,34,34)
+$color-one: #222; // replaced by $color-two in design editor
+// rgb(34,34,34)
+
+$color-two: #333;
+// rgb(51,51,51)
+
+$color-three: #888; // replaced by $color-four in design editor
+// rgb(136,136,136)
+
+$color-four: #919191; 
+// rgb(145,145,145)
+
+$color-error: #c33; //rgb(204,51,51)
 $color-notice: #3c3; // rgb(51,204,51)
 
 // Fonts
@@ -24,27 +32,7 @@ $font-two: "EB Garamond", "Georgia", serif;
 $h1-size: 36px;
 $h2-size: 24px;
 $font-size: 18px;
-$line-height: 1.45;
+$line-height: 1.4;
 
-////// temporary vars for design editor - remove unnceessary ones
-$second-color: $color-black;
-$third-color: #818181; //rgb(129,129,129)
-$fourth-color: $color-white;
-$link-color: #919191; //
-$link-color: $third-color;
-$focus-color: #f9ec5a;
-
-$bg-color: #f4f4f4;
-$bg-color-dark: #2b2b2b;
-
-$error-color: #c70909;
-$success-color: #409e13;
-
-// FONT SIZES
-
-$main-width: 700px;
-
-$break-medium: 600px;
-$break-small: 500px;
-
-$header-inner-height: 28px;
+$color-one: $color-two; 
+$color-three: $color-four;

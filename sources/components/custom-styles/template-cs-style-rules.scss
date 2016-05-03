@@ -128,13 +128,13 @@ body {
 // Focus area
 
 .front-page .content-body {
-  color: var(--focus-area-title-color);
-  font-size: var(--focus-area-title-font-size);
-  font-style: var(--focus-area-title-font-style);
-  font-weight: var(--focus-area-title-font-weight);
-  line-height: var(--focus-area-title-line-height);
-  text-decoration: var(--focus-area-title-text-decoration);
-  text-transform: var(--focus-area-title-text-transform);
+  color: var(--focus-area-text-color);
+  font-size: var(--focus-area-text-font-size);
+  font-style: var(--focus-area-text-font-style);
+  font-weight: var(--focus-area-text-font-weight);
+  line-height: var(--focus-area-text-line-height);
+  text-decoration: var(--focus-area-text-text-decoration);
+  text-transform: var(--focus-area-text-text-transform);
 
   a {
     color: var(--focus-area-links-color);
@@ -224,7 +224,7 @@ body {
 @media screen and (min-width: $tablet) {
   .post-page {
     .post-content {
-      max-width: calc(100% - 358px);
+      max-width: calc(100% - 365px);
     }
   }
 }
@@ -361,7 +361,8 @@ body {
 
 // Button, table, form
 
-.content-formatted {
+.content-formatted,
+.comment-form {
   .custom-btn,
   .custom-btn:hover,
   .form_submit input,
@@ -387,10 +388,10 @@ body {
     padding: var(--table-cell-padding);
   }
 
-  form,
+form,
   .form {
-      font-size: var(--form-field-text-font-size);
-      color: var(--form-field-text-color);
+    color: var(--form-field-text-color);
+    font-size: var(--form-field-text-font-size);
   }
 
   .form_field label,
@@ -398,6 +399,7 @@ body {
   .form_field_textarea,
   .form_field_select,
   .form_field_file {
+    background-color: var(--color-bg);
     color: var(--form-field-text-color);
     font-size: var(--form-field-text-font-size);
     font-style: var(--form-field-text-font-style);
@@ -416,3 +418,4 @@ body {
     border-bottom-color: $color-four;
   }
 }
+

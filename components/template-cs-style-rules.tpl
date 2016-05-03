@@ -82,13 +82,13 @@ body {
 }
 
 .front-page .content-body {
-  color: var(--focus-area-title-color);
-  font-size: var(--focus-area-title-font-size);
-  font-style: var(--focus-area-title-font-style);
-  font-weight: var(--focus-area-title-font-weight);
-  line-height: var(--focus-area-title-line-height);
-  text-decoration: var(--focus-area-title-text-decoration);
-  text-transform: var(--focus-area-title-text-transform);
+  color: var(--focus-area-text-color);
+  font-size: var(--focus-area-text-font-size);
+  font-style: var(--focus-area-text-font-style);
+  font-weight: var(--focus-area-text-font-weight);
+  line-height: var(--focus-area-text-line-height);
+  text-decoration: var(--focus-area-text-text-decoration);
+  text-transform: var(--focus-area-text-text-transform);
 }
 .front-page .content-body a {
   color: var(--focus-area-links-color);
@@ -160,7 +160,7 @@ body {
 }
 @media screen and (min-width: 999px) {
   .post-page .post-content {
-    max-width: calc(100% - 358px);
+    max-width: calc(100% - 365px);
   }
 }
 .post-page .post-date {
@@ -269,7 +269,11 @@ body {
 .content-formatted .custom-btn,
 .content-formatted .custom-btn:hover,
 .content-formatted .form_submit input,
-.content-formatted .form_submit input:hover {
+.content-formatted .form_submit input:hover,
+.comment-form .custom-btn,
+.comment-form .custom-btn:hover,
+.comment-form .form_submit input,
+.comment-form .form_submit input:hover {
   background-color: var(--button-background-color);
   color: var(--button-color);
   font-size: var(--button-font-size);
@@ -280,24 +284,35 @@ body {
   text-transform: var(--button-text-transform);
 }
 .content-formatted .custom-btn:hover,
-.content-formatted .form_submit input:hover {
+.content-formatted .form_submit input:hover,
+.comment-form .custom-btn:hover,
+.comment-form .form_submit input:hover {
   opacity: .75;
 }
-.content-formatted table td {
+.content-formatted table td,
+.comment-form table td {
   border-top-style: var(--table-border-style);
   border-top-bottom: var(--table-border-style);
   padding: var(--table-cell-padding);
 }
 .content-formatted form,
-.content-formatted .form {
-  font-size: var(--form-field-text-font-size);
+.content-formatted .form,
+.comment-form form,
+.comment-form .form {
   color: var(--form-field-text-color);
+  font-size: var(--form-field-text-font-size);
 }
 .content-formatted .form_field label,
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select,
-.content-formatted .form_field_file {
+.content-formatted .form_field_file,
+.comment-form .form_field label,
+.comment-form .form_field_textfield,
+.comment-form .form_field_textarea,
+.comment-form .form_field_select,
+.comment-form .form_field_file {
+  background-color: var(--color-bg);
   color: var(--form-field-text-color);
   font-size: var(--form-field-text-font-size);
   font-style: var(--form-field-text-font-style);
@@ -306,10 +321,13 @@ body {
   text-decoration: var(--form-field-text-text-decoration);
   text-transform: var(--form-field-text-text-transform);
 }
-.content-formatted .form_field label {
+.content-formatted .form_field label,
+.comment-form .form_field label {
   color: #919191;
 }
 .content-formatted .form_field_textarea,
-.content-formatted .form_field_textfield {
+.content-formatted .form_field_textfield,
+.comment-form .form_field_textarea,
+.comment-form .form_field_textfield {
   border-bottom-color: #919191;
 }

@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --form-field-text-line-height: 1.4em;
+  --form-field-text-line-height: 1.4;
   /* VoogStyle
     "pathI18n": ["form", "text"],
     "titleI18n": "font_weight",
@@ -81,5 +81,5 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-text-color: black;
+  --form-field-text-color: #333;
 }

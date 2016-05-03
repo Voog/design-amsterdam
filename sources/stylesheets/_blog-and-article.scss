@@ -36,17 +36,17 @@
     margin: 0;
     font-size: 18px;
     font-weight: 400;
-    color: $color-one;
+    color: $color-two;
     text-transform: uppercase;
 
     a {
-      color: $color-one;
+      color: $color-two;
     }
   }
 
   .post-date {
     font-size: 12px;
-    color: $color-two;
+    color: $color-three;
   }
 
   .post-content {
@@ -131,7 +131,7 @@
   .post-date {
     font-size: 18px;
     font-weight: 400;
-    color: $color-three;
+    color: $color-error;
   }
 
   .post-content {

@@ -121,7 +121,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-title-color: $color-five;
+  --content-title-color: $color-two;
 
   /* VoogStyle
     "pathI18n": ["content", "date"],
@@ -211,7 +211,7 @@
     "scope": "global",
     "featured": true
   */
-  --post-date-color: $color-three;
+  --post-date-color: $color-error;
 
   /* VoogStyle
     "pathI18n": ["content", "text"],
@@ -238,16 +238,21 @@
      "unit": "em",
      "scope": "global"
   */
-  --content-line-height: 1.4em;
+  --content-line-height: $line-height;
 
   /* VoogStyle
     "pathI18n": ["content", "text"],
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+        "--content-title-color",
+        "--blog-list-title-color",
+        "--form-field-text-color"
+    ]
   */
-  --content-color: $color-five;
+  --content-color: $color-two;
 
 /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
@@ -381,7 +386,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-color: rgba($color-black, .5);
+  --content-links-color: $color-four;
 
    /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
@@ -391,7 +396,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-links-hover-color: rgba($color-black, .8);
+  --content-links-hover-color: $color-two;
 
   // scss-lint:enable Comment, Indentation
 }

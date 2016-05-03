@@ -140,7 +140,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --h2-line-height: 1.4em;
+  --h2-line-height: $line-height;
 
   /* VoogStyle
      "pathI18n": ["headings", "heading"],
@@ -215,7 +215,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-color: $color-three;
+  --h2-color: $color-error;
 
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
@@ -239,7 +239,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --h3-line-height: 1.4em;
+  --h3-line-height: $line-height;
 
   /* VoogStyle
      "pathI18n": ["headings", "subheading"],
@@ -314,7 +314,7 @@
     "scope": "global",
     "featured": true
   */
-  --h3-color: $color-three;
+  --h3-color: $color-error;
 
   // scss-lint:enable Comment, Indentation
 }
