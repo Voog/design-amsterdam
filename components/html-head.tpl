@@ -27,6 +27,9 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-header" %}
+  {% if front_page %}
+    {% include "template-cs-focus-area" %}
+  {% endif %}
   {% if blog_list %}
     {% include "template-cs-blog-list" %}
   {% endif %}

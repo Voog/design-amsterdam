@@ -169,6 +169,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/template-cs-focus-area.tpl",
+      "layout_name": "template-cs-focus-area",
+      "title": "template-cs-focus-area"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-footer.tpl",
       "layout_name": "template-cs-footer",
       "title": "template-cs-footer"

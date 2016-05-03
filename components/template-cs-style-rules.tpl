@@ -81,6 +81,30 @@ body {
   text-transform: var(--header-mainmenu-active-text-transform);
 }
 
+.front-page .content-body {
+  color: var(--focus-area-title-color);
+  font-size: var(--focus-area-title-font-size);
+  font-style: var(--focus-area-title-font-style);
+  font-weight: var(--focus-area-title-font-weight);
+  line-height: var(--focus-area-title-line-height);
+  text-decoration: var(--focus-area-title-text-decoration);
+  text-transform: var(--focus-area-title-text-transform);
+}
+.front-page .content-body a {
+  color: var(--focus-area-links-color);
+  font-style: var(--focus-area-links-font-style);
+  font-weight: var(--focus-area-links-font-weight);
+  text-decoration: var(--focus-area-links-text-decoration);
+  text-transform: var(--focus-area-links-text-transform);
+}
+.front-page .content-body a:hover {
+  color: var(--focus-area-links-hover-color);
+  font-style: var(--focus-area-links-hover-font-style);
+  font-weight: var(--focus-area-links-hover-font-weight);
+  text-decoration: var(--focus-area-links-hover-text-decoration);
+  text-transform: var(--focus-area-links-hover-text-transform);
+}
+
 .blog-page .post-title,
 .blog-page .post-title a {
   color: var(--blog-list-title-color);

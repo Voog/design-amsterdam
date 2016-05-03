@@ -9,7 +9,8 @@
 
 .content-body {
   display: inline-block;
-  width: 85%;
+  width: 100%;
+  max-width: calc(100% - 125px);
 }
 
 .content-header {
