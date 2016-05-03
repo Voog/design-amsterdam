@@ -81,6 +81,27 @@ body {
   text-transform: var(--header-mainmenu-active-text-transform);
 }
 
+.blog-page .post-title,
+.blog-page .post-title a {
+  color: var(--blog-list-title-color);
+  font-size: var(--blog-list-title-font-size);
+  font-style: var(--blog-list-title-font-style);
+  font-weight: var(--blog-list-title-font-weight);
+  line-height: var(--blog-list-title-line-height);
+  text-decoration: var(--blog-list-title-text-decoration);
+  text-transform: var(--blog-list-title-text-transform);
+}
+
+.blog-page .post-date {
+  color: var(--blog-list-date-color);
+  font-size: var(--blog-list-date-font-size);
+  font-style: var(--blog-list-date-font-style);
+  font-weight: var(--blog-list-date-font-weight);
+  line-height: var(--blog-list-date-line-height);
+  text-decoration: var(--blog-list-date-text-decoration);
+  text-transform: var(--blog-list-date-text-transform);
+}
+
 .common-page .content-header,
 .post-page .post-header h1 {
   font-size: var(--content-title-font-size);
@@ -93,6 +114,12 @@ body {
 }
 
 @media screen and (min-width: 640px) {
+  .blog-page .post-excerpt,
+  .blog-page .post-body {
+    margin-left: var(--blog-list-margin);
+    margin-right: var(--blog-list-margin);
+  }
+
   .post-page .post-excerpt,
   .post-page .post-body {
     margin-left: var(--blog-article-margin);

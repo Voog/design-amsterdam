@@ -2,7 +2,8 @@
 {% include "template-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% include "html-head" %}
+  {% assign blog_list = true %}
+  {% include "html-head" blog_list: true %}
   {% include "edicy-tools-variables" %}
 </head>
 

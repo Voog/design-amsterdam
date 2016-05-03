@@ -125,6 +125,31 @@ body {
   }
 }
 
+// Blog list 
+
+.blog-page .post-title {
+  &,
+  a {
+    color: var(--blog-list-title-color);
+    font-size: var(--blog-list-title-font-size);
+    font-style: var(--blog-list-title-font-style);
+    font-weight: var(--blog-list-title-font-weight);
+    line-height: var(--blog-list-title-line-height);
+    text-decoration: var(--blog-list-title-text-decoration);
+    text-transform: var(--blog-list-title-text-transform);
+  }
+}
+
+.blog-page .post-date {
+  color: var(--blog-list-date-color);
+  font-size: var(--blog-list-date-font-size);
+  font-style: var(--blog-list-date-font-style);
+  font-weight: var(--blog-list-date-font-weight);
+  line-height: var(--blog-list-date-line-height);
+  text-decoration: var(--blog-list-date-text-decoration);
+  text-transform: var(--blog-list-date-text-transform);
+}
+
 // Content - Page title
 
 .common-page .content-header,
@@ -138,9 +163,17 @@ body {
   color: var(--content-title-color);
 }
 
-// Content - blog article margins and width / post date
+// Content - blog margins
 
 @media screen and (min-width: $mobile) {
+  .blog-page {
+    .post-excerpt,
+    .post-body {
+      margin-left: var(--blog-list-margin);
+      margin-right: var(--blog-list-margin);
+    }
+  }
+
   .post-page {
     .post-excerpt,
     .post-body {
