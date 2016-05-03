@@ -259,3 +259,33 @@ body {
 .content-formatted .form_submit input:hover {
   opacity: .75;
 }
+.content-formatted table td {
+  border-top-style: var(--table-border-style);
+  border-top-bottom: var(--table-border-style);
+  padding: var(--table-cell-padding);
+}
+.content-formatted form,
+.content-formatted .form {
+  font-size: var(--form-field-text-font-size);
+  color: var(--form-field-text-color);
+}
+.content-formatted .form_field label,
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_select,
+.content-formatted .form_field_file {
+  color: var(--form-field-text-color);
+  font-size: var(--form-field-text-font-size);
+  font-style: var(--form-field-text-font-style);
+  font-weight: var(--form-field-text-font-weight);
+  line-height: var(--form-field-text-line-height);
+  text-decoration: var(--form-field-text-text-decoration);
+  text-transform: var(--form-field-text-text-transform);
+}
+.content-formatted .form_field label {
+  color: #919191;
+}
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_textfield {
+  border-bottom-color: #919191;
+}
