@@ -284,7 +284,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-submenu-color: #919191;
+  --content-submenu-color: undefined;
  /* VoogStyle
   "pathI18n": ["content", "sub_menu", "hover"],
   "titleI18n": "color",
@@ -331,12 +331,7 @@
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true,
-    "boundVariables": [
-        "--content-title-color",
-        "--blog-list-title-color",
-        "--form-field-text-color"
-    ]
+    "featured": true
   */
   --content-color: #333;
   /* VoogStyle

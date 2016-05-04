@@ -89,7 +89,7 @@
     "scope": "global",
     "featured": true
   */
-  --h1-color: #222;
+  --h1-color: #333;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "size",

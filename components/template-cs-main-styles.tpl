@@ -43,7 +43,11 @@
         "--footer-color",
         "--header-site-title-color",
         "--header-mainmenu-hover-color",
-        "--header-mainmenu-active-color"
+        "--header-mainmenu-active-color",
+        "--content-title-color",
+        "--blog-list-title-color",
+        "--form-field-text-color",
+        "--h1-color"
       ]
   */
   --color-primary: #333;
@@ -60,7 +64,8 @@
         "--content-submenu-color",
         "--focus-area-text-color",
         "--focus-area-links-hover-color",
-        "--header-mainmenu-color"
+        "--header-mainmenu-color",
+        "--table-border-color"
      ]
   */
   --color-secondary: #919191;

@@ -44,10 +44,7 @@
   {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
-
   {% include "template-cs-style-rules" %}
-  {% comment %}
-  {% endcomment %}
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}

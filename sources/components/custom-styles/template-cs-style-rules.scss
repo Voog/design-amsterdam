@@ -89,6 +89,15 @@ body {
       }
     }
   }
+
+  &.header-fixed {
+    background-color: var(--color-bg);
+  }
+}
+
+// Header - lang menu
+.lang-menu.flags-disabled .lang-flag {
+  color: var(--header-mainmenu-active-color);
 }
 
 // Header - Main menu
@@ -153,29 +162,61 @@ body {
   }
 }
 
-// Blog list 
+// Blog 
 
-.blog-page .post-title {
-  &,
-  a {
-    color: var(--blog-list-title-color);
-    font-size: var(--blog-list-title-font-size);
-    font-style: var(--blog-list-title-font-style);
-    font-weight: var(--blog-list-title-font-weight);
-    line-height: var(--blog-list-title-line-height);
-    text-decoration: var(--blog-list-title-text-decoration);
-    text-transform: var(--blog-list-title-text-transform);
+.blog-page {
+  .post-title {
+    &,
+    a {
+      color: var(--blog-list-title-color);
+      font-size: var(--blog-list-title-font-size);
+      font-style: var(--blog-list-title-font-style);
+      font-weight: var(--blog-list-title-font-weight);
+      line-height: var(--blog-list-title-line-height);
+      text-decoration: var(--blog-list-title-text-decoration);
+      text-transform: var(--blog-list-title-text-transform);
+    }
+  }
+
+  .post-date {
+    color: var(--blog-list-date-color);
+    font-size: var(--blog-list-date-font-size);
+    font-style: var(--blog-list-date-font-style);
+    font-weight: var(--blog-list-date-font-weight);
+    line-height: var(--blog-list-date-line-height);
+    text-decoration: var(--blog-list-date-text-decoration);
+    text-transform: var(--blog-list-date-text-transform);
+  }
+
+  .tags {
+    color: var(--content-color);
+
+    .tag-link {
+      color: var(--content-color);
+      opacity: .6;
+
+      &.active {
+        border-bottom-color: var(--content-color);
+        color: var(--content-color);
+        opacity: 1;
+      }
+    }
   }
 }
 
-.blog-page .post-date {
-  color: var(--blog-list-date-color);
-  font-size: var(--blog-list-date-font-size);
-  font-style: var(--blog-list-date-font-style);
-  font-weight: var(--blog-list-date-font-weight);
-  line-height: var(--blog-list-date-line-height);
-  text-decoration: var(--blog-list-date-text-decoration);
-  text-transform: var(--blog-list-date-text-transform);
+
+.comments-title {
+  font-size: var(--content-font-size);
+}
+
+.comment-author {
+  color: var(--content-color);
+}
+
+.comment-body,
+.comment-date {
+  color: var(--content-color);
+  opacity: .6;
 }
 
 // Content - Page title
@@ -306,6 +347,59 @@ body {
   line-height: var(--footer-line-height);
   text-decoration: var(--footer-text-decoration);
   text-transform: var(--footer-text-transform);
+
+  &.footer-fixed {
+    background-color: var(--color-bg);
+    background: linear-gradient(to bottom, 
+      var(--color-bg) 0%, 
+      var(--color-bg) 15%, 
+      var(--color-bg) 100%);
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(to bottom, 
+      rgba($color-white,.001) 0%, 
+      var(--color-bg) 50%, 
+      var(--color-bg) 100%);
+  }
+}
+
+.voog-reference {
+  &,
+  a {
+    color: var(--footer-color);
+  }
+}
+
+.container .horizontal-line {
+    background-color: var(--footer-color);
+}
+
+// Search
+.search {
+  .search-box {
+    &.search-box-focus {
+      border-top-color: var(--footer-color);
+    }
+  }
+
+  .search-input {
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &-ms-input-placeholder {
+      color: var(--color-secondary);
+    }
+
+    &:focus {
+      &::-webkit-input-placeholder,
+      &:-moz-placeholder,
+      &::-moz-placeholder,
+      &-ms-input-placeholder {
+        color: var(--color-secondary);
+      }
+    }
+  }
 }
 
 // Headings
@@ -383,8 +477,10 @@ body {
   }
 
   table td {
+    border-bottom-color: var(--table-border-color);
+    border-bottom-style: var(--table-border-style);
+    border-top-color: var(--table-border-color);
     border-top-style: var(--table-border-style);
-    border-top-bottom: var(--table-border-style);
     padding: var(--table-cell-padding);
   }
 
@@ -410,12 +506,12 @@ form,
   }
 
   .form_field label {
-    color: $color-four;
+    color: var(--color-secondary);
   }
 
   .form_field_textarea,
   .form_field_textfield {
-    border-bottom-color: $color-four;
+    border-bottom-color: var(--color-secondary);
   }
 }
 

@@ -11,6 +11,10 @@
   font-weight: 700;
   src: url("../assets/montserrat-bold.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-bold.woff2") format("woff2"), url("../assets/montserrat-bold.woff") format("woff"), url("../assets/montserrat-bold.ttf") format("truetype"), url("../assets/montserrat-bold.svg#Montserrat") format("svg");
 }
+a {
+  text-decoration: none;
+}
+
 .scrollpos {
   position: fixed;
   top: 0;
@@ -1111,7 +1115,7 @@ body {
 .content-body {
   display: inline-block;
   width: 100%;
-  max-width: calc(100% - 125px);
+  max-width: calc(100% - 135px);
 }
 
 .content-header {

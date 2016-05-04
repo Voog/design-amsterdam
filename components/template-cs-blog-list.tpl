@@ -20,7 +20,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-title-font-size: 18px;
+  --blog-list-title-font-size: 20px;
   /* VoogStyle
      "pathI18n": ["blog", "title"],
      "titleI18n": "line_height",
@@ -206,12 +206,7 @@
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true,
-    "boundVariables": [
-        "--content-title-color",
-        "--blog-list-title-color",
-        "--form-field-text-color"
-    ]
+    "featured": true
   */
   --content-color: #333;
   /* VoogStyle
