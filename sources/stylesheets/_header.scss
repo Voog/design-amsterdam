@@ -38,6 +38,7 @@
     margin: 0 auto;
 
     .header-title {
+      @include hyphenate(true);
       // display: table-cell;
       // max-width: 810px;
       margin: 0;

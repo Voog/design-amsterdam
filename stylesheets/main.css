@@ -355,7 +355,7 @@ body {
   }
   .main-menu .editmode-button a {
     padding: 10px 15px !important;
-    background-color: #838383 !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
     vertical-align: middle !important;
   }
 }
@@ -879,6 +879,12 @@ body {
   margin: 0 auto;
 }
 .header .header-inner .header-title {
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   margin: 0;
   margin-right: 13px;
   font-size: 24px;

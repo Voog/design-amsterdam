@@ -134,34 +134,6 @@ body {
   }
 }
 
-// Focus area
-
-.front-page .content-body {
-  color: var(--focus-area-text-color);
-  font-size: var(--focus-area-text-font-size);
-  font-style: var(--focus-area-text-font-style);
-  font-weight: var(--focus-area-text-font-weight);
-  line-height: var(--focus-area-text-line-height);
-  text-decoration: var(--focus-area-text-text-decoration);
-  text-transform: var(--focus-area-text-text-transform);
-
-  a {
-    color: var(--focus-area-links-color);
-    font-style: var(--focus-area-links-font-style);
-    font-weight: var(--focus-area-links-font-weight);
-    text-decoration: var(--focus-area-links-text-decoration);
-    text-transform: var(--focus-area-links-text-transform);
-
-    &:hover {
-      color: var(--focus-area-links-hover-color);
-      font-style: var(--focus-area-links-hover-font-style);
-      font-weight: var(--focus-area-links-hover-font-weight);
-      text-decoration: var(--focus-area-links-hover-text-decoration);
-      text-transform: var(--focus-area-links-hover-text-transform);
-    }
-  }
-}
-
 // Blog 
 
 .blog-page {
