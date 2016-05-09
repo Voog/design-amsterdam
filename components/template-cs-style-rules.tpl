@@ -32,7 +32,7 @@ body {
 .content-formatted form,
 .content-formatted .form,
 .content-formatted form input,
-.content-formatted form-textarea {
+.content-formatted form textarea {
   font-family: var(--font-one);
 }
 
