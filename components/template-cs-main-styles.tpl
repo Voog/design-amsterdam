@@ -65,7 +65,8 @@
         "--focus-area-text-color",
         "--focus-area-links-hover-color",
         "--header-mainmenu-color",
-        "--table-border-color"
+        "--table-border-color",
+        "--form-field-border-color"
      ]
   */
   --color-secondary: #919191;

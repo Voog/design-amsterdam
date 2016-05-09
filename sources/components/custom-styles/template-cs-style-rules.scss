@@ -477,13 +477,35 @@ form,
     text-transform: var(--form-field-text-text-transform);
   }
 
-  .form_field label {
-    color: var(--color-secondary);
-  }
-
   .form_field_textarea,
   .form_field_textfield {
-    border-bottom-color: var(--color-secondary);
+    border-bottom-color: var(--form-field-border-color);
+  }
+}
+
+.content-formatted form input,
+.form_field label,
+.content-formatted form {
+  color: var(--form-field-text-color);
+
+  ::-webkit-input-placeholder {
+    color: var(--form-field-text-color);
+    opacity: .5;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+   color: var(--form-field-text-color);
+    opacity: .5;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--form-field-text-color);
+    opacity: .5;
+  }
+
+  :-ms-input-placeholder {  
+    color: var(--form-field-text-color);
+    opacity: .5;
   }
 }
 

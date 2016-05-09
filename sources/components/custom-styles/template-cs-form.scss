@@ -109,5 +109,14 @@
   */
   --form-field-text-color: $color-two;
 
+  /* VoogStyle
+    "pathI18n": ["form"],
+    "titleI18n": "border",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --form-field-border-color: $color-four;
+
   // scss-lint:enable Comment, Indentation
 }

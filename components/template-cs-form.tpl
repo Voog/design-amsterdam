@@ -82,4 +82,12 @@
     "featured": true
   */
   --form-field-text-color: #333;
+  /* VoogStyle
+    "pathI18n": ["form"],
+    "titleI18n": "border",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --form-field-border-color: #919191;
 }

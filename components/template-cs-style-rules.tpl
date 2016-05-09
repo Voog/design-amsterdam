@@ -357,13 +357,41 @@ body {
   text-decoration: var(--form-field-text-text-decoration);
   text-transform: var(--form-field-text-text-transform);
 }
-.content-formatted .form_field label,
-.comment-form .form_field label {
-  color: var(--color-secondary);
-}
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_textfield,
 .comment-form .form_field_textarea,
 .comment-form .form_field_textfield {
-  border-bottom-color: var(--color-secondary);
+  border-bottom-color: var(--form-field-border-color);
+}
+
+.content-formatted form input,
+.form_field label,
+.content-formatted form {
+  color: var(--form-field-text-color);
+}
+.content-formatted form input ::-webkit-input-placeholder,
+.form_field label ::-webkit-input-placeholder,
+.content-formatted form ::-webkit-input-placeholder {
+  color: var(--form-field-text-color);
+  opacity: .5;
+}
+.content-formatted form input :-moz-placeholder,
+.form_field label :-moz-placeholder,
+.content-formatted form :-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--form-field-text-color);
+  opacity: .5;
+}
+.content-formatted form input ::-moz-placeholder,
+.form_field label ::-moz-placeholder,
+.content-formatted form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--form-field-text-color);
+  opacity: .5;
+}
+.content-formatted form input :-ms-input-placeholder,
+.form_field label :-ms-input-placeholder,
+.content-formatted form :-ms-input-placeholder {
+  color: var(--form-field-text-color);
+  opacity: .5;
 }
