@@ -11,12 +11,16 @@
   font-weight: 700;
   src: url("../assets/montserrat-bold.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-bold.woff2") format("woff2"), url("../assets/montserrat-bold.woff") format("woff"), url("../assets/montserrat-bold.ttf") format("truetype"), url("../assets/montserrat-bold.svg#Montserrat") format("svg");
 }
+a {
+  text-decoration: none;
+}
+
 .scrollpos {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
-  background: #fff;
+  background: white;
 }
 
 .cfx:after {
@@ -216,13 +220,16 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 .content-formatted .custom-btn {
-  display: inline-block;
-  padding: 5px 12px;
-  margin-bottom: 20px;
-  color: #888;
-  cursor: pointer;
   background: #dadada;
   border: 0;
+  color: #919191;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  padding: .31em .75em;
 }
 .blog-page .post-content .content-formatted .edy-positionable-container-maxwidth, .post-page .post-content .content-formatted .edy-positionable-container-maxwidth {
   width: auto !important;
@@ -306,16 +313,12 @@ body {
 }
 .menu li a:hover {
   color: rgba(0, 0, 0, 0.8);
-  -webkit-filter: grayscale(50%);
-  filter: grayscale(50%);
 }
 .menu li a:hover:before {
   background-color: transparent;
 }
 .menu li.active a {
   color: rgba(0, 0, 0, 0.8);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
 }
 .menu li.active a:hover {
   color: rgba(0, 0, 0, 0.85);
@@ -352,7 +355,7 @@ body {
   }
   .main-menu .editmode-button a {
     padding: 10px 15px !important;
-    background-color: #838383 !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
     vertical-align: middle !important;
   }
 }
@@ -377,7 +380,7 @@ body {
   hyphens: auto;
   font-size: 16px;
   font-weight: 300;
-  color: #888;
+  color: #919191;
 }
 .sub-menu li a.untranslated {
   color: #c33;
@@ -471,7 +474,7 @@ body {
   min-width: 138px;
   padding: 0;
   font-size: 12px;
-  background: #fff;
+  background: white;
   -webkit-border: 1px solid #e1e1e1;
   border: 1px solid #e1e1e1;
 }
@@ -496,7 +499,7 @@ body {
   position: relative;
   display: block;
   padding: 6px 4px 4px 30px;
-  color: #888;
+  color: #919191;
   text-transform: uppercase;
 }
 .lang-menu li .edy-menu-langadd {
@@ -768,7 +771,7 @@ body {
   }
   .main-menu li.active a {
     font-weight: 400;
-    color: #fff;
+    color: white;
   }
 
   .lang-menu {
@@ -794,7 +797,7 @@ body {
   .lang-menu li.active a,
   .lang-menu li.active a:hover {
     background-color: #838383;
-    color: #fff;
+    color: white;
     color: rgba(255, 255, 255, 0.5);
     opacity: 1;
   }
@@ -862,7 +865,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 10px 0 #888;
+  box-shadow: 0 0 10px 0 #919191;
 }
 .voog-search-visible .header.header-fixed {
   display: none;
@@ -876,6 +879,12 @@ body {
   margin: 0 auto;
 }
 .header .header-inner .header-title {
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   margin: 0;
   margin-right: 13px;
   font-size: 24px;
@@ -1021,7 +1030,7 @@ body {
     width: 20px;
     height: 3px;
     margin: 4px auto;
-    background: #fff;
+    background: white;
     border-radius: 5px;
   }
   .topbar .expanded {
@@ -1111,7 +1120,8 @@ body {
 
 .content-body {
   display: inline-block;
-  width: 85%;
+  width: 100%;
+  max-width: calc(100% - 135px);
 }
 
 .content-header {
@@ -1177,7 +1187,7 @@ body {
 }
 .blog-page .post-date {
   font-size: 12px;
-  color: #888;
+  color: #919191;
 }
 .blog-page .post-content {
   position: relative;
@@ -1321,7 +1331,8 @@ body {
   display: block;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 70px;
+  margin-left: 35px;
+  margin-right: 35px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .post-page .tags .tag-icon {
@@ -1480,7 +1491,7 @@ body {
 
 #mobile-search .search {
   width: 100%;
-  background-color: #fff;
+  background-color: white;
   border-top: 2px solid rgba(0, 0, 0, 0.65);
   border-bottom: 2px solid rgba(0, 0, 0, 0.65);
 }
@@ -1808,12 +1819,14 @@ body.mobilesearch-open {
 }
 
 .form_submit input {
-  padding: 5px 12px;
-  margin: 0;
-  color: #888;
-  cursor: pointer;
   background: #dadada;
   border: 0;
+  color: #919191;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin: 0;
+  padding: .31em .75em;
 }
 .form_submit input:hover {
   color: rgba(0, 0, 0, 0.8);
@@ -1932,7 +1945,7 @@ body.mobilesearch-open {
   padding: 20px 20px 20px 25px;
   margin-top: 0;
   margin-bottom: 0;
-  background: #fff;
+  background: white;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 0%, white 15%, white 100%);
 }
 .footer.footer-fixed .gradient-overlay {

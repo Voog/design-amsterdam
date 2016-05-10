@@ -9,8 +9,10 @@
 
 .content-body {
   display: inline-block;
-  width: 85%;
+  width: 100%;
+  max-width: calc(100% - 135px);
 }
+
 
 .content-header {
   margin-bottom: 45px;

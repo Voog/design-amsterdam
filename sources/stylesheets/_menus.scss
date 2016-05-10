@@ -4,18 +4,18 @@
   z-index: 2;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
   list-style: none;
 
   li {
     a {
       font-size: 12px;
-      color: rgba(0,0,0,.5);
+      color: rgba($color-black,.5);
       text-decoration: none;
 
       &:hover {
-        color: rgba(0,0,0,.8);
-        @include filter(grayscale(50%));
+        color: rgba($color-black,.8);
+        // @include filter(grayscale(50%));
 
         &:before {
           background-color: transparent;
@@ -26,11 +26,11 @@
 
   li.active {
     a {
-      color: rgba(0,0,0,.8);
-      @include filter(grayscale(100%));
+      color: rgba($color-black,.8);
+      // @include filter(grayscale(100%));
 
       &:hover {
-        color: rgba(0,0,0,.85);
+        color: rgba($color-black,.85);
       }
     }
   }
@@ -47,7 +47,7 @@
       text-transform: uppercase;
 
       &.untranslated {
-        color: #c33;
+        color: $color-error;
       }
     }
   }
@@ -66,7 +66,7 @@
 
       a {
         padding: 10px 15px!important;
-        background-color: #838383 !important;
+        background-color: rgba(0, 0, 0, .3) !important;
         vertical-align: middle !important;
       }
     }
@@ -91,10 +91,10 @@
       @include hyphenate(true);
       font-size: 16px;
       font-weight: 300;
-      color: #888;
+      color: $color-three;
 
       &.untranslated {
-        color: #c33;
+        color: $color-error;
       }
     }
 
@@ -118,7 +118,7 @@
   height: 25px;
   padding: 0;
   margin-left: 10px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
   font-size: 12px;
   vertical-align: top;
   cursor: pointer;
@@ -198,7 +198,7 @@
     min-width: 138px;
     padding: 0;
     font-size: 12px;
-    background: #fff;
+    background: $color-white;
     -webkit-border: 1px solid #e1e1e1;
     border: 1px solid #e1e1e1;
 
@@ -231,7 +231,7 @@
       position: relative;
       display: block;
       padding: 6px 4px 4px 30px;
-      color: #888;
+      color: $color-three;
       text-transform: uppercase;
     }
 
@@ -243,7 +243,7 @@
   li.active {
     a,
     a:hover {
-      color: #333;
+      color: $color-two;
     }
   }
 
@@ -468,7 +468,7 @@ $flags:
 
     li.active a {
       font-weight: 400;
-      color: #fff;
+      color: $color-white;
     }
   }
 
@@ -499,7 +499,7 @@ $flags:
       a,
       a:hover {
         background-color: #838383;
-        @include color(#fff, .5);
+        @include color($color-white, .5);
         opacity: 1;
       }
     }
@@ -512,7 +512,7 @@ $flags:
         height: 15px;
         padding: 13px 8px 12px;
         opacity: .95;
-        @include color(#fff);
+        @include color($color-white);
 
         &.lang-flag {
           &:before,

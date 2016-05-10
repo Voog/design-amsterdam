@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+{% include "template-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% include "html-head" %}
+  {% assign common_page = true %}
+  {% include "html-head" common_page: true %}
   {% include "edicy-tools-variables" %}
 </head>
 

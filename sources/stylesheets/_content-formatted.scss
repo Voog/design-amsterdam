@@ -9,7 +9,7 @@
   h5,
   h6 {
     margin: 0 0 17px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-one;
     font-weight: 300;
   }
 
@@ -18,24 +18,24 @@
   h4,
   h5,
   h6 {
-    color: #c33;
+    color: $color-error;
     text-transform: uppercase;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: $h1-size;
     line-height: 1;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: $h2-size;
   }
 
   h3,
   h4,
   h5,
   h6 {
-    font-size: 18px;
+    font-size: $font-size;
   }
 
   p {
@@ -47,10 +47,10 @@
   }
 
   a {
-    color: rgba(0,0,0,.5);
+    color: rgba($color-black,.5);
 
     &:hover {
-      color: rgba(0,0,0,.8);
+      color: rgba($color-black,.8);
     }
   }
 
@@ -118,13 +118,16 @@
   }
 
   .custom-btn {
-    display: inline-block;
-    padding: 5px 12px;
-    margin-bottom: 20px;
-    color: #888;
-    cursor: pointer;
     background: #dadada;
     border: 0;
+    color: $color-three;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-one;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+    padding: .31em .75em;
   }
 
   // Image container positioning
