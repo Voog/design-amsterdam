@@ -59,12 +59,23 @@ body {
   background-color: var(--color-bg);
 }
 
-.lang-menu.flags-disabled .lang-flag {
-  color: var(--header-mainmenu-active-color);
-}
+@media screen and (min-width: 640px) {
+  .lang-menu.flags-disabled .lang-flag {
+    color: var(--header-mainmenu-active-color);
+  }
 
+  .main-menu li a {
+    color: var(--header-mainmenu-color);
+  }
+  .main-menu li a:hover,
+  .main-menu li.active a:hover {
+    color: var(--header-mainmenu-hover-color);
+  }
+  .main-menu li.active a {
+    color: var(--header-mainmenu-active-color);
+  }
+}
 .main-menu li a {
-  color: var(--header-mainmenu-color);
   font-size: var(--header-mainmenu-font-size);
   font-style: var(--header-mainmenu-font-style);
   font-weight: var(--header-mainmenu-font-weight);
@@ -74,14 +85,12 @@ body {
 }
 .main-menu li a:hover,
 .main-menu li.active a:hover {
-  color: var(--header-mainmenu-hover-color);
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
   text-decoration: var(--header-mainmenu-hover-text-decoration);
   text-transform: var(--header-mainmenu-hover-text-transform);
 }
 .main-menu li.active a {
-  color: var(--header-mainmenu-active-color);
   font-style: var(--header-mainmenu-active-font-style);
   font-weight: var(--header-mainmenu-active-font-weight);
   text-decoration: var(--header-mainmenu-active-text-decoration);
