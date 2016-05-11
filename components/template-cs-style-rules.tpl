@@ -343,11 +343,13 @@ body {
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select,
 .content-formatted .form_field_file,
+.content-formatted .form_field .edy-fe-label,
 .comment-form .form_field label,
 .comment-form .form_field_textfield,
 .comment-form .form_field_textarea,
 .comment-form .form_field_select,
-.comment-form .form_field_file {
+.comment-form .form_field_file,
+.comment-form .form_field .edy-fe-label {
   background-color: var(--color-bg);
   color: var(--form-field-text-color);
   font-size: var(--form-field-text-font-size);

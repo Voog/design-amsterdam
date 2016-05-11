@@ -466,7 +466,8 @@ form,
   .form_field_textfield,
   .form_field_textarea,
   .form_field_select,
-  .form_field_file {
+  .form_field_file,
+  .form_field .edy-fe-label {
     background-color: var(--color-bg);
     color: var(--form-field-text-color);
     font-size: var(--form-field-text-font-size);

@@ -19,7 +19,7 @@
   --table-cell-padding: 10px;
   /* VoogStyle
     "pathI18n": ["table"],
-    "titleI18n": "border",
+    "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global"
   */

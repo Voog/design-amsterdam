@@ -331,7 +331,10 @@
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--form-field-text-color"
+    ]
   */
   --content-color: #333;
   /* VoogStyle

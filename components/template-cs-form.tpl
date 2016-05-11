@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --form-field-text-line-height: 1.4;
+  --form-field-text-line-height: 1.6;
   /* VoogStyle
     "pathI18n": ["form", "text"],
     "titleI18n": "font_weight",
