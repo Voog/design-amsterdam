@@ -390,15 +390,12 @@
     });
   };
 
-  var bindCustomTexteditorStyles = function() {
+  var bindCustomTexteditorStyles = function(buttonTranslation) {
     window.edy = window.edy || [];
-    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+    edy.push(['texteditorStyles', {name: buttonTranslation, tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
   };
 
   var init = function() {
-    if (editmode()) {
-      bindCustomTexteditorStyles();
-    }
     toggleMainMenu();
     toggleLangMenu();
     handlePopoverMenuHide();
@@ -418,7 +415,8 @@
     initFrontPage: initFrontPage,
     initCommonPage: initCommonPage,
     initBlogPage: initBlogPage,
-    initArticlePage: initArticlePage
+    initArticlePage: initArticlePage,
+    bindCustomTexteditorStyles: bindCustomTexteditorStyles
   });
 
   init();

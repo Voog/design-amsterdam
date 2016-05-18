@@ -19,5 +19,7 @@
       $(this).toggleClass('js-flag-disable-btn');
       $('.js-menu-lang-wrap').toggleClass('flags-enabled flags-disabled');
     });
+
+    site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
   </script>
 {% endeditorjsblock %}
