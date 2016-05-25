@@ -169,13 +169,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-focus-area.tpl",
-      "layout_name": "template-cs-focus-area",
-      "title": "template-cs-focus-area"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-cs-footer.tpl",
       "layout_name": "template-cs-footer",
       "title": "template-cs-footer"
@@ -366,21 +359,21 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/modernizr.js",
+      "file": "javascripts/modernizr-custom.min.js",
       "kind": "javascripts",
-      "filename": "modernizr.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/modernizr.min.js",
-      "kind": "javascripts",
-      "filename": "modernizr.min.js"
+      "filename": "modernizr-custom.min.js"
     },
     {
       "content_type": "application/javascript",
       "file": "javascripts/search.js",
       "kind": "javascripts",
       "filename": "search.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/search.min.js",
+      "kind": "javascripts",
+      "filename": "search.min.js"
     },
     {
       "content_type": "text/css",
