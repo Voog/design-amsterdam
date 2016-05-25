@@ -835,6 +835,8 @@ body {
     padding-left: 0;
   }
   .lang-menu.flags-enabled li a {
+    width: 21px;
+    height: 15px;
     font-size: 0;
   }
   .lang-menu .menu {
@@ -859,8 +861,7 @@ body {
     float: right;
   }
   .lang-menu li a {
-    width: 21px;
-    height: 15px;
+    min-height: 15px;
     padding: 13px 8px 12px;
     opacity: .95;
     color: white;

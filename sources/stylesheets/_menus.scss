@@ -442,6 +442,8 @@ $flags:
 
     &.flags-enabled {
       li a {
+        width: 21px;
+        height: 15px;
         font-size: 0;
       }
     }
@@ -470,8 +472,7 @@ $flags:
       float: right;
 
       a {
-        width: 21px;
-        height: 15px;
+        min-height: 15px;
         padding: 13px 8px 12px;
         opacity: .95;
         @include color($color-white);
