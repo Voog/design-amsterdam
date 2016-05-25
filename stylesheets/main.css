@@ -516,6 +516,7 @@ body {
   padding-bottom: 3px;
   font-size: 9px;
   line-height: 1;
+  color: #333;
   text-align: center;
   text-transform: uppercase;
   background-position: 0 -75px;
@@ -835,7 +836,6 @@ body {
   }
   .lang-menu.flags-enabled li a {
     font-size: 0;
-    text-indent: -9999px;
   }
   .lang-menu .menu {
     position: relative;

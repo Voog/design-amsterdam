@@ -260,6 +260,7 @@
     padding-bottom: 3px;
     font-size: 9px;
     line-height: 1;
+    color: $color-two;
     text-align: center;
     text-transform: uppercase;
     background-position: 0 -75px;
@@ -442,7 +443,6 @@ $flags:
     &.flags-enabled {
       li a {
         font-size: 0;
-        text-indent: -9999px;
       }
     }
 
