@@ -343,17 +343,10 @@ body {
 }
 @media screen and (max-width: 640px) {
   .main-menu .editmode-button {
-    margin-top: 7px;
+    display: inline-block;
+    padding: 10px;
     margin-left: 0;
-    margin-bottom: 7px;
-  }
-  .main-menu .editmode-button:last-child {
-    margin-top: 18px;
-  }
-  .main-menu .editmode-button a {
-    padding: 10px 15px !important;
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    vertical-align: middle !important;
+    background-color: #838383;
   }
 }
 
@@ -391,6 +384,7 @@ body {
   position: relative;
   z-index: 4;
   display: none;
+  font-size: 0;
 }
 
 .lang-menu-toggle {
@@ -488,6 +482,11 @@ body {
 }
 .lang-menu.flags-disabled .lang-flag {
   padding-left: 4px;
+}
+@media screen and (max-width: 999px) {
+  .lang-menu.flags-disabled .lang-flag {
+    padding-left: 12px;
+  }
 }
 .lang-menu.flags-disabled .lang-flag:before, .lang-menu.flags-disabled .lang-flag:after {
   display: none;
@@ -885,7 +884,7 @@ body {
   .lang-menu .add-lang-btn {
     top: 0;
     left: 0;
-    padding: 7px 15px 11px;
+    padding: 13px 15px;
     margin: 0;
     background-color: #838383;
     opacity: .95;

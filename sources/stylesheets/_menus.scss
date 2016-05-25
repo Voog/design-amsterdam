@@ -56,19 +56,10 @@
     margin-left: 10px;
 
     @include query($mobile) {
-      margin-top: 7px;
+      display: inline-block;
+      padding: 10px;
       margin-left: 0;
-      margin-bottom: 7px;
-
-      &:last-child {
-        margin-top: 18px;
-      }
-
-      a {
-        padding: 10px 15px!important;
-        background-color: rgba(0, 0, 0, .3) !important;
-        vertical-align: middle !important;
-      }
+      background-color: #838383;
     }
   }
 }
@@ -110,6 +101,7 @@
   position: relative;
   z-index: 4;
   display: none;
+  font-size: 0;
 }
 
 .lang-menu-toggle {
@@ -219,6 +211,10 @@
   &.flags-disabled {
     .lang-flag {
       padding-left: 4px;
+
+      @include query($tablet) {
+        padding-left: 12px;
+      }
 
       &:before,
       &:after {
@@ -508,7 +504,7 @@ $flags:
     .add-lang-btn {
       top: 0;
       left: 0;
-      padding: 7px 15px 11px;
+      padding: 13px 15px;
       margin: 0;
       background-color: #838383;
       opacity: .95;
