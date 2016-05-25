@@ -209,55 +209,71 @@ module.exports = function(grunt) {
       }
     },
 
-    // Copys the files from the source folders to the layout folders.
-    copy: {
-      assets: {
-        files: [
-          {
-            expand: true,
-            cwd: 'sources/assets/copy',
-            src: '*',
-            dest: 'assets/'
-          }
-        ]
+
+    // Watches the project for changes and recompiles the output files.
+    watch: {
+      modernizr: {
+        files: 'modernizr-config.json',
+        tasks: ['modernizr_builder:build']
       },
 
-      images: {
-        files: [
-          {
-            expand: true,
-            cwd: 'sources/images/copy',
-            src: '*',
-            dest: 'images/'
-          }
-        ]
+      js_copy: {
+        files: 'sources/javascripts/copy/*.js',
+        tasks: ['copy:javascripts', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
-      javascripts: {
-        files: [
-          {
-            expand: true,
-            cwd: 'sources/javascripts/copy',
-            src: '*',
-            dest: 'javascripts/'
-          }
-        ]
+      js_concat_build_global: {
+        files: 'sources/javascripts/concat/global/*.js',
+        tasks: ['concat:build_global', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
+      },
+      
+      js_concat_build_blog_and_news: {
+        files: 'sources/javascripts/concat/blog-and-news/*.js',
+        tasks: ['concat:build_blog_and_news', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
-      // Copies the compiled css files from temporary folder to "components"
-      // folder and renames the files to ""*.tpl".
+      css_main: {
+        files: [
+          'sources/stylesheets/*.scss',
+          'sources/stylesheets/*/*.scss',
+        ],
+        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest', 'exec:kit:stylesheets/*.css']
+      },
+
       custom_styles: {
-        files: [
-          {
-            expand: true,
-            cwd: 'sources/components/custom-styles/tmp',
-            src: '*.css',
-            dest: 'components',
-            ext: '.tpl'
-          }
-        ]
+        files: 'sources/components/custom-styles/*.scss',
+        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'replace', 'copy:custom_styles', 'clean:remove', 'exec:kitmanifest']
+      },
+
+      img_copy: {
+        files: 'sources/images/copy/*',
+        tasks: [ 'copy:images', 'exec:kitmanifest', 'exec:kit:images/*']
+      },
+
+      img_minify: {
+        files: 'sources/images/minify/*',
+        tasks: ['imagemin:build_images', 'exec:kitmanifest', 'exec:kit:images/*']
+      },
+
+      assets_copy: {
+        files: 'sources/assets/copy/*',
+        tasks: ['copy:assets', 'exec:kitmanifest', 'exec:kit:assets/*']
+      },
+
+      assets_minify: {
+        files: 'sources/assets/minify/*',
+        tasks: ['imagemin:build_assets', 'exec:kitmanifest', 'exec:kit:assets/*']
+      },
+
+
+      voog: {
+        files: ['layouts/*.tpl', 'components/*.tpl'],
+        options: {
+          spawn: false
+        }
       }
-    },
+    }
+  });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-modernizr-builder');
