@@ -1047,6 +1047,7 @@ body {
 
 .sidebar-left {
   max-width: 120px;
+  margin-right: 20px;
 }
 .sidebar-left .content-formatted h1 {
   margin: 0 0 3px;
@@ -1065,6 +1066,7 @@ body {
     max-width: 105px;
     padding: 15px 5px 20px;
     margin-bottom: 20px;
+    margin-right: 0;
     margin-left: 20px;
     word-break: break-word;
     word-wrap: break-word;
@@ -1104,7 +1106,7 @@ body {
 .content-body {
   display: inline-block;
   width: 100%;
-  max-width: calc(100% - 135px);
+  max-width: calc(100% - 144px);
 }
 
 .content-header {
