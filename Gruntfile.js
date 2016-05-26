@@ -209,7 +209,6 @@ module.exports = function(grunt) {
       }
     },
 
-
     // Watches the project for changes and recompiles the output files.
     watch: {
       modernizr: {
@@ -222,14 +221,9 @@ module.exports = function(grunt) {
         tasks: ['copy:javascripts', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
-      js_concat_build_global: {
-        files: 'sources/javascripts/concat/global/*.js',
-        tasks: ['concat:build_global', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
-      },
-      
-      js_concat_build_blog_and_news: {
-        files: 'sources/javascripts/concat/blog-and-news/*.js',
-        tasks: ['concat:build_blog_and_news', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
+      js_concat: {
+        files: 'sources/javascripts/concat/*.js',
+        tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
       css_main: {
@@ -265,7 +259,6 @@ module.exports = function(grunt) {
         tasks: ['imagemin:build_assets', 'exec:kitmanifest', 'exec:kit:assets/*']
       },
 
-
       voog: {
         files: ['layouts/*.tpl', 'components/*.tpl'],
         options: {
@@ -276,16 +269,16 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-modernizr-builder');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-modernizr-builder');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'copy:assets', 'copy:images', 'copy:javascripts', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove']);
 
