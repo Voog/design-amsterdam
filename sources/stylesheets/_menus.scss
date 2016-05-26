@@ -411,7 +411,7 @@ $flags:
       a {
         display: inline-block;
         padding: 8px 10px 7px;
-        font-size: 18px;
+        font-size: 18px !important; // Hotfix to disable design editor style override.
         color: #d7d7d7;
         vertical-align: top;
         background: #838383;
