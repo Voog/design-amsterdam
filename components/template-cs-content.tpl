@@ -284,7 +284,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-submenu-color: undefined;
+  --content-submenu-color: #919191;
  /* VoogStyle
   "pathI18n": ["content", "sub_menu", "hover"],
   "titleI18n": "color",
