@@ -15,7 +15,7 @@
     </section>
     <main class="content" role="main">
       {% include "sidebar-left" %}
-      <section class="content-body content-formatted" data-search-indexing-allowed="true">{% content %}</section>
+      <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
     </main>
     {% include "footer" %}
   </div>

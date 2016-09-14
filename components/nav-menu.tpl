@@ -16,6 +16,6 @@
       <li class="editmode-button">{% menubtn site.hidden_menuitems %}</li>
     {% endif %}
 
-    <li class="editmode-button">{% menuadd %}</li>
+    <li class="editmode-button" {% unless nav-menu == "mobile-menu" %}{{ edy_intro_add_page }}{% endunless %}>{% menuadd %}</li>
   {% endif %}
 </ul>
