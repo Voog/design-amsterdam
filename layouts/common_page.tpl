@@ -10,12 +10,12 @@
 <body class="common-page{% if site.search.enabled %} search-enabled{% endif %}{% if editmode %} editmode{% endif %}">
   <div class="container">
     {% include "header" %}
-    <section class="content-header content-formatted cfx" data-search-indexing-allowed="true">
+    <section class="content-header content-formatted cfx" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>
       {% content name="slogan" %}
     </section>
     <main class="content" role="main">
       {% include "sidebar-left" %}
-      <section class="content-body content-formatted" data-search-indexing-allowed="true">{% content %}</section>
+      <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
     </main>
     {% include "footer" %}
   </div>
