@@ -402,7 +402,7 @@
     handleWindowResize();
     wrapTables();
     $('.content form').edicyFormPlaceholders();
-    $(window).load(function() {
+    $(window).on('load', function() {
       $('input, textarea').placeholder();
     });
 
