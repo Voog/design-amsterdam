@@ -266,10 +266,20 @@
   }
 
   &:nth-child(2) {
-    @media screen and (max-width: $mobile) {
-      border-top-color: rgba($color-black, .2);
-      border-top-style: solid;
-      border-top-width: 1px;
+    &::before {
+      @media screen and (max-width: $mobile) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        border-top-color: currentColor;
+        border-top-style: solid;
+        border-top-width: 1px;
+        content: '';
+        opacity: .2;
+      }
     }
   }
 
