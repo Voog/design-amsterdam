@@ -1396,6 +1396,69 @@ body {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 641px) {
+  .post-nav-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.post-nav-link {
+  position: relative;
+  display: block;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: currentColor;
+}
+.post-nav-link:hover .post-nav-direction {
+  opacity: 1;
+}
+.post-nav-link:hover .post-nav-title {
+  opacity: 1;
+}
+@media screen and (max-width: 640px) {
+  .post-nav-link:nth-child(2) {
+    border-top-color: rgba(0, 0, 0, 0.2);
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .post-nav-link {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .post-nav-link-older {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .post-nav-link-newer {
+    padding-left: 20px;
+    text-align: right;
+  }
+}
+
+.post-nav-direction {
+  font-size: 13px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .3;
+}
+
+.post-nav-title {
+  margin-top: 6px;
+  font-size: 18px;
+  opacity: .7;
+}
+
 @media screen and (max-width: 640px) {
   .blog-page .post {
     margin-bottom: 30px;
