@@ -19,8 +19,10 @@ $color-two: #333;
 $color-three: #888; // replaced by $color-four in design editor
 // rgb(136,136,136)
 
-$color-four: #919191; 
+$color-four: #919191;
 // rgb(145,145,145)
+
+$color-grey: #dadada;
 
 $color-error: #c33; //rgb(204,51,51)
 $color-notice: #3c3; // rgb(51,204,51)
@@ -34,5 +36,5 @@ $h2-size: 24px;
 $font-size: 18px;
 $line-height: 1.4;
 
-$color-one: $color-two; 
+$color-one: $color-two;
 $color-three: $color-four;

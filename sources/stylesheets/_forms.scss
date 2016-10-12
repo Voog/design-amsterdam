@@ -88,7 +88,7 @@
 
 .form_field_textarea,
 .form_field_textfield {
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid rgba($color-grey, 1);
 }
 
 .form_field_textarea {
@@ -107,7 +107,7 @@
 }
 
 .form_submit input {
-  background: #dadada;
+  background: rgba($color-grey, 1);
   border: 0;
   color: $color-three;
   cursor: pointer;

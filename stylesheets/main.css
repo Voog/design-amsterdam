@@ -2041,3 +2041,16 @@ body.mobilesearch-open {
     display: none;
   }
 }
+.public .edy-ecommerce-shopping-cart-button {
+  top: 48px;
+  display: inline-block;
+  padding: .31em .75em;
+  margin-bottom: 20px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  color: #919191;
+  cursor: pointer;
+  background: #dadada;
+  border: 0;
+}
