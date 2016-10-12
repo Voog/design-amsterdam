@@ -1,0 +1,29 @@
+.public {
+  .edy-ecommerce-shopping-cart-button {
+    top: 48px;
+    display: inline-block;
+    padding: .33em .75em;
+    margin-bottom: 20px;
+    font-family: $font-one;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: $color-three;
+    cursor: pointer;
+    background: rgba($color-grey, 1);
+    border: 0;
+
+    @include query($mobile) {
+      top: 0;
+      right: 40px;
+    }
+
+    @include querymin($mobile) {
+      top: 48px;
+      right: 20px;
+    }
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+}

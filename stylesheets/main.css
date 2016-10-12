@@ -2044,7 +2044,7 @@ body.mobilesearch-open {
 .public .edy-ecommerce-shopping-cart-button {
   top: 48px;
   display: inline-block;
-  padding: .31em .75em;
+  padding: .33em .75em;
   margin-bottom: 20px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -2053,4 +2053,19 @@ body.mobilesearch-open {
   cursor: pointer;
   background: #dadada;
   border: 0;
+}
+@media screen and (max-width: 640px) {
+  .public .edy-ecommerce-shopping-cart-button {
+    top: 0;
+    right: 40px;
+  }
+}
+@media screen and (min-width: 641px) {
+  .public .edy-ecommerce-shopping-cart-button {
+    top: 48px;
+    right: 20px;
+  }
+}
+.public .edy-ecommerce-shopping-cart-button:hover {
+  opacity: .75;
 }
