@@ -76,7 +76,7 @@ body {
 .header {
   .header-inner {
     .header-title {
-      &, 
+      &,
       & a,
       & a:hover {
         color: var(--header-site-title-color);
@@ -152,7 +152,7 @@ body {
   }
 }
 
-// Blog 
+// Blog
 
 .blog-page {
   .post-title {
@@ -310,7 +310,7 @@ body {
         text-transform: var(--content-submenu-active-text-transform);
       }
     }
-  } 
+  }
 }
 
 // Content - Text
@@ -340,16 +340,16 @@ body {
 
   &.footer-fixed {
     background-color: var(--color-bg);
-    background: linear-gradient(to bottom, 
-      var(--color-bg) 0%, 
-      var(--color-bg) 15%, 
+    background: linear-gradient(to bottom,
+      var(--color-bg) 0%,
+      var(--color-bg) 15%,
       var(--color-bg) 100%);
   }
 
   .gradient-overlay {
-    background: linear-gradient(to bottom, 
-      rgba($color-white,.001) 0%, 
-      var(--color-bg) 50%, 
+    background: linear-gradient(to bottom,
+      rgba($color-white,.001) 0%,
+      var(--color-bg) 50%,
       var(--color-bg) 100%);
   }
 }
@@ -522,9 +522,19 @@ form,
     opacity: .5;
   }
 
-  :-ms-input-placeholder {  
+  :-ms-input-placeholder {
     color: var(--form-field-text-color);
     opacity: .5;
   }
 }
 
+.public {
+  .edy-ecommerce-shopping-cart-button {
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    font-style: var(--button-font-style);
+    font-weight: var(--button-font-weight);
+    text-decoration: var(--button-text-decoration);
+    text-transform: var(--button-text-transform);
+  }
+}
