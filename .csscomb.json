@@ -5,6 +5,8 @@
     "bower_components/**"
   ],
   "sort-order": [
+    "$variable",
+    "$include",
     "top",
     "right",
     "bottom",
