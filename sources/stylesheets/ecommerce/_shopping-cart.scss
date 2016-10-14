@@ -11,10 +11,11 @@
     cursor: pointer;
     background: rgba($color-grey, 1);
     border: 0;
+    z-index: 1;
 
     @include query($mobile) {
-      top: 0;
-      right: 40px;
+      top: 40px;
+      right: 0;
     }
 
     @include querymin($mobile) {
