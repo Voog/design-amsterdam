@@ -22,8 +22,18 @@
       right: 20px;
     }
 
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+
     &:hover {
       opacity: .75;
+    }
+
+    .edy-ecommerce-shopping-cart-button-flash {
+      line-height: 2.2;
     }
   }
 }
