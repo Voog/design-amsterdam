@@ -1,6 +1,7 @@
 .public {
   .edy-ecommerce-shopping-cart-button {
     top: 48px;
+    z-index: 10;
     display: inline-block;
     padding: .33em .75em;
     margin-bottom: 20px;
@@ -11,7 +12,6 @@
     cursor: pointer;
     background: rgba($color-grey, 1);
     border: 0;
-    z-index: 10;
 
     @include query($mobile) {
       top: 40px;
