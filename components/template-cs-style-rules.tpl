@@ -129,6 +129,10 @@ body {
   opacity: 1;
 }
 
+.post-nav {
+  color: var(--content-color);
+}
+
 .comments-title {
   font-size: var(--content-font-size);
 }
