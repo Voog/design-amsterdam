@@ -388,6 +388,13 @@
       // refactor is needed. Disableing it is a quicker and less painful method.
       if ($(window).width() > 640) {
         handler(getPostHeights());
+      } else {
+        $('.container').css({
+          'padding-top': '',
+          'margin-bottom': ''
+        });
+
+        $('.header-fixed').removeClass('header-fixed header-animated').css('top', '');
       }
     }).on('scroll', onScroll);
 
