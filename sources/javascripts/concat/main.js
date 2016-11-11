@@ -376,11 +376,15 @@
 
     var update = function() {
       ticking = false;
-      handler(getPostHeights());
+      if ($(window).width() > 640) {
+        handler(getPostHeights());
+      }
     };
 
     $(window).on('load resize', function() {
-      handler(getPostHeights());
+      if ($(window).width() > 640) {
+        handler(getPostHeights());
+      }
     }).on('scroll', onScroll);
 
     $('footer').bind('mouseenter', function() {
