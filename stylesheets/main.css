@@ -1765,11 +1765,11 @@ body {
 .mobile-search-toggler {
   position: absolute;
   top: 0;
-  right: 43px;
+  right: 40px;
   z-index: 3;
   display: block;
-  width: 33px;
-  height: 43px;
+  width: 40px;
+  height: 40px;
   background: url("../images/search.png") no-repeat center center;
   background-size: 16px 16px;
   outline: 0;
