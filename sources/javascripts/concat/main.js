@@ -376,12 +376,16 @@
 
     var update = function() {
       ticking = false;
+      // NOTE: Animated header on mobile screen is too buggy. To fix it a huge
+      // refactor is needed. Disableing it is a quicker and less painful method.
       if ($(window).width() > 640) {
         handler(getPostHeights());
       }
     };
 
     $(window).on('load resize', function() {
+      // NOTE: Animated header on mobile screen is too buggy. To fix it a huge
+      // refactor is needed. Disableing it is a quicker and less painful method.
       if ($(window).width() > 640) {
         handler(getPostHeights());
       }
