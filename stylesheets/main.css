@@ -993,13 +993,15 @@ body {
 
 @media screen and (max-width: 640px) {
   .header {
-    padding: 10px 50px 10px 0;
-    margin-top: 0;
-    margin-bottom: 30px;
+    padding: 7px 60px 7px 20px;
+    margin: 0 -20px 30px;
   }
   .header.header-fixed {
     padding-top: 7px;
     padding-bottom: 7px;
+  }
+  .search-enabled .header {
+    padding-right: 80px;
   }
   .header .header-title {
     margin-top: 30px;
@@ -1765,11 +1767,11 @@ body {
 .mobile-search-toggler {
   position: absolute;
   top: 0;
-  right: 43px;
+  right: 40px;
   z-index: 3;
   display: block;
-  width: 33px;
-  height: 43px;
+  width: 40px;
+  height: 40px;
   background: url("../images/search.png") no-repeat center center;
   background-size: 16px 16px;
   outline: 0;
