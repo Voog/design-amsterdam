@@ -10727,7 +10727,15 @@ return jQuery;
     };
 
     var fixHeader = function() {
-      $(header).addClass('header-fixed header-animated').css({'top' : 0});
+      var headerOffset;
+
+      if ($('body').hasClass('edy-checkout-button-visible')) {
+        headerOffset = $('.edy-ecommerce-shopping-cart-button').outerHeight();
+      } else {
+        headerOffset = 0;
+      }
+
+      $(header).addClass('header-fixed header-animated').css({'top' : headerOffset});
       $(container).css({'padding-top' : headerStaticArea});
     };
 
