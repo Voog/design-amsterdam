@@ -305,6 +305,10 @@
   .svg & {
     background-image: url('../assets/search.svg');
   }
+
+  .edy-checkout-button-visible & {
+    top: 41px; // Height of the checkout button.
+  }
 }
 
 body.mobilesearch-open {
@@ -353,6 +357,10 @@ body.mobilesearch-open {
   overflow: auto;
   background: #e5e5e5;
   -webkit-overflow-scrolling: touch;
+
+  .edy-checkout-button-visible & {
+    top: 81px; // Base offset + height of the checkout button (40 + 41).
+  }
 }
 
 .mobilesearch-open #mobile-search {
