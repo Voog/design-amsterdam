@@ -1,6 +1,6 @@
 {
-  "description": "Stream of texts and visuals",
-  "name": "Amsterdam",
+  "description": "Classic urban harmony",
+  "name": "Rotterdam",
   "preview_medium": "",
   "preview_small": "",
   "author": "Tõnu Runnel",
@@ -8,23 +8,16 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/feature_page.tpl",
-      "layout_name": "page_default",
-      "title": "Feature page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/front_page.tpl",
       "layout_name": "page_front",
       "title": "Front page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
     },
     {
       "content_type": "blog",
@@ -39,6 +32,13 @@
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
       "title": "Blog article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
     },
     {
       "content_type": "component",
@@ -242,13 +242,6 @@
       "file": "components/edicy-tools-styles.tpl",
       "layout_name": "edicy-tools-styles",
       "title": "edicy-tools-styles"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-variables.tpl",
-      "layout_name": "edicy-tools-variables",
-      "title": "edicy-tools-variables"
     }
   ],
   "assets": [
@@ -301,7 +294,7 @@
       "filename": "montserrat-bold.woff"
     },
     {
-      "content_type": "text/unknown",
+      "content_type": "application/font-woff",
       "file": "assets/montserrat-bold.woff2",
       "kind": "assets",
       "filename": "montserrat-bold.woff2"
@@ -331,7 +324,7 @@
       "filename": "montserrat-regular.woff"
     },
     {
-      "content_type": "text/unknown",
+      "content_type": "application/font-woff",
       "file": "assets/montserrat-regular.woff2",
       "kind": "assets",
       "filename": "montserrat-regular.woff2"

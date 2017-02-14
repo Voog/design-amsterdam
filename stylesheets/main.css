@@ -1470,8 +1470,7 @@ body {
   }
 }
 .blog-page .container .content-body {
-  width: 100%;
-  max-width: 90%;
+  width: 100% !important;
   margin-bottom: 70px;
   font-size: 24px;
   line-height: 1.5;
