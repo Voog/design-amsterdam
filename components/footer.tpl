@@ -1,8 +1,11 @@
 <footer class="footer content-formatted cfx">
-  {% if site.search.enabled %}{% include "search" %}{% endif %}
-  <div class="horizontal-line"></div>
-  <div class="gradient-overlay"></div>
-  {% xcontent name="footer" %}
-</footer>
+  <div class="wrap">
+    <div class="horizontal-line"></div>
+    <div class="gradient-overlay"></div>
+    {% xcontent name="footer" %}
+  </div>
 
-<div class="voog-reference">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div>
+  <div class="voog-reference-wrap wrap">
+    <div class="voog-reference">{% loginblock %}{% endloginblock %}</div>
+  </div>
+</footer>

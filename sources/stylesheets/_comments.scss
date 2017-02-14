@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 312px;
   margin-left: 42px;
-  font-family: $font-one;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   vertical-align: top;
 }
 
@@ -31,7 +31,7 @@
 
   input,
   textarea {
-    font-family: $font-one;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .form_field {
@@ -43,7 +43,7 @@
     width: 100%;
     padding: 0;
     line-height: 1.6;
-    color: rgba($color-black,.8);
+    color: rgba(0,0,0,.8);
   }
 
   .form_field_textarea {
@@ -64,12 +64,12 @@
 
 .comment-date {
   display: inline-block;
-  color: $color-four;
+  color: #919191;
 }
 
 .comment-body {
   @include hyphenate(true);
-  color: rgba($color-black,.5);
+  color: rgba(0,0,0,.5);
 }
 
 @include query($tablet) {

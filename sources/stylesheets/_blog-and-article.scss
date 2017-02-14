@@ -1,6 +1,6 @@
 // BLOG & BLOG ARTICLE
 .post-header {
-  font-family: $font-one;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .post-date {
@@ -36,17 +36,17 @@
     margin: 0;
     font-size: 18px;
     font-weight: 400;
-    color: $color-two;
+    color: #333;
     text-transform: uppercase;
 
     a {
-      color: $color-two;
+      color: #333;
     }
   }
 
   .post-date {
     font-size: 12px;
-    color: $color-three;
+    color: #888;
   }
 
   .post-content {
@@ -131,7 +131,7 @@
   .post-date {
     font-size: 18px;
     font-weight: 400;
-    color: $color-error;
+    color: #c33;
   }
 
   .post-content {
@@ -180,12 +180,12 @@
 }
 
 .tags {
-  font-family: $font-one;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 
   .tags-list,
   .tag-link {
-    color: rgba($color-black,.5);
+    color: rgba(0,0,0,.5);
   }
 }
 
@@ -193,17 +193,17 @@
   display: inline-block;
   padding: 12px;
   line-height: 1.8;
-  color: rgba($color-black,.9);
+  color: rgba(0,0,0,.9);
   text-transform: uppercase;
-  background-color: rgba($color-black,.05);
+  background-color: rgba(0,0,0,.05);
 
   .tag-link {
     margin-left: 10px;
 
     &.active {
       padding-bottom: 2px;
-      color: rgba($color-black,.9);
-      border-bottom: 2px solid rgba($color-black,.25);
+      color: rgba(0,0,0,.9);
+      border-bottom: 2px solid rgba(0,0,0,.25);
     }
   }
 }
@@ -213,9 +213,8 @@
   display: block;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 35px;
-  margin-right: 35px;
-  font-family: $font-one;
+  margin-left: 70px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .tag-icon {
     position: absolute;

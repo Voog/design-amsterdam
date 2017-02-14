@@ -11,8 +11,8 @@
     right: 0;
     display: block;
     width: 100%;
-    font-family: $font-one;
-    z-index: 11;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // z-index: 11;
 
     &.fixed .toggle-btn {
       position: absolute;
@@ -29,7 +29,7 @@
       padding: 0;
       margin: 0;
       cursor: pointer;
-      background: $color-two;
+      background: #333;
       border: 0;
       outline: none;
 
@@ -40,7 +40,7 @@
 
       &.open,
       &.open:hover {
-        background: $color-two;
+        background: #333;
         opacity: 1;
       }
 
@@ -73,7 +73,7 @@
       width: 20px;
       height: 3px;
       margin: 4px auto;
-      background: $color-white;
+      background: #fff;
       border-radius: 5px;
     }
 
@@ -92,7 +92,7 @@
       }
     }
 
-    &.fixed {
+    &.fixed { // scss-lint:disable MergeableSelector
       .lang-menu {
         position: absolute;
         top: 0;

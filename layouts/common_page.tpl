@@ -7,10 +7,10 @@
   {% include "edicy-tools-variables" %}
 </head>
 
-<body class="common-page{% if site.search.enabled %} search-enabled{% endif %}{% if editmode %} editmode{% endif %}">
+<body class="common-page content-page{% if site.search.enabled %} search-enabled{% endif %}{% if editmode or site.has_many_languages? %} lang-enabled{% endif %} {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
   <div class="container">
     {% include "header" %}
-    <section class="content-header content-formatted cfx" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>
+    <section class="content-header content-formatted cfx" data-search-indexing-allowed="true">
       {% content name="slogan" %}
     </section>
     <main class="content" role="main">

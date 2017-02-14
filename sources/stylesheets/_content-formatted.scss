@@ -2,6 +2,24 @@
 .content-formatted {
   @include hyphenate(true);
 
+  &,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  table,
+  pre,
+  code {
+    .dark-background & {
+      color: rgba(255,255,255,.8);
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -9,7 +27,7 @@
   h5,
   h6 {
     margin: 0 0 17px;
-    font-family: $font-one;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
   }
 
@@ -18,24 +36,24 @@
   h4,
   h5,
   h6 {
-    color: $color-error;
+    color: #c33;
     text-transform: uppercase;
   }
 
   h1 {
-    font-size: $h1-size;
+    font-size: 36px;
     line-height: 1;
   }
 
   h2 {
-    font-size: $h2-size;
+    font-size: 24px;
   }
 
   h3,
   h4,
   h5,
   h6 {
-    font-size: $font-size;
+    font-size: 18px;
   }
 
   p {
@@ -47,10 +65,18 @@
   }
 
   a {
-    color: rgba($color-black,.5);
+    color: rgba(0,0,0,.5);
 
     &:hover {
-      color: rgba($color-black,.8);
+      color: rgba(0,0,0,.8);
+    }
+
+    .dark-background & {
+      color: rgba(255,255,255,.5);
+
+      &:hover {
+        color: rgba(255,255,255,.8);
+      }
     }
   }
 
@@ -71,6 +97,10 @@
   code {
     font-size: 14px;
     @include bg(#fafafa);
+
+    .dark-background & {
+      background-color: #050505;
+    }
   }
 
   pre {
@@ -112,7 +142,7 @@
     }
   }
 
-  .overthrow {
+  .table-container {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -120,17 +150,15 @@
   .custom-btn {
     background: #dadada;
     border: 0;
-    color: $color-three;
     cursor: pointer;
     display: inline-block;
-    font-family: $font-one;
     font-size: 16px;
     line-height: 1.7em;
     margin-bottom: 20px;
     padding: .31em .75em;
   }
 
-  // Image container positioning
+  // IMAGE CONTAINERS
   .blog-page .post-content &,
   .post-page .post-content & {
     .edy-positionable-container-maxwidth {
@@ -197,9 +225,8 @@
       width: 100%;
     }
 
-    .blog-page .post-content &,
-    .post-page .post-content & {
-      .edy-positionable-container-maxwidth {
+    .edy-positionable-container-maxwidth {
+      .post & {
         width: auto !important;
         max-width: none !important;
         margin-right: 0 !important;

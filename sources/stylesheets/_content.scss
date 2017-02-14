@@ -1,40 +1,43 @@
 // CONTENT
-.content {
-  margin-bottom: 30px;
-}
-
-.content-bottom {
-  margin-left: 125px;
-}
-
-.content-body {
-  display: inline-block;
-  width: 100%;
-  max-width: calc(100% - 144px);
-}
-
-.content-header {
-  margin-bottom: 45px;
-
-  h1 {
-    margin: 0;
-    font-size: 50px;
-    line-height: 1;
-    letter-spacing: -3px;
-  }
-}
-
-@include query($tablet) {
+.container {
   .content {
-    position: relative;
+    margin-bottom: 30px;
+
+    @include query($tablet) {
+      position: relative;
+      margin-bottom: 20px;
+    }
   }
 
   .content-body {
-    max-width: 100%;
+    .content-page & {
+      display: inline-block;
+      width: calc(100% - 144px);
+
+      @include query($tablet) {
+        display: block;
+        width: auto;
+      }
+    }
+
+    @include query($tablet) {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+
+    @include query($mobile) {
+      margin-bottom: 0;
+    }
   }
 
-  .container .content-body {
-    max-width: 100%;
-    margin-bottom: 50px;
+  .content-header {
+    margin-bottom: 45px;
+
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      line-height: 1;
+      letter-spacing: -3px;
+    }
   }
 }

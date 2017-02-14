@@ -2,12 +2,35 @@
 .header {
   position: relative;
   z-index: 10;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: $font-one;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  min-height: 27px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // -webkit-transform: translateZ(0);
+  // transform: translateZ(0);
 
+  .front-page & {
+    margin-top: 33px;
+    margin-bottom: 33px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .content-page & {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include query($mobile) {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  @include query($mobile) {
+    position: static;
+
+    .search-enabled & {
+      padding-right: 70px;
+    }
+  }
 
   &.header-fixed {
     position: fixed;
@@ -18,9 +41,9 @@
     padding: 15px 25px;
     margin-top: 0;
     margin-bottom: 0;
-    background: rgba($color-white,.95);
-    -webkit-box-shadow: 0 0 10px 0 $color-three;
-    box-shadow: 0 0 10px 0 $color-three;
+    background: rgba(255,255,255,.95);
+    -webkit-box-shadow: 0 0 10px 0 #888;
+    box-shadow: 0 0 10px 0 #888;
 
     .voog-search-visible & {
       display: none;
@@ -33,16 +56,23 @@
   }
 
   .header-inner {
-    max-width: $site-width;
+    max-width: 940px;
     padding: 0;
     margin: 0 auto;
 
+    .flexbox & {
+      @include display(flex);
+      @include flex-wrap(wrap);
+      @include justify-content(flex-end);
+
+      @include query($mobile) {
+        display: block;
+      }
+    }
+
     .header-title {
       @include hyphenate(true);
-      // display: table-cell;
-      // max-width: 810px;
       margin: 0;
-      margin-right: 13px;
       font-size: 24px;
       font-weight: 700;
       line-height: 1.1;
@@ -53,43 +83,63 @@
         min-width: 100px;
       }
 
-      .flexbox & {
-        @include flex(1 0 auto);
-      }
-
-      .no-flexbox & {
-        float: left;
-
-        @include query($mobile) {
-          float: none;
-        }
-      }
-
       a {
-        color: rgba($color-black,.8);
+        display: inline-block;
+        color: rgba(0,0,0,.8);
         text-decoration: none;
 
         &:hover {
-          color: rgba($color-black,.75);
+          color: rgba(0,0,0,.75);
         }
       }
     }
   }
 
-  .header-top {
-    .editmode.flexbox & {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-
-      @include query($mobile) {
-        display: block;
-      }
+  .header-left {
+    .flexbox & {
+      @include flex(1 0 auto);
     }
 
-    .editmode.no-flexbox &,
-    .public & {
-      display: table;
+    .no-flexbox & {
+      float: left;
+
+      @include query($mobile) {
+        float: none;
+      }
+    }
+    // display: table;
+    // float: left;
+    // margin-right: 20px;
+
+    // @include query($mobile) {
+    //   margin-right: 30px;
+    // }
+  }
+
+  .header-right {
+    position: relative;
+    text-align: right;
+    margin-left: 20px;
+
+    .no-flexbox & {
+      float: right;
+    }
+    // float: right;
+    // position: relative;
+    // top: -2px;
+
+    @include query($mobile) {
+      position: static;
+    }
+
+    .header-options {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @include query($mobile) {
+        position: static;
+      }
     }
   }
 }
@@ -97,16 +147,19 @@
 @include query($mobile) {
   // HEADER
   .header {
-    padding: 7px 60px 7px 20px;
-    margin: 0 -20px 30px;
 
-    &.header-fixed {
-      padding-top: 7px;
-      padding-bottom: 7px;
+    &,
+    .front-page & {
+      margin: 0 -20px;
+      padding: 8px 50px 5px 20px;
+
+      .search-enabled & {
+        padding-right: 80px;
+      }
     }
 
-    .search-enabled & {
-      padding-right: 80px;
+    &.header-fixed {
+      padding: 7px 45px;
     }
 
     .header-title {
@@ -118,7 +171,7 @@
       display: none;
     }
 
-    .header-top,
+    .header-left,
     .header-title {
       display: block;
     }

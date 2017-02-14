@@ -3,15 +3,15 @@
 .content-formatted .form {
   margin-top: 30px;
   margin-bottom: 35px;
-  font-family: $font-one;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: $color-four;
+  color: #919191;
 }
 
 .content-formatted form {
   input,
   textarea {
-    font-family: $font-one;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
 
@@ -22,13 +22,13 @@
 .form_field_error,
 .form_error {
   font-weight: 700;
-  color: $color-error;
+  color: #c33;
   font-size: 16px;
 }
 
 .form_notice {
   font-weight: 700;
-  color: $color-notice;
+  color: #3c3;
 }
 
 .form_error,
@@ -40,10 +40,19 @@
 .form_field {
   margin-bottom: 15px;
 
-  label {
+  label,
+  .edy-fe-label {
     display: block;
     padding: 2px 0 1px;
-    color: $color-four;
+    color: #919191;
+
+    .header-inner & {
+      color: rgba(0,0,0,.8);
+    }
+
+    .dark-background & {
+      color: white;
+    }
   }
 }
 
@@ -85,10 +94,18 @@
   -webkit-appearance: none;
 }
 
-
 .form_field_textarea,
 .form_field_textfield {
   border-bottom: 1px solid #dadada;
+
+  .header-inner & {
+    background: rgba(255,255,255,0.5);
+    border: none;
+  }
+
+  .light-background & {
+    background: rgba(0,0,0,0.5);
+  }
 }
 
 .form_field_textarea {
@@ -107,16 +124,15 @@
 }
 
 .form_submit input {
+  padding: 5px 12px;
+  margin: 0;
+  color: #888;
+  cursor: pointer;
   background: #dadada;
   border: 0;
-  color: $color-three;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 1.7em;
-  margin: 0;
-  padding: .31em .75em;
 
-  &:hover {
-    color: rgba($color-black,.8);
+  .light-background & {
+    background: #252525;
+    color: rgba(255,255,255,.5);
   }
 }

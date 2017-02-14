@@ -1,376 +1,301 @@
-// SEARCH
-.container .search {
-  position: relative;
-  display: block;
-  width: 220px;
-  margin: 0;
+/* SEARCH */
+// Styling rules for the site's search box. These rules affect the entire site.
+.mobile-search-btns {
+  display: none;
+
+  @include query($mobile) {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    display: block;
+  }
 }
 
 .search {
-  .search-box {
-    position: relative;
-    max-width: 180px;
-    padding: 0 10px 0 30px;
-    overflow: hidden;
-    border-top: 2px solid transparent;
-    transition: border-top-color .1s, border-bottom-color .1s;
+  position: relative;
+  vertical-align: middle;
+  float: left;
+  font-size: 0;
 
-    &.search-box-focus {
-      border-top: 2px solid rgba($color-black,.65);
-    }
+  .voog-search-visible & {
+    @include bg($search-bg);
+    display: inline-block;
   }
 
-  .search-input {
-    width: 100%;
-    padding: 5px 0;
-    margin: 0;
-    font-family: $font-one;
-    font-size: 16px;
-    color: rgba($color-black,.8);
-    background: none;
-    border: 0;
-    outline: 0;
+  .header-fixed &,
+  &.hidden {
+    display: none;
+  }
 
-    &::-ms-clear {
+  @include query($mobile) {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.95);
+
+    .voog-search-visible & {
+      display: block;
+    }
+
+    .edy-checkout-button-visible & {
+      top: 81px; // Base offset + height of the checkout button (40 + 41).
+    }
+  }
+}
+
+.search-form {
+  position: relative;
+  z-index: 20;
+
+  .voog-search-visible & {
+    @include bg($search-bg);
+  }
+
+  @include query($mobile) {
+    display: none;
+
+    .voog-search-visible & {
+      display: block;
+      background-color: $white;
+      border-top: 2px solid rgba($black,.65);
+      border-bottom: 2px solid rgba($black,.65);
+    }
+  }
+}
+
+.search-input {
+  display: none;
+  vertical-align: middle;
+  width: 140px;
+  margin: 0;
+  padding: 8px 30px 7px 9px;
+  font-family: inherit;
+  font-size: 12px;
+  @include color($search-color, 0.67);
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+
+  .voog-search-visible & {
+    display: block;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  // Removes the clear input button in IE11
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+
+  }
+
+  @include query($mobile) {
+    width: 100%;
+    padding: 11px 50px 11px 20px;
+    font-size: 16px;
+  }
+}
+
+.search-btn {
+  @extend %button;
+  vertical-align: top;
+  opacity: .35;
+  line-height: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include query($mobile) {
+  }
+}
+
+.search-btn-submit,
+.search-btn-open {
+  position: relative;
+  top: 1px;
+  right: 0;
+  display: inline-block;
+  padding: 5px;
+
+  .voog-search-visible & {
+    display: none;
+  }
+
+  @include query($mobile) {
+    top: 0;
+    padding: 11px;
+
+      .edy-checkout-button-visible & {
+      top: 41px; // Height of the checkout button.
+    }
+  }
+}
+
+.search-btn-reset,
+.search-btn-close {
+  display: none;
+  padding: 9px;
+
+  .voog-search-visible & {
+    display: inline-block;
+  }
+
+  @include query($mobile) {
+    padding: 13px 9px 9px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.search-btn-close {
+  position: relative;
+  top: 41px;
+}
+
+.search-btn-submit,
+.search-btn-reset {
+  .voog-search-visible & {
+    position: absolute;
+    top: 1px;
+    right: 0;
+
+    @include query($mobile) {
+      top: 0;
+    }
+  }
+}
+
+.search-btn-submit {
+  @include query($mobile) {
+    .voog-search-visible & {
+      display: block;
+    }
+  }
+}
+
+.search-btn-reset {
+  @include query($mobile) {
+    .voog-search-visible & {
       display: none;
     }
+  }
+}
 
-    &::-webkit-input-placeholder,
-    &:-moz-placeholder,
-    &::-moz-placeholder,
-    &-ms-input-placeholder {
-      color: rgba($color-black,.5);
-      opacity: 0;
-      transition: opacity .1s;
+.voog-search-modal {
+
+}
+
+.voog-search-modal-inner {
+  @include hyphenate(true);
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 999;
+  display: none;
+  width: 350px;
+  max-height: 600px;
+  padding: 15px 25px;
+  text-align: left;
+  font-size: 16px;
+  @include bg($white,.95);
+  box-shadow: 0 0 40px rgba($black,.1);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .edy-checkout-button-visible & {
+    top: 124px; // Base offset + height of the checkout button (40 + 41).
+  }
+
+  &.search-results-active {
+    display: block;
+  }
+
+  @media screen and (min-width: 640px) and (max-height: 900px) {
+    max-height: 700px;
+  }
+
+  @media screen and (min-width: 640px) and (max-height: 800px) {
+    max-height: 600px;
+  }
+
+  @media screen and (min-width: 640px) and (max-height: 700px) {
+    max-height: 500px;
+  }
+
+  @media screen and (min-width: 640px) and (max-height: 600px) {
+    max-height: 400px;
+  }
+
+  @media screen and (min-width: 640px) and (max-height: 500px) {
+    max-height: 300px;
+  }
+
+  @media screen and (min-width: 640px) and (max-height: 400px) {
+    max-height: 200px;
+  }
+
+  @include query($mobile) {
+    position: fixed;
+    top: 85px;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    max-height: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+
+    &.no-content {
+      bottom: auto;
     }
+  }
+}
 
-    &:focus {
-      &::-webkit-input-placeholder,
-      &:-moz-placeholder,
-      &::-moz-placeholder,
-      &-ms-input-placeholder {
-        color: rgba($color-black,.5);
-        opacity: 1;
+.voog-search-modal-result {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $black;
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      @include color($search-color);
+
+      &:hover {
+        @include color($search-color, 0.8);
       }
     }
   }
 
-  .search-submit,
-  .search-close {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: none;
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .search-submit {
-    display: block;
-
-    .no-svg & {
-      background-image: url('../images/search.png');
-    }
-
-    .svg & {
-      background-image: url('../assets/search.svg');
-      background-size: 16px;
-    }
-  }
-
-  .search-close {
-    .no-svg & {
-      background-image: url('../images/ico-close.png');
-    }
-
-    .svg & {
-      background-image: url('../assets/ico-close.svg');
-      background-size: 12px;
-    }
-  }
-
-  &:after {
-    position: absolute;
-    top: -2px;
-    right: -30px;
-    display: none;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-    border-color: rgba($color-black,0);
-    border-right-color: #e5e5e5;
-    border-style: solid;
-    border-width: 18px;
-    content: ' ';
-  }
-}
-
-#mobile-search .search {
-  width: 100%;
-  background-color: $color-white;
-  border-top: 2px solid rgba($color-black,.65);
-  border-bottom: 2px solid rgba($color-black,.65);
-
-  .search-box {
-    top: 0;
-    right: 0;
-    left: 0;
-    max-width: 100%;
-    padding-right: 50px;
-    padding-left: 25px;
-
-    &.search-box-focus {
-      border-top: 2px solid transparent;
-    }
-  }
-
-  .search-input {
-    padding: 10px 0;
-    font-size: 16px;
-  }
-
-  .search-submit,
-  .search-close {
-    position: absolute;
-    right: 0;
-    left: initial;
-  }
-}
-
-.voog-search-visible {
-  overflow: hidden;
-
-  .search .search-close {
-    display: block;
-  }
-
-  .search:after {
-    display: block;
-  }
-
-  .voog-search-container {
-    z-index: 1000;
-    display: block;
-    width: 300px;
-    opacity: 1;
-    -moz-box-shadow: 10px 0 10px rgba($color-black,.05);
-    -webkit-box-shadow: 10px 0 10px rgba($color-black,.05);
-    box-shadow: 10px 0 10px rgba($color-black,.05);
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .search:after {
-    right: -20px;
-  }
-}
-
-#mobile-search .search:after {
-  display: none;
-}
-
-// SEARCH CONTAINER
-.voog-search-container {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  width: 0;
-  margin-left: 240px;
-  overflow: hidden;
-  background: #e5e5e5;
-  opacity: 0;
-  -webkit-transition: opacity .1s ease-in, width .3s ease-in;
-  transition: opacity .1s ease-in, width .3s ease-in;
-
-  .editmode & {
-    bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .voog-search-container {
-    margin-left: 235px;
-  }
-}
-
-#mobile-search .voog-search-container {
-  position: static;
-  top: auto;
-  width: 100%;
-  margin-left: 0 !important;
-
-  .voog-mobile-search-visible & {
-    z-index: 1000;
-    display: block;
-    opacity: 1;
-  }
-}
-
-.voog-search-inner {
-  width: 300px;
-  height: 100%;
-  overflow: auto;
-}
-
-#mobile-search .voog-search-inner {
-  width: auto;
-}
-
-.voog-search-loader {
-  display: block;
-  height: 100%;
-
-  .svg & {
-    background: url('../assets/loader.svg') no-repeat center center;
-  }
-}
-
-.voog-search-results {
-  display: none;
-  padding: 20px 0;
-}
-
-#mobile-search .voog-search-results {
-  padding: 10px 0;
-}
-
-.voog-search-noresults {
-  display: none;
-  width: 100%;
-  height: 100%;
-
-  div {
-    display: table-cell;
-    padding: 40px;
-    color: #848484;
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  &.voog-search-noresults-visible {
-    display: table;
-  }
-}
-
-.voog-search-result {
-  padding: 12px 18px;
-  font-family: $font-one;
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba($color-black,.5);
-
-  .voog-search-result-title {
-    padding: 0 0 12px;
-    margin: 0;
-    font-size: 16px;
-    color: rgba($color-black,.8);
-  }
-
-  .voog-search-result-link {
-    color: rgba($color-black,.6);
-
-    &:hover {
-      color: rgba($color-black,.6);
-    }
-  }
-
-  .voog-search-result-content {
-    padding: 0;
-    margin: 0;
+  p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #818181;
   }
 
   em {
     font-style: normal;
-    background: #f9ec5a;
+    @include bg($search-highlight, 0.5);
+    border-radius: 2px;
+    padding: 0 0.2em;
   }
-}
-
-.mobile-search-toggler {
-  position: absolute;
-  top: 0;
-  right: 40px;
-  z-index: 3;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url('../images/search.png') no-repeat center center;
-  background-size: 16px 16px;
-  outline: 0;
-
-  .svg & {
-    background-image: url('../assets/search.svg');
-  }
-
-  .edy-checkout-button-visible & {
-    top: 41px; // Height of the checkout button.
-  }
-}
-
-body.mobilesearch-open {
-  overflow: hidden;
-}
-
-.mobilesearch-open .mobile-search-toggler {
-  background: none !important;
-
-  &:before,
-  &:after {
-    position: absolute;
-    top: 20px;
-    left: 7px;
-    display: block;
-    width: 20px;
-    height: 3px;
-    background: #222;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    content: '';
-  }
-
-  &:before {
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  &:after {
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-}
-
-#mobile-search {
-  position: fixed;
-  top: 40px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  display: none;
-  overflow: auto;
-  background: #e5e5e5;
-  -webkit-overflow-scrolling: touch;
-
-  .edy-checkout-button-visible & {
-    top: 81px; // Base offset + height of the checkout button (40 + 41).
-  }
-}
-
-.mobilesearch-open #mobile-search {
-  display: block;
-}
-
-#mobile-search-results {
-  position: absolute;
-  top: 45px;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }

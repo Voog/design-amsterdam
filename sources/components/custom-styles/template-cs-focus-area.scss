@@ -1,0 +1,35 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+  // scss-lint:disable Comment, Indentation
+  
+  /* VoogStyle
+     "pathI18n": ["focus_area"],
+     "titleI18n": "maximum_width",
+     "editor": "rangePicker",
+     "min": 600,
+     "max": 1800,
+     "step": 20,
+     "unit": "px",
+     "scope": "global"
+  */
+  --focus-area-width: 1800px;
+
+  // scss-lint:enable Comment, Indentation
+}

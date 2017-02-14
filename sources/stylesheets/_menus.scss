@@ -4,17 +4,17 @@
   z-index: 2;
   padding: 0;
   margin: 0;
-  font-family: $font-one;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   list-style: none;
 
   li {
     a {
       font-size: 12px;
-      color: rgba($color-black,.5);
+      color: rgba(0,0,0,.5);
       text-decoration: none;
 
       &:hover {
-        color: rgba($color-black,.8);
+        color: rgba(0,0,0,.8);
         // @include filter(grayscale(50%));
 
         &:before {
@@ -26,28 +26,71 @@
 
   li.active {
     a {
-      color: rgba($color-black,.8);
+      color: rgba(0,0,0,.8);
       // @include filter(grayscale(100%));
 
       &:hover {
-        color: rgba($color-black,.85);
+        color: rgba(0,0,0,.85);
       }
     }
   }
 }
 
+.main-menu,
+.lang-menu {
+  float: left;
+}
+
 .main-menu {
+  .search-enabled.lang-enabled.voog-search-visible.flags-disabled & {
+    margin-right: 240px;
+  }
+  .search-enabled.lang-enabled.voog-search-visible & {
+    margin-right: 175px;
+  }
+
+  .search-enabled.lang-enabled.flags-disabled & {
+    margin-right: 120px;
+
+    @include query($mobile) {
+      margin-right: 0;
+    }
+  }
+
+  .search-enabled.lang-enabled & {
+    margin-right: 70px;
+  }
+
+  .lang-enabled & {
+    margin-right: 45px;
+  }
+
+  .lang-enabled.flags-disabled & {
+    margin-right: 95px;
+
+    @include query($mobile) {
+      margin-right: 0;
+    }
+  }
+
+
+  .search-enabled.voog-search-visible & {
+    margin-right: 145px;
+  }
+
+  .search-enabled & {
+    margin-right: 40px;
+  }
+
   li {
     display: inline-block;
-    margin-right: 5px;
-    line-height: 1;
+    margin-left: 5px;
 
     a {
-      @include hyphenate(true);
       text-transform: uppercase;
 
       &.untranslated {
-        color: $color-error;
+        color: #c33;
       }
     }
   }
@@ -56,10 +99,29 @@
     margin-left: 10px;
 
     @include query($mobile) {
-      display: inline-block;
-      padding: 10px;
+      margin-top: 3px;
       margin-left: 0;
-      background-color: #838383;
+      margin-bottom: 7px;
+
+      &:last-child {
+        margin-top: 10px;
+      }
+
+      a {
+        padding: 10px 15px!important;
+        background-color: #838383 !important;
+        vertical-align: middle !important;
+      }
+    }
+  }
+
+  @include query($mobile) {
+    .search-enabled.lang-enabled.voog-search-visible &,
+    .search-enabled.lang-enabled &,
+    .lang-enabled &,
+    .search-enabled.voog-search-visible &,
+    .search-enabled & {
+      margin-right: 0;
     }
   }
 }
@@ -82,10 +144,10 @@
       @include hyphenate(true);
       font-size: 16px;
       font-weight: 300;
-      color: $color-three;
+      color: #888;
 
       &.untranslated {
-        color: $color-error;
+        color: #c33;
       }
     }
 
@@ -101,7 +163,6 @@
   position: relative;
   z-index: 4;
   display: none;
-  font-size: 0;
 }
 
 .lang-menu-toggle {
@@ -110,13 +171,18 @@
   height: 25px;
   padding: 0;
   margin-left: 10px;
-  font-family: $font-one;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   vertical-align: top;
   cursor: pointer;
   background: none;
   border: 0;
   outline: none;
+
+  &:before,
+  &:after {
+    right: 5px;
+  }
 
   .flags-disabled & {
     .ico-popover-toggle {
@@ -136,10 +202,8 @@
     }
   }
 
-  .editmode & {
-    &.open {
-      margin-right: 90px;
-    }
+  .search-enabled & {
+    margin-left: 0;
   }
 }
 
@@ -149,7 +213,6 @@
   &:after {
     position: absolute;
     top: 5px;
-    left: 5px;
     display: block;
     width: 21px;
     height: 15px;
@@ -184,14 +247,13 @@
   &.expanded {
     position: absolute;
     top: 25px;
-    left: 10px;
-    z-index: 10;
+    right: 0;
+    z-index: 20;
     display: block;
     min-width: 138px;
     padding: 0;
-    margin-bottom: 60px;
     font-size: 12px;
-    background: $color-white;
+    background: #fff;
     -webkit-border: 1px solid #e1e1e1;
     border: 1px solid #e1e1e1;
 
@@ -203,18 +265,19 @@
 
 .lang-menu {
   position: relative;
+  top: 3px;
   display: table-cell;
   height: 13px;
   line-height: 1.1;
   vertical-align: top;
 
-  &.flags-disabled {
-    .lang-flag {
-      padding-left: 4px;
+  @include query($mobile) {
+    top: 0;
+  }
 
-      @include query($tablet) {
-        padding-left: 12px;
-      }
+  .flags-disabled & {
+    .lang-flag {
+      padding-right: 4px;
 
       &:before,
       &:after {
@@ -227,26 +290,34 @@
     a {
       position: relative;
       display: block;
-      padding: 6px 4px 4px 30px;
-      color: $color-three;
+      padding: 6px 30px 4px 4px;
+      color: #888;
       text-transform: uppercase;
+      text-align: right;
+
+      &.lang-flag {
+        &:before,
+        &:after {
+          right: 4px;
+        }
+      }
     }
 
     .edy-menu-langadd {
-      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
   li.active {
     a,
     a:hover {
-      color: $color-two;
+      color: #333;
     }
   }
 
   .add-lang-btn {
     margin-top: 10px;
-    margin-left: 12px;
+    margin-right: 12px;
   }
 }
 
@@ -335,9 +406,10 @@ $flags:
 
   .menu {
     .menu-item {
-      padding: 7px 12px;
+      padding: 7px 5px;
       margin-top: 8px;
       font-size: 13px;
+      text-align: right;
     }
   }
 
@@ -427,7 +499,7 @@ $flags:
 
     li.active a {
       font-weight: 400;
-      color: $color-white;
+      color: #fff;
     }
   }
 
@@ -436,11 +508,20 @@ $flags:
     display: none;
     padding-left: 0;
 
-    &.flags-enabled {
+    .flags-enabled & {
       li a {
-        width: 21px;
-        height: 15px;
         font-size: 0;
+
+        &.edy-menu-langadd {
+          margin: 15px;
+        }
+      }
+    }
+
+    .flags-disabled & {
+      li a {
+        width: auto;
+        padding: 13px 9px 12px;
       }
     }
 
@@ -459,7 +540,7 @@ $flags:
       a,
       a:hover {
         background-color: #838383;
-        @include color($color-white, .5);
+        @include color(#fff, .5);
         opacity: 1;
       }
     }
@@ -468,10 +549,11 @@ $flags:
       float: right;
 
       a {
-        min-height: 15px;
-        padding: 13px 8px 12px;
+        width: 21px;
+        height: 15px;
+        padding: 13px 9px 12px;
         opacity: .95;
-        @include color($color-white);
+        @include color(#fff);
 
         &.lang-flag {
           &:before,
@@ -504,7 +586,7 @@ $flags:
     .add-lang-btn {
       top: 0;
       left: 0;
-      padding: 13px 15px;
+      padding: 7px 15px 11px;
       margin: 0;
       background-color: #838383;
       opacity: .95;
