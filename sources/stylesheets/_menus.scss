@@ -46,7 +46,7 @@
     margin-right: 240px;
   }
   .search-enabled.lang-enabled.voog-search-visible & {
-    margin-right: 175px;
+    margin-right: 180px;
   }
 
   .search-enabled.lang-enabled.flags-disabled & {
@@ -82,11 +82,18 @@
     margin-right: 40px;
   }
 
+  .nav-menu {
+    @include querymin($mobile) {
+      top: -3px;
+    }
+  }
+
   li {
     display: inline-block;
     margin-left: 5px;
 
     a {
+      display: block;
       text-transform: uppercase;
 
       &.untranslated {
@@ -99,19 +106,7 @@
     margin-left: 10px;
 
     @include query($mobile) {
-      margin-top: 3px;
       margin-left: 0;
-      margin-bottom: 7px;
-
-      &:last-child {
-        margin-top: 10px;
-      }
-
-      a {
-        padding: 10px 15px!important;
-        background-color: #838383 !important;
-        vertical-align: middle !important;
-      }
     }
   }
 
@@ -482,7 +477,7 @@ $flags:
 
       a {
         display: inline-block;
-        padding: 8px 10px 7px;
+        padding: 9px 10px 8px !important;
         font-size: 18px !important; // Hotfix to disable design editor style override.
         color: #d7d7d7;
         vertical-align: top;
@@ -586,9 +581,8 @@ $flags:
     .add-lang-btn {
       top: 0;
       left: 0;
-      padding: 7px 15px 11px;
+      padding: 6px 15px 12px;
       margin: 0;
-      background-color: #838383;
       opacity: .95;
 
       a {

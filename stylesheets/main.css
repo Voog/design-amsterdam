@@ -526,7 +526,7 @@ body {
   margin-right: 240px;
 }
 .search-enabled.lang-enabled.voog-search-visible .main-menu {
-  margin-right: 175px;
+  margin-right: 180px;
 }
 .search-enabled.lang-enabled.flags-disabled .main-menu {
   margin-right: 120px;
@@ -556,11 +556,17 @@ body {
 .search-enabled .main-menu {
   margin-right: 40px;
 }
+@media screen and (min-width: 641px) {
+  .main-menu .nav-menu {
+    top: -3px;
+  }
+}
 .main-menu li {
   display: inline-block;
   margin-left: 5px;
 }
 .main-menu li a {
+  display: block;
   text-transform: uppercase;
 }
 .main-menu li a.untranslated {
@@ -571,17 +577,7 @@ body {
 }
 @media screen and (max-width: 640px) {
   .main-menu .editmode-button {
-    margin-top: 3px;
     margin-left: 0;
-    margin-bottom: 7px;
-  }
-  .main-menu .editmode-button:last-child {
-    margin-top: 10px;
-  }
-  .main-menu .editmode-button a {
-    padding: 10px 15px !important;
-    background-color: #838383 !important;
-    vertical-align: middle !important;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1059,7 +1055,7 @@ body {
   }
   .main-menu li a {
     display: inline-block;
-    padding: 8px 10px 7px;
+    padding: 9px 10px 8px !important;
     font-size: 18px !important;
     color: #d7d7d7;
     vertical-align: top;
@@ -1136,9 +1132,8 @@ body {
   .lang-menu .add-lang-btn {
     top: 0;
     left: 0;
-    padding: 7px 15px 11px;
+    padding: 6px 15px 12px;
     margin: 0;
-    background-color: #838383;
     opacity: .95;
   }
   .lang-menu .add-lang-btn a {
@@ -1298,7 +1293,7 @@ body {
 @media screen and (max-width: 640px) {
   .header, .front-page .header {
     margin: 0 -20px;
-    padding: 8px 50px 5px 20px;
+    padding: 7px 50px 5px 20px;
   }
   .search-enabled .header, .search-enabled .front-page .header {
     padding-right: 80px;
@@ -1845,6 +1840,7 @@ body {
 .search {
   position: relative;
   vertical-align: middle;
+  margin-right: 3px;
   float: left;
   font-size: 0;
 }
@@ -1957,6 +1953,10 @@ body {
   .search-btn-open {
     top: 41px;
   }
+}
+
+.search-btn-open {
+  margin-right: 3px;
 }
 
 .search-btn-reset,
@@ -2388,9 +2388,6 @@ body {
   opacity: 0;
   transition: opacity .2s ease-in-out;
 }
-.footer .search {
-  max-width: 100%;
-}
 
 .voog-reference-wrap, .front-page .voog-reference-wrap {
   margin-top: 30px;
@@ -2431,8 +2428,5 @@ body {
   .footer.footer-fixed {
     padding-top: 7px;
     padding-bottom: 7px;
-  }
-  .footer .search {
-    display: none;
   }
 }

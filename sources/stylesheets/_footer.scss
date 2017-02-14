@@ -56,10 +56,6 @@
     -webkit-transition: opacity .2s ease-in-out;
     transition: opacity .2s ease-in-out;
   }
-
-  .search {
-    max-width: 100%;
-  }
 }
 .voog-reference-wrap {
   &,
@@ -108,10 +104,6 @@
     &.footer-fixed {
       padding-top: 7px;
       padding-bottom: 7px;
-    }
-
-    .search {
-      display: none;
     }
   }
 }
