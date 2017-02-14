@@ -8,16 +8,23 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
     },
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page.tpl",
+      "file": "layouts/feature_page.tpl",
       "layout_name": "page_default",
-      "title": "Common page"
+      "title": "Feature page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
     },
     {
       "content_type": "blog",
@@ -32,13 +39,6 @@
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
       "title": "Blog article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-variables.tpl",
-      "layout_name": "edicy-tools-variables",
-      "title": "edicy-tools-variables"
     },
     {
       "content_type": "component",
@@ -242,6 +242,13 @@
       "file": "components/edicy-tools-styles.tpl",
       "layout_name": "edicy-tools-styles",
       "title": "edicy-tools-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
     }
   ],
   "assets": [
