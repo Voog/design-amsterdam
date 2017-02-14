@@ -263,11 +263,13 @@
   top: 3px;
   display: table-cell;
   height: 13px;
+  margin-left: 3px;
   line-height: 1.1;
   vertical-align: top;
 
   @include query($mobile) {
     top: 0;
+    margin-left: 0;
   }
 
   .flags-disabled & {

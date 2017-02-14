@@ -714,12 +714,14 @@ body {
   top: 3px;
   display: table-cell;
   height: 13px;
+  margin-left: 3px;
   line-height: 1.1;
   vertical-align: top;
 }
 @media screen and (max-width: 640px) {
   .lang-menu {
     top: 0;
+    margin-left: 0;
   }
 }
 .flags-disabled .lang-menu .lang-flag {
@@ -1840,7 +1842,6 @@ body {
 .search {
   position: relative;
   vertical-align: middle;
-  margin-right: 3px;
   float: left;
   font-size: 0;
 }
@@ -1953,10 +1954,6 @@ body {
   .search-btn-open {
     top: 41px;
   }
-}
-
-.search-btn-open {
-  margin-right: 3px;
 }
 
 .search-btn-reset,
