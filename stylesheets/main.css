@@ -1469,6 +1469,14 @@ body {
     margin-bottom: 20px;
   }
 }
+.blog-page .container .content-body {
+  width: 100%;
+  max-width: 90%;
+  margin-bottom: 70px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.5);
+}
 .content-page .container .content-body {
   display: inline-block;
   width: calc(100% - 144px);

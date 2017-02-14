@@ -10,6 +10,15 @@
   }
 
   .content-body {
+    .blog-page & {
+      width: 100%;
+      max-width: 90%;
+      margin-bottom: 70px;
+      font-size: 24px;
+      line-height: 1.5;
+      color: rgba($black, .5);
+    }
+
     .content-page & {
       display: inline-block;
       width: calc(100% - 144px);
