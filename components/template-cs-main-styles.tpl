@@ -7,7 +7,10 @@
      "max": 1800,
      "step": 20,
      "unit": "px",
-     "scope": "global"
+     "scope": "global",
+     "boundVariables": [
+      "--focus-area-width"
+     ]
   */
   --site-width: 940px;
   /* VoogStyle

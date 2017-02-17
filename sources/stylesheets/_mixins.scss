@@ -1,3 +1,4 @@
+// HYPHENATE
 @mixin hyphenate($boolean) {
   @if $boolean == true {
     word-break: break-word;
@@ -93,6 +94,12 @@
 // MEDIA QUERY
 @mixin query($value: $tablet-1) {
   @media screen and (max-width: $value) {
+    @content;
+  }
+}
+
+@mixin querymin($value: $tablet-1) {
+  @media screen and (min-width: $value + 1px) {
     @content;
   }
 }

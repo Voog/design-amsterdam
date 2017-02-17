@@ -1,11 +1,11 @@
-@import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../../bower_components/bourbon/dist/bourbon';
 @import '_mixins';
 @import '_variables';
 
 // COMMENTS
 .comment-form {
   .placeholder {
-    color: $color-four;
+    color: #919191;
   }
 
   .form_field_textfield {

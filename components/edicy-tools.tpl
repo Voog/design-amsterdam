@@ -5,19 +5,28 @@
       type: 'site'
     });
 
-    $('.js-option-toggle-flags').on('click', function(event) {
-      event.stopPropagation();
+    var pageData = new Edicy.CustomData({
+      type: 'page',
+      id: '{{ page.id }}'
+    });
 
-      if ($(this).hasClass('js-flag-disable-btn')) {
-        var flagsState = false;
-      } else {
-        var flagsState = true;
+    // Initiates language flag toggleing functionality.
+    site.toggleFlags();
+
+    // Front page left content area background picker.
+    var headerBg = new Edicy.BgPicker($('.js-background-settings'), {
+        picture: true,
+        target_width: 600,
+        color: true,
+        showAlpha: true,
+
+      preview: function(data) {
+        site.headerBgPreview(data, '.js-header-banner');
+      },
+
+      commit: function(data) {
+        site.headerBgCommit(data, 'header_bg');
       }
-
-      siteData.set("flags_state", flagsState);
-
-      $(this).toggleClass('js-flag-disable-btn');
-      $('.js-menu-lang-wrap').toggleClass('flags-enabled flags-disabled');
     });
 
     site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');

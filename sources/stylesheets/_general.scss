@@ -8,7 +8,7 @@ a {
   top: 0;
   right: 0;
   z-index: 100;
-  background: $color-white;
+  background: #fff;
 }
 
 .cfx:after {
@@ -19,11 +19,45 @@ a {
   visibility: hidden;
 }
 
+%button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: none;
+  }
+}
+
+.voog-bg-picker-btn {
+  top: 0;
+  left: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
 body {
   padding: 0;
   margin: 0 auto;
-  font: 300 20px/1.4 $font-two;
+  font: 300 20px/1.4 "EB Garamond", "Georgia", serif;
   color: #222;
+
+  @include query($mobile) {
+    &.voog-search-visible {
+      position: fixed;
+      right: 0;
+      left: 0;
+      overflow: hidden;
+    }
+  }
 }
 
 .edy-bar-open:after {
@@ -33,9 +67,11 @@ body {
 }
 
 .container {
-  max-width: $site-width;
-  padding: 0 25px;
-  margin: 0 auto;
+  .content-page & {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
 
   a {
     text-decoration: none;
@@ -50,24 +86,158 @@ body {
     height: 2px;
     max-width: 100%;
     margin-bottom: 12px;
-    background: rgba($color-black,.65);
+    background: rgba(0,0,0,.65);
   }
 }
 
 // FRONT PAGE
 .front-page {
+  .wrap {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  .content {
+    .wrap {
+      padding: 40px 20px 17px;
+
+      @include query($mobile) {
+        padding: 20px 0 0;
+      }
+    }
+  }
+
+  .background-color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
   .content-body {
-    width: 100%;
-    max-width: 90%;
-    margin-bottom: 70px;
-    font-family: $font-one;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
     line-height: 1.5;
-    color: rgba($color-black,.5);
+    color: rgba(0,0,0,.5);
 
     &:empty {
       display: none;
     }
+
+    a {
+      color: rgba(0,0,0,.3);
+
+      &:hover {
+        color: rgba(0,0,0,.5);
+      }
+    }
+
+    @include query($mobile) {
+      font-size: 15px;
+    }
+  }
+}
+
+.header-banner {
+  position: relative;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center center;
+
+  .flexbox & {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+  }
+
+  @include query($mobile) {
+    min-height: 340px;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  .header-body {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+
+    .no-flexbox & {
+      display: table;
+      width: 100%;
+      min-height: 350px;
+      margin: 0 auto;
+    }
+  }
+
+  .header-inner {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+
+    .no-flexbox & {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    @include query($mobile) {
+      font-size: 38px;
+    }
+
+    @include query(452px) {
+      min-width: 0;
+    }
+
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    pre,
+    code {
+      color: rgba(0,0,0,.8);
+    }
+
+    table {
+      margin: 0 auto;
+    }
+
+    ul,
+    ol,
+    dl,
+    table,
+    pre,
+    code,
+    form,
+    .form {
+      text-align: left;
+    }
+  }
+
+  .edys-gallery-area,
+  .edy-gallery-area {
+    font-size: 0;
+
+    .edys-gallery-item,
+    .edy-gallery-item,
+    .edy-gallery-sortable-placeholder {
+      display: inline-block;
+      float: none;
+      margin: 3px 0 3px 6px;
+    }
+  }
+
+  .edy-ca-empty {
+    max-width: 412px;
+    margin: 0 auto;
+  }
+
+  .edy-empty-bordered {
+    padding: 56px 40px 52px;
   }
 }
 
@@ -78,7 +248,7 @@ body {
   }
 
   .content-header {
-    font-family: $font-one;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 46px;
     line-height: 1;
   }
