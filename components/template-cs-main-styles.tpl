@@ -30,7 +30,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-two: "EB Garamond", "Georgia", serif;
+  --font-two: "Crimson Text", serif;
   /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "primary_color",

@@ -57,7 +57,7 @@ a {
 body {
   padding: 0;
   margin: 0 auto;
-  font: 300 20px/1.4 "EB Garamond", "Georgia", serif;
+  font: 400 20px/1.4 "Crimson Text", serif;
   color: #222;
 }
 @media screen and (max-width: 640px) {
@@ -310,7 +310,7 @@ body {
 .content-formatted h6 {
   margin: 0 0 17px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .content-formatted h2,
 .content-formatted h3,

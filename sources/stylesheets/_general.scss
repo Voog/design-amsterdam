@@ -47,7 +47,7 @@ a {
 body {
   padding: 0;
   margin: 0 auto;
-  font: 300 20px/1.4 "EB Garamond", "Georgia", serif;
+  font: 400 20px/1.4 "Crimson Text", serif;
   color: #222;
 
   @include query($mobile) {

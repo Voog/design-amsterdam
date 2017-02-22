@@ -57,10 +57,6 @@
           "value": "\"Crimson Text\", serif"
         },
         {
-          "title": "Garamond",
-          "value": "\"EB Garamond\", \"Georgia\", serif"
-        },
-        {
           "title": "Lora",
           "value": "\"Lora\", serif"
         },
