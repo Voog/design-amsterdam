@@ -287,6 +287,61 @@ body {
   -ms-hyphens: auto;
   hyphens: auto;
 }
+.content-formatted:empty {
+  display: none;
+}
+.content-formatted h1:first-child,
+.content-formatted h2:first-child,
+.content-formatted h3:first-child,
+.content-formatted h4:first-child,
+.content-formatted h5:first-child,
+.content-formatted h6:first-child,
+.content-formatted p:first-child,
+.content-formatted ul:first-child,
+.content-formatted ol:first-child,
+.content-formatted dl:first-child,
+.content-formatted table:first-child,
+.content-formatted pre:first-child,
+.content-formatted code:first-child,
+.content-formatted iframe:first-child,
+.content-formatted table:first-child,
+.content-formatted form:first-child,
+.content-formatted .table-container:first-child,
+.content-formatted .edy-positionable-container-left-block:first-child,
+.content-formatted .edy-positionable-container-center-block:first-child,
+.content-formatted .edy-positionable-container-right-block:first-child,
+.content-formatted .edy-texteditor-container-wrapper-left-block:first-child,
+.content-formatted .edy-texteditor-container-wrapper-center:first-child,
+.content-formatted .edy-texteditor-container-wrapper-right-block:first-child,
+.content-formatted .edy-positionable-container-maxwidth:first-child {
+  margin-top: 0;
+}
+.content-formatted h1:last-child,
+.content-formatted h2:last-child,
+.content-formatted h3:last-child,
+.content-formatted h4:last-child,
+.content-formatted h5:last-child,
+.content-formatted h6:last-child,
+.content-formatted p:last-child,
+.content-formatted ul:last-child,
+.content-formatted ol:last-child,
+.content-formatted dl:last-child,
+.content-formatted table:last-child,
+.content-formatted pre:last-child,
+.content-formatted code:last-child,
+.content-formatted iframe:last-child,
+.content-formatted table:last-child,
+.content-formatted form:last-child,
+.content-formatted .table-container:last-child,
+.content-formatted .edy-positionable-container-left-block:last-child,
+.content-formatted .edy-positionable-container-center-block:last-child,
+.content-formatted .edy-positionable-container-right-block:last-child,
+.content-formatted .edy-texteditor-container-wrapper-left-block:last-child,
+.content-formatted .edy-texteditor-container-wrapper-center:last-child,
+.content-formatted .edy-texteditor-container-wrapper-right-block:last-child,
+.content-formatted .edy-positionable-container-maxwidth:last-child {
+  margin-bottom: 0;
+}
 .dark-background .content-formatted, .dark-background
 .content-formatted p, .dark-background
 .content-formatted h1, .dark-background
@@ -438,22 +493,6 @@ body {
 .content-formatted .edy-texteditor-container-wrapper-right-block {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.content-formatted .edy-positionable-container-center:first-child,
-.content-formatted .edy-positionable-container-left-block:first-child,
-.content-formatted .edy-positionable-container-right-block:first-child,
-.content-formatted .edy-texteditor-container-wrapper-center:first-child,
-.content-formatted .edy-texteditor-container-wrapper-left-block:first-child,
-.content-formatted .edy-texteditor-container-wrapper-right-block:first-child {
-  margin-top: 0;
-}
-.content-formatted .edy-positionable-container-center:last-child,
-.content-formatted .edy-positionable-container-left-block:last-child,
-.content-formatted .edy-positionable-container-right-block:last-child,
-.content-formatted .edy-texteditor-container-wrapper-center:last-child,
-.content-formatted .edy-texteditor-container-wrapper-left-block:last-child,
-.content-formatted .edy-texteditor-container-wrapper-right-block:last-child {
-  margin-bottom: 0;
 }
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {

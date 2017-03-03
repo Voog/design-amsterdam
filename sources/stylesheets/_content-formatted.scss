@@ -2,6 +2,43 @@
 .content-formatted {
   @include hyphenate(true);
 
+  &:empty {
+    display: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl,
+  table,
+  pre,
+  code,
+  iframe,
+  table,
+  form,
+  .table-container,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-center-block,
+  .edy-positionable-container-right-block,
+  .edy-texteditor-container-wrapper-left-block,
+  .edy-texteditor-container-wrapper-center,
+  .edy-texteditor-container-wrapper-right-block,
+  .edy-positionable-container-maxwidth {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &,
   p,
   h1,
@@ -176,14 +213,6 @@
   .edy-texteditor-container-wrapper-right-block {
     margin-top: 20px;
     margin-bottom: 20px;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   .edy-positionable-container-left,
