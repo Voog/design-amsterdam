@@ -16,7 +16,7 @@
       "content_type": "page",
       "component": false,
       "file": "layouts/feature_page.tpl",
-      "layout_name": "page_default",
+      "layout_name": "page_feature",
       "title": "Feature page"
     },
     {
