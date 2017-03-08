@@ -1501,6 +1501,7 @@ body {
 }
 .container .content {
   margin-bottom: 30px;
+  font-size: 0;
 }
 @media screen and (max-width: 999px) {
   .container .content {
@@ -1517,7 +1518,7 @@ body {
 }
 .content-page .container .content-body {
   display: inline-block;
-  width: calc(100% - 144px);
+  width: calc(100% - 140px);
 }
 @media screen and (max-width: 999px) {
   .content-page .container .content-body {
