@@ -108,6 +108,14 @@ body {
   text-transform: var(--header-mainmenu-active-text-transform);
 }
 
+.blog-page .post-read-more-btn {
+  font-style: var(--button-font-style);
+  font-weight: var(--button-font-weight);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
+  text-transform: var(--button-text-transform);
+  background-color: var(--button-background-color);
+}
 .blog-page .post-title,
 .blog-page .post-title a {
   color: var(--blog-list-title-color);

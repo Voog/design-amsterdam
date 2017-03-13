@@ -166,6 +166,16 @@ body {
 // Blog
 
 .blog-page {
+
+  .post-read-more-btn {
+    font-style: var(--button-font-style);
+    font-weight: var(--button-font-weight);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+    text-transform: var(--button-text-transform);
+    background-color: var(--button-background-color);
+  }
+
   .post-title {
     &,
     a {

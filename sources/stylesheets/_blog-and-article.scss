@@ -72,6 +72,29 @@
       margin-left: 240px;
     }
   }
+
+  .post-readmore {
+    margin: 0 70px;
+
+    @media screen and (max-width: $mobile - 1) {
+      margin: 0;
+    }
+  }
+
+  .post-read-more-btn {
+    display: inline-block;
+    padding: .31em .75em;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: rgba(0,0,0,.5);
+    cursor: pointer;
+    background: #dadada;
+    border: 0;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
 }
 
 .post-page,
