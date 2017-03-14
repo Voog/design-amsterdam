@@ -23,6 +23,7 @@
           <section class="post-content">
             <div class="post-excerpt content-formatted cfx">{{ article.excerpt }}</div>
             <div class="post-body content-formatted cfx">{{ article.body }}</div>
+            <div class="post-readmore"><a class="post-read-more-btn" href="{{ article.url }}">{{ "read_more" | lc }}</a></div>
           </section>
         </article>
       {% endfor %}

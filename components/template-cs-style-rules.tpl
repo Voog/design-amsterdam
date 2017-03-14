@@ -109,12 +109,12 @@ body {
 }
 
 .blog-page .post-read-more-btn {
+  background-color: var(--button-background-color);
+  color: var(--button-color);
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
-  color: var(--button-color);
   text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
-  background-color: var(--button-background-color);
 }
 .blog-page .post-title,
 .blog-page .post-title a {
