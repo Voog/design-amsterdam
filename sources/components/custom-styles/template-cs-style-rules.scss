@@ -479,8 +479,6 @@ body {
   .custom-btn:hover,
   .form_submit input,
   .form_submit input:hover {
-    background-color: var(--button-background-color);
-    color: var(--button-color);
     font-size: var(--button-font-size);
     font-style: var(--button-font-style);
     font-weight: var(--button-font-weight);
@@ -489,7 +487,17 @@ body {
     text-transform: var(--button-text-transform);
   }
 
-  .custom-btn:hover,
+  .custom-btn:not(.custom-btn-disabled),
+  .form_submit input {
+    &,
+    &:hover {
+      color: var(--button-color);
+      background-color: var(--button-background-color);
+    }
+  }
+
+  // TODO: Move to main.css file.
+  .custom-btn:not(.custom-btn-disabled):hover,
   .form_submit input:hover {
     opacity: .75;
   }

@@ -50,7 +50,8 @@
         "--content-title-color",
         "--blog-list-title-color",
         "--form-field-text-color",
-        "--h1-color"
+        "--h1-color",
+        "--button-color"
       ]
   */
   --color-primary: #333;
@@ -62,7 +63,6 @@
      "featured": true,
      "boundVariables": [
         "--blog-list-date-color",
-        "--button-color",
         "--content-links-color",
         "--content-submenu-color",
         "--focus-area-text-color",

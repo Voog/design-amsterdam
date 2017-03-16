@@ -187,12 +187,24 @@
   .custom-btn {
     background: #dadada;
     border: 0;
-    cursor: pointer;
     display: inline-block;
     font-size: 16px;
     line-height: 1.7em;
-    margin-bottom: 20px;
     padding: .31em .75em;
+
+    .public & {
+      cursor: pointer;
+    }
+
+    &-disabled {
+      // scss-lint:disable NestingDepth
+      .public & {
+        cursor: default;
+        color: $color-four;
+        background-color: $color-disabled;
+      }
+      // scss-lint:enable NestingDepth
+    }
   }
 
   // IMAGE CONTAINERS
