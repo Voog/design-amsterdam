@@ -2,7 +2,7 @@
 .sidebar {
   display: inline-block;
   width: 100%;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
   vertical-align: top;
 }
 
@@ -12,7 +12,7 @@
 
   .content-formatted h1 {
     margin: 0 0 3px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-one;
     font-size: 16px;
     font-weight: 700;
     color: #333;

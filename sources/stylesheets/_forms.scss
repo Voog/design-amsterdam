@@ -1,7 +1,7 @@
 // FORMS
 .content-formatted form,
 .content-formatted .form {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
   font-size: 16px;
   color: #919191;
 }
@@ -9,7 +9,7 @@
 .content-formatted form {
   input,
   textarea {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-one;
   }
 }
 

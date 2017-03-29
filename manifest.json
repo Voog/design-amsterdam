@@ -277,66 +277,6 @@
       "filename": "loader.svg"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/montserrat-bold.eot",
-      "kind": "assets",
-      "filename": "montserrat-bold.eot"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/montserrat-bold.svg",
-      "kind": "assets",
-      "filename": "montserrat-bold.svg"
-    },
-    {
-      "content_type": "application/font-sfnt",
-      "file": "assets/montserrat-bold.ttf",
-      "kind": "assets",
-      "filename": "montserrat-bold.ttf"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/montserrat-bold.woff",
-      "kind": "assets",
-      "filename": "montserrat-bold.woff"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/montserrat-bold.woff2",
-      "kind": "assets",
-      "filename": "montserrat-bold.woff2"
-    },
-    {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/montserrat-regular.eot",
-      "kind": "assets",
-      "filename": "montserrat-regular.eot"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/montserrat-regular.svg",
-      "kind": "assets",
-      "filename": "montserrat-regular.svg"
-    },
-    {
-      "content_type": "application/font-sfnt",
-      "file": "assets/montserrat-regular.ttf",
-      "kind": "assets",
-      "filename": "montserrat-regular.ttf"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/montserrat-regular.woff",
-      "kind": "assets",
-      "filename": "montserrat-regular.woff"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/montserrat-regular.woff2",
-      "kind": "assets",
-      "filename": "montserrat-regular.woff2"
-    },
-    {
       "content_type": "image/svg+xml",
       "file": "assets/search.svg",
       "kind": "assets",

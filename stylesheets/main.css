@@ -1,16 +1,3 @@
-/* FONTS */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-regular.woff2") format("woff2"), url("../assets/montserrat-regular.woff") format("woff"), url("../assets/montserrat-regular.ttf") format("truetype"), url("../assets/montserrat-regular.svg#Montserrat") format("svg");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/montserrat-bold.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-bold.woff2") format("woff2"), url("../assets/montserrat-bold.woff") format("woff"), url("../assets/montserrat-bold.ttf") format("truetype"), url("../assets/montserrat-bold.svg#Montserrat") format("svg");
-}
 a {
   text-decoration: none;
 }
@@ -57,7 +44,10 @@ a {
 body {
   padding: 0;
   margin: 0 auto;
-  font: 400 20px/1.4 "Crimson Text", serif;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
   color: #222;
 }
 @media screen and (max-width: 640px) {
@@ -114,7 +104,7 @@ body {
   bottom: 0;
 }
 .front-page .content-body {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.5);
@@ -182,7 +172,7 @@ body {
   margin: 0 auto;
 }
 .header-banner .header-inner {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
 }
 .no-flexbox .header-banner .header-inner {
@@ -249,7 +239,7 @@ body {
   margin-left: -80px;
 }
 .common-page .content-header {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 46px;
   line-height: 1;
 }
@@ -361,7 +351,7 @@ body {
 .content-formatted h5,
 .content-formatted h6 {
   margin: 0 0 17px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 .content-formatted h2,
@@ -538,7 +528,7 @@ body {
   z-index: 2;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
 }
 .menu li a {
@@ -670,7 +660,7 @@ body {
   height: 25px;
   padding: 0;
   margin-left: 10px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   vertical-align: top;
   cursor: pointer;
@@ -1195,7 +1185,7 @@ body {
   position: relative;
   z-index: 10;
   min-height: 27px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .front-page .header {
   margin-top: 33px;
@@ -1365,7 +1355,7 @@ body {
     right: 0;
     display: block;
     width: 100%;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .topbar.fixed .toggle-btn {
     position: absolute;
@@ -1444,7 +1434,7 @@ body {
 .sidebar {
   display: inline-block;
   width: 100%;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   vertical-align: top;
 }
 
@@ -1454,7 +1444,7 @@ body {
 }
 .sidebar-left .content-formatted h1 {
   margin: 0 0 3px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #333;
@@ -1547,7 +1537,7 @@ body {
 }
 
 .post-header {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .post-date {
@@ -1720,7 +1710,7 @@ body {
 }
 
 .tags {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
 }
 .tags .tags-list,
@@ -1751,7 +1741,7 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 70px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .post-page .tags .tag-icon {
   position: absolute;
@@ -2181,14 +2171,14 @@ body {
 
 .content-formatted form,
 .content-formatted .form {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #919191;
 }
 
 .content-formatted form input,
 .content-formatted form textarea {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container .placeholder {
@@ -2325,7 +2315,7 @@ body {
   width: 100%;
   max-width: 312px;
   margin-left: 42px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   vertical-align: top;
 }
 
@@ -2348,7 +2338,7 @@ body {
 }
 .comment-form input,
 .comment-form textarea {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .comment-form .form_field {
   margin-bottom: 5px;
@@ -2412,7 +2402,7 @@ body {
   display: inline-block;
   width: 100%;
   margin-bottom: 30px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.8);
   transform: translateZ(0);

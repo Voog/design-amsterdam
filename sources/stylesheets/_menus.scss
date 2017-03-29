@@ -4,7 +4,7 @@
   z-index: 2;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
   list-style: none;
 
   li {
@@ -166,7 +166,7 @@
   height: 25px;
   padding: 0;
   margin-left: 10px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
   font-size: 12px;
   vertical-align: top;
   cursor: pointer;

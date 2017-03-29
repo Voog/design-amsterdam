@@ -47,7 +47,10 @@ a {
 body {
   padding: 0;
   margin: 0 auto;
-  font: 400 20px/1.4 "Crimson Text", serif;
+  font-family: $font-two;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
   color: #222;
 
   @include query($mobile) {
@@ -116,7 +119,7 @@ body {
   }
 
   .content-body {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-one;
     font-size: 24px;
     line-height: 1.5;
     color: rgba(0,0,0,.5);
@@ -174,7 +177,7 @@ body {
   }
 
   .header-inner {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-one;
     font-size: 24px;
 
     .no-flexbox & {
@@ -248,7 +251,7 @@ body {
   }
 
   .content-header {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-one;
     font-size: 46px;
     line-height: 1;
   }

@@ -1,6 +1,6 @@
 // BLOG & BLOG ARTICLE
 .post-header {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
 }
 
 .post-date {
@@ -203,7 +203,7 @@
 }
 
 .tags {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
   font-size: 12px;
 
   .tags-list,
@@ -237,7 +237,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 70px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-one;
 
   .tag-icon {
     position: absolute;
