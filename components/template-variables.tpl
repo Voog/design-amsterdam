@@ -1,9 +1,7 @@
 {% capture dont_render %}
-  {% comment %}
-  ===================================================================
-  || Design editor variables.
-  ===============================================================
-  {% endcomment %}
+  {% comment %}=================================================================
+  | Design editor variables.
+  ============================================================= {% endcomment %}
   {% capture base_font_set %}
     [
       {
@@ -24,7 +22,7 @@
           },
           {
             "title": "Montserrat",
-            "value": "Montserrat, Helvetica, Arial, sans-serif"
+            "value": "Montserrat, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
           },
           {
             "title": "Open Sans",
