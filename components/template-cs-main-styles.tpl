@@ -21,7 +21,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font-one: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-one: Montserrat, sans-serif;
   /* VoogStyle
      "pathI18n": ["main_styles"],
      "titleI18n": "font_secondary",
