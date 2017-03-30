@@ -47,10 +47,10 @@ a {
 body {
   padding: 0;
   margin: 0 auto;
-  font-family: $font-two;
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 1.4;
+  font-family: $font-two;
   color: #222;
 
   @include query($mobile) {
