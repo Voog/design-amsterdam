@@ -63,6 +63,10 @@
             "value": "\"Crimson Text\", serif"
           },
           {
+            "title": "Georgia",
+            "value": "\"Georgia\", serif"
+          },
+          {
             "title": "Lora",
             "value": "\"Lora\", serif"
           },
