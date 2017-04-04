@@ -1,7 +1,7 @@
 {
   "name": "voog-design-amsterdam",
   "devDependencies": {
-    "bourbon": "^4.3.3",
+    "bourbon": "^4.3.4",
     "jquery": "^3.1.1"
   }
 }
