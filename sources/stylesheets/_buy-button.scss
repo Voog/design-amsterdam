@@ -1,0 +1,18 @@
+// =============================================================================
+// Content area buy button
+// =============================================================================
+// This can't be written in BEM.
+.content-formatted {
+  .edy-buy-button-variants {
+    // sass-lint:disable class-name-format
+    .form_field {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .form_field_select {
+      width: initial;
+    }
+    // sass-lint:enable class-name-format
+  }
+}

@@ -523,6 +523,14 @@ body {
     margin-left: 0 !important;
   }
 }
+.content-formatted .edy-buy-button-variants .form_field {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.content-formatted .edy-buy-button-variants .form_field_select {
+  width: initial;
+}
+
 .menu {
   position: relative;
   z-index: 2;
