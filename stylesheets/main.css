@@ -523,6 +523,9 @@ body {
     margin-left: 0 !important;
   }
 }
+.content-formatted .edy-buy-button-container .form_field {
+  padding-top: 12px;
+}
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 0;
   padding-bottom: 0;
