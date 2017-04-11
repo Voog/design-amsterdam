@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
+{% include "blog-article-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_list = true %}
@@ -17,7 +18,15 @@
         <article class="post">
           <header class="post-header">
             <h1 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h1>
-            <time datetime="{{ article.created_at | date : "%Y-%m-%d" }}" class="post-date">{{ article.created_at | format_date : "%b %d, %Y" }}</time>
+
+            {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
+            {% if article_year == current_year %}
+              {% assign article_date_format = "long_without_year" %}
+            {% else %}
+              {% assign article_date_format = "long" %}
+            {% endif %}
+
+            <time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
           </header>
 
           <section class="post-content">
