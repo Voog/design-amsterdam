@@ -29,7 +29,7 @@
     "scope": "global",
     "featured": true
   */
-  --footer-font-size: 12px;
+  #{--footer-font-size}: 12px;
 
   /* VoogStyle
      "pathI18n": ["footer", "text"],
@@ -41,7 +41,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --footer-line-height: $line-height;
+  #{--footer-line-height}: $line-height;
 
   /* VoogStyle
     "pathI18n": ["footer", "text"],
@@ -50,7 +50,7 @@
     "scope": "global",
     "featured": true
   */
-  --footer-color: $color-two;
+  #{--footer-color}: $color-two;
 
   // scss-lint:enable Comment, Indentation
 }

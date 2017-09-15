@@ -18,7 +18,7 @@
 // =============================================================================
 :root {
   // scss-lint:disable Comment, Indentation
-  
+
   /* VoogStyle
      "pathI18n": ["focus_area"],
      "titleI18n": "maximum_width",
@@ -29,7 +29,7 @@
      "unit": "px",
      "scope": "global"
   */
-  --focus-area-width: 1800px;
+  #{--focus-area-width}: 1800px;
 
   // scss-lint:enable Comment, Indentation
 }
