@@ -63,7 +63,8 @@ body {
   font-style: var(--header-site-title-font-style);
   font-weight: var(--header-site-title-font-weight);
   line-height: var(--header-site-title-line-height);
-  text-decoration: var(--header-site-title-text-decoration);
+  -webkit-text-decoration: var(--header-site-title-text-decoration);
+          text-decoration: var(--header-site-title-text-decoration);
   text-transform: var(--header-site-title-text-transform);
 }
 .header.header-fixed {
@@ -91,20 +92,23 @@ body {
   font-style: var(--header-mainmenu-font-style);
   font-weight: var(--header-mainmenu-font-weight);
   line-height: var(--header-mainmenu-line-height);
-  text-decoration: var(--header-mainmenu-text-decoration);
+  -webkit-text-decoration: var(--header-mainmenu-text-decoration);
+          text-decoration: var(--header-mainmenu-text-decoration);
   text-transform: var(--header-mainmenu-text-transform);
 }
 .main-menu li a:hover,
 .main-menu li.active a:hover {
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
-  text-decoration: var(--header-mainmenu-hover-text-decoration);
+  -webkit-text-decoration: var(--header-mainmenu-hover-text-decoration);
+          text-decoration: var(--header-mainmenu-hover-text-decoration);
   text-transform: var(--header-mainmenu-hover-text-transform);
 }
 .main-menu li.active a {
   font-style: var(--header-mainmenu-active-font-style);
   font-weight: var(--header-mainmenu-active-font-weight);
-  text-decoration: var(--header-mainmenu-active-text-decoration);
+  -webkit-text-decoration: var(--header-mainmenu-active-text-decoration);
+          text-decoration: var(--header-mainmenu-active-text-decoration);
   text-transform: var(--header-mainmenu-active-text-transform);
 }
 
@@ -113,7 +117,8 @@ body {
   color: var(--button-color);
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
-  text-decoration: var(--button-text-decoration);
+  -webkit-text-decoration: var(--button-text-decoration);
+          text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
 }
 .blog-page .post-title,
@@ -123,7 +128,8 @@ body {
   font-style: var(--blog-list-title-font-style);
   font-weight: var(--blog-list-title-font-weight);
   line-height: var(--blog-list-title-line-height);
-  text-decoration: var(--blog-list-title-text-decoration);
+  -webkit-text-decoration: var(--blog-list-title-text-decoration);
+          text-decoration: var(--blog-list-title-text-decoration);
   text-transform: var(--blog-list-title-text-transform);
 }
 .blog-page .post-date {
@@ -132,7 +138,8 @@ body {
   font-style: var(--blog-list-date-font-style);
   font-weight: var(--blog-list-date-font-weight);
   line-height: var(--blog-list-date-line-height);
-  text-decoration: var(--blog-list-date-text-decoration);
+  -webkit-text-decoration: var(--blog-list-date-text-decoration);
+          text-decoration: var(--blog-list-date-text-decoration);
   text-transform: var(--blog-list-date-text-transform);
 }
 .blog-page .tags {
@@ -168,7 +175,8 @@ body {
   line-height: var(--content-title-line-height);
   font-weight: var(--content-title-font-weight);
   font-style: var(--content-title-font-style);
-  text-decoration: var(--content-title-text-decoration);
+  -webkit-text-decoration: var(--content-title-text-decoration);
+          text-decoration: var(--content-title-text-decoration);
   text-transform: var(--content-title-text-transform);
   color: var(--content-title-color);
 }
@@ -205,7 +213,8 @@ body {
   font-style: var(--post-date-font-style);
   font-weight: var(--post-date-font-weight);
   line-height: var(--post-date-line-height);
-  text-decoration: var(--post-date-text-decoration);
+  -webkit-text-decoration: var(--post-date-text-decoration);
+          text-decoration: var(--post-date-text-decoration);
   text-transform: var(--post-date-text-transform);
 }
 
@@ -215,7 +224,8 @@ body {
   font-style: var(--content-submenu-font-style);
   font-weight: var(--content-submenu-font-weight);
   line-height: var(--content-submenu-line-height);
-  text-decoration: var(--content-submenu-text-decoration);
+  -webkit-text-decoration: var(--content-submenu-text-decoration);
+          text-decoration: var(--content-submenu-text-decoration);
   text-transform: var(--content-submenu-text-transform);
 }
 .sub-menu li a:hover,
@@ -224,7 +234,8 @@ body {
   font-style: var(--content-submenu-hover-font-style);
   font-weight: var(--content-submenu-hover-font-weight);
   line-height: var(--content-submenu-line-height);
-  text-decoration: var(--content-submenu-hover-text-decoration);
+  -webkit-text-decoration: var(--content-submenu-hover-text-decoration);
+          text-decoration: var(--content-submenu-hover-text-decoration);
   text-transform: var(--content-submenu-hover-text-transform);
 }
 .sub-menu li.active a {
@@ -232,7 +243,8 @@ body {
   font-style: var(--content-submenu-active-font-style);
   font-weight: var(--content-submenu-active-font-weight);
   line-height: var(--content-submenu-line-height);
-  text-decoration: var(--content-submenu-active-text-decoration);
+  -webkit-text-decoration: var(--content-submenu-active-text-decoration);
+          text-decoration: var(--content-submenu-active-text-decoration);
   text-transform: var(--content-submenu-active-text-transform);
 }
 .sub-menu li.active a:hover {
@@ -248,14 +260,16 @@ body {
   color: var(--content-links-color);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
-  text-decoration: var(--content-links-text-decoration);
+  -webkit-text-decoration: var(--content-links-text-decoration);
+          text-decoration: var(--content-links-text-decoration);
   text-transform: var(--content-links-text-transform);
 }
 .content-formatted a:hover {
   color: var(--content-links-hover-color);
   font-style: var(--content-links-hover-font-style);
   font-weight: var(--content-links-hover-font-weight);
-  text-decoration: var(--content-links-hover-text-decoration);
+  -webkit-text-decoration: var(--content-links-hover-text-decoration);
+          text-decoration: var(--content-links-hover-text-decoration);
   text-transform: var(--content-links-hover-text-transform);
 }
 
@@ -265,14 +279,21 @@ body {
   font-style: var(--footer-font-style);
   font-weight: var(--footer-font-weight);
   line-height: var(--footer-line-height);
-  text-decoration: var(--footer-text-decoration);
+  -webkit-text-decoration: var(--footer-text-decoration);
+          text-decoration: var(--footer-text-decoration);
   text-transform: var(--footer-text-transform);
 }
 .footer.footer-fixed {
   background-color: var(--color-bg);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg)), color-stop(15%, var(--color-bg)), to(var(--color-bg)));
+  background: -webkit-linear-gradient(top, var(--color-bg) 0%, var(--color-bg) 15%, var(--color-bg) 100%);
+  background: -o-linear-gradient(top, var(--color-bg) 0%, var(--color-bg) 15%, var(--color-bg) 100%);
   background: linear-gradient(to bottom, var(--color-bg) 0%, var(--color-bg) 15%, var(--color-bg) 100%);
 }
 .footer .gradient-overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.001)), color-stop(50%, var(--color-bg)), to(var(--color-bg)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.001) 0%, var(--color-bg) 50%, var(--color-bg) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.001) 0%, var(--color-bg) 50%, var(--color-bg) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 0%, var(--color-bg) 50%, var(--color-bg) 100%);
 }
 
@@ -306,7 +327,8 @@ body {
   font-weight: var(--h1-font-weight);
   line-height: var(--h1-line-height);
   text-align: var(--h1-alignment);
-  text-decoration: var(--h1-text-decoration);
+  -webkit-text-decoration: var(--h1-text-decoration);
+          text-decoration: var(--h1-text-decoration);
   text-transform: var(--h1-text-transform);
 }
 .content-formatted h2 {
@@ -318,7 +340,8 @@ body {
   font-weight: var(--h2-font-weight);
   line-height: var(--h2-line-height);
   text-align: var(--h2-alignment);
-  text-decoration: var(--h2-text-decoration);
+  -webkit-text-decoration: var(--h2-text-decoration);
+          text-decoration: var(--h2-text-decoration);
   text-transform: var(--h2-text-transform);
 }
 .content-formatted h3 {
@@ -332,7 +355,8 @@ body {
   font-weight: var(--h3-font-weight);
   line-height: var(--h3-line-height);
   text-align: var(--h3-alignment);
-  text-decoration: var(--h3-text-decoration);
+  -webkit-text-decoration: var(--h3-text-decoration);
+          text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
 }
 
@@ -348,7 +372,8 @@ body {
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
   line-height: var(--button-line-height);
-  text-decoration: var(--button-text-decoration);
+  -webkit-text-decoration: var(--button-text-decoration);
+          text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
 }
 .content-formatted .custom-btn:not(.custom-btn-disabled), .content-formatted .custom-btn:not(.custom-btn-disabled):hover,
@@ -400,7 +425,8 @@ body {
   font-style: var(--form-field-text-font-style);
   font-weight: var(--form-field-text-font-weight);
   line-height: var(--form-field-text-line-height);
-  text-decoration: var(--form-field-text-text-decoration);
+  -webkit-text-decoration: var(--form-field-text-text-decoration);
+          text-decoration: var(--form-field-text-text-decoration);
   text-transform: var(--form-field-text-text-transform);
 }
 .content-formatted .form_field_textarea,
