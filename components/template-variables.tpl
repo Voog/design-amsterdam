@@ -9,10 +9,6 @@
         "title": "Sans Serif",
         "list": [
           {
-            "title": "Avenir Next",
-            "value": "\"Avenir Next\", \"Avenir\", \"Helvetica Neue\", \"Helvetica\", \"Segoe UI\", sans-serif"
-          },
-          {
             "title": "Fira Sans",
             "value": "\"Fira Sans\", sans-serif"
           },
