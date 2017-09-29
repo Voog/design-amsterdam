@@ -30,6 +30,14 @@
   --button-line-height: 1.7em;
   /* VoogStyle
     "pathI18n": ["button"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --button-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["button"],
     "titleI18n": "font_size",
     "type": "button",
     "editor": "toggleIcon",

@@ -253,6 +253,9 @@ body {
 
 .content-formatted {
   font-size: var(--content-font-size);
+  -webkit-hyphens: var(--content-hyphens);
+      -ms-hyphens: var(--content-hyphens);
+          hyphens: var(--content-hyphens);
   line-height: var(--content-line-height);
   color: var(--content-color);
 }
@@ -316,48 +319,53 @@ body {
   color: var(--color-secondary);
 }
 
-.content-formatted h1 {
-  color: var(--h1-color);
-}
-.content-formatted h1,
-.content-formatted h1 a,
-.content-formatted h1 a:hover {
+.content-formatted h1, .content-formatted h1 a, .content-formatted h1 a:hover {
   font-size: var(--h1-font-size);
   font-style: var(--h1-font-style);
   font-weight: var(--h1-font-weight);
+  -webkit-hyphens: var(--h1-hyphens);
+      -ms-hyphens: var(--h1-hyphens);
+          hyphens: var(--h1-hyphens);
   line-height: var(--h1-line-height);
   text-align: var(--h1-alignment);
   -webkit-text-decoration: var(--h1-text-decoration);
           text-decoration: var(--h1-text-decoration);
   text-transform: var(--h1-text-transform);
 }
-.content-formatted h2 {
-  color: var(--h2-color);
+.content-formatted h1 {
+  color: var(--h1-color);
 }
 .content-formatted h2, .content-formatted h2 a, .content-formatted h2 a:hover {
   font-size: var(--h2-font-size);
   font-style: var(--h2-font-style);
   font-weight: var(--h2-font-weight);
+  -webkit-hyphens: var(--h2-hyphens);
+      -ms-hyphens: var(--h2-hyphens);
+          hyphens: var(--h2-hyphens);
   line-height: var(--h2-line-height);
   text-align: var(--h2-alignment);
   -webkit-text-decoration: var(--h2-text-decoration);
           text-decoration: var(--h2-text-decoration);
   text-transform: var(--h2-text-transform);
 }
-.content-formatted h3 {
-  color: var(--h3-color);
+.content-formatted h2 {
+  color: var(--h2-color);
 }
-.content-formatted h3,
-.content-formatted h3 a,
-.content-formatted h3 a:hover {
+.content-formatted h3, .content-formatted h3 a, .content-formatted h3 a:hover {
   font-size: var(--h3-font-size);
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);
+  -webkit-hyphens: var(--h2-hyphens);
+      -ms-hyphens: var(--h2-hyphens);
+          hyphens: var(--h2-hyphens);
   line-height: var(--h3-line-height);
   text-align: var(--h3-alignment);
   -webkit-text-decoration: var(--h3-text-decoration);
           text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
+}
+.content-formatted h3 {
+  color: var(--h3-color);
 }
 
 .content-formatted .custom-btn,

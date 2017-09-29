@@ -1,6 +1,6 @@
 // BLOG COMMENTS
 .comments {
-  @include hyphenate(true);
+  // // @include hyphenate(true);
   display: inline-block;
   width: 100%;
   max-width: 312px;
@@ -68,7 +68,7 @@
 }
 
 .comment-body {
-  @include hyphenate(true);
+  // @include hyphenate(true);
   color: rgba(0,0,0,.5);
 }
 

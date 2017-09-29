@@ -23,6 +23,14 @@
   --form-field-text-line-height: 1.6;
   /* VoogStyle
     "pathI18n": ["form", "text"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --form-field-text-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["form", "text"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",

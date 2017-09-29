@@ -23,6 +23,14 @@
   --footer-line-height: 1.4;
   /* VoogStyle
     "pathI18n": ["footer", "text"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --footer-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["footer", "text"],
     "titleI18n": "color",
     "editor": "colorPicker",
     "scope": "global",

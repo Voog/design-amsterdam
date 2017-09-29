@@ -34,6 +34,14 @@
   --content-title-line-height: 1em;
   /* VoogStyle
     "pathI18n": ["content", "title"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --content-title-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["content", "title"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",

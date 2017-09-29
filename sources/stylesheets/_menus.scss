@@ -136,7 +136,7 @@
     }
 
     a {
-      @include hyphenate(true);
+      // @include hyphenate(true);
       font-size: 16px;
       font-weight: 300;
       color: #888;

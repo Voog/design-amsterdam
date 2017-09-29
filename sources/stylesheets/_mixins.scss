@@ -1,22 +1,3 @@
-// HYPHENATE
-@mixin hyphenate($boolean) {
-  @if $boolean == true {
-    word-break: break-word;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  } @else {
-    word-break: normal;
-    word-wrap: normal;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
-}
-
 // GENERAL
 @mixin calc($property, $expression) {
   #{$property}: -webkit-calc(#{$expression});

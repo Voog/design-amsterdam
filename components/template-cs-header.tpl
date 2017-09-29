@@ -23,6 +23,14 @@
   --header-site-title-line-height: 1.1em;
   /* VoogStyle
     "pathI18n": ["header", "title"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --header-site-title-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["header", "title"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -104,6 +112,14 @@
      "scope": "global"
   */
   --header-mainmenu-line-height: 1em;
+  /* VoogStyle
+    "pathI18n": ["header", "main_menu", "normal"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --header-mainmenu-hyphens: auto;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
     "titleI18n": "font_weight",

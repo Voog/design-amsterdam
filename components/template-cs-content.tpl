@@ -23,6 +23,14 @@
   --content-title-line-height: 1em;
   /* VoogStyle
     "pathI18n": ["content", "title"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --content-title-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["content", "title"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -104,6 +112,14 @@
      "scope": "global"
   */
   --content-submenu-line-height: .85em;
+  /* VoogStyle
+    "pathI18n": ["content", "sub_menu", "normal"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --content-submenu-hyphens: auto;
   /* VoogStyle
     "pathI18n": ["content", "sub_menu", "normal"],
     "titleI18n": "font_weight",
@@ -326,6 +342,14 @@
      "scope": "global"
   */
   --content-line-height: 1.4;
+  /* VoogStyle
+    "pathI18n": ["content", "text"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --content-hyphens: auto;
   /* VoogStyle
     "pathI18n": ["content", "text"],
     "titleI18n": "color",

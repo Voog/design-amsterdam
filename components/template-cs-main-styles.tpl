@@ -32,6 +32,14 @@
   */
   --font-two: "Crimson Text", serif;
   /* VoogStyle
+    "pathI18n": ["main_styles"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --site-hyphens: auto;
+  /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "primary_color",
      "editor": "colorPicker",
