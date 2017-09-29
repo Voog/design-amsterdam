@@ -4,6 +4,12 @@ body {
   font-family: var(--font-two);
 }
 
+.container {
+  -webkit-hyphens: var(--site-hyphens);
+      -ms-hyphens: var(--site-hyphens);
+          hyphens: var(--site-hyphens);
+}
+
 .post-header,
 .tags,
 .post-page .tags,
@@ -51,6 +57,9 @@ body {
 
 .header-banner .header-body {
   width: var(--focus-area-width);
+  -webkit-hyphens: var(--focus-area-hyphens);
+      -ms-hyphens: var(--focus-area-hyphens);
+          hyphens: var(--focus-area-hyphens);
 }
 
 .front-page .content-body {
@@ -63,6 +72,9 @@ body {
   font-style: var(--header-site-title-font-style);
   font-weight: var(--header-site-title-font-weight);
   line-height: var(--header-site-title-line-height);
+  -webkit-hyphens: var(--header-site-title-hyphens);
+      -ms-hyphens: var(--header-site-title-hyphens);
+          hyphens: var(--header-site-title-hyphens);
   -webkit-text-decoration: var(--header-site-title-text-decoration);
           text-decoration: var(--header-site-title-text-decoration);
   text-transform: var(--header-site-title-text-transform);
@@ -92,6 +104,9 @@ body {
   font-style: var(--header-mainmenu-font-style);
   font-weight: var(--header-mainmenu-font-weight);
   line-height: var(--header-mainmenu-line-height);
+  -webkit-hyphens: var(--header-mainmenu-hyphens);
+      -ms-hyphens: var(--header-mainmenu-hyphens);
+          hyphens: var(--header-mainmenu-hyphens);
   -webkit-text-decoration: var(--header-mainmenu-text-decoration);
           text-decoration: var(--header-mainmenu-text-decoration);
   text-transform: var(--header-mainmenu-text-transform);
@@ -113,13 +128,16 @@ body {
 }
 
 .blog-page .post-read-more-btn {
-  background-color: var(--button-background-color);
-  color: var(--button-color);
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
+  -webkit-hyphens: var(--button-hyphens);
+      -ms-hyphens: var(--button-hyphens);
+          hyphens: var(--button-hyphens);
+  color: var(--button-color);
   -webkit-text-decoration: var(--button-text-decoration);
           text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
+  background-color: var(--button-background-color);
 }
 .blog-page .post-title,
 .blog-page .post-title a {
@@ -128,6 +146,9 @@ body {
   font-style: var(--blog-list-title-font-style);
   font-weight: var(--blog-list-title-font-weight);
   line-height: var(--blog-list-title-line-height);
+  -webkit-hyphens: var(--blog-list-title-hyphens);
+      -ms-hyphens: var(--blog-list-title-hyphens);
+          hyphens: var(--blog-list-title-hyphens);
   -webkit-text-decoration: var(--blog-list-title-text-decoration);
           text-decoration: var(--blog-list-title-text-decoration);
   text-transform: var(--blog-list-title-text-transform);
@@ -172,13 +193,16 @@ body {
 .common-page .content-header,
 .post-page .post-header h1 {
   font-size: var(--content-title-font-size);
-  line-height: var(--content-title-line-height);
-  font-weight: var(--content-title-font-weight);
   font-style: var(--content-title-font-style);
+  font-weight: var(--content-title-font-weight);
+  -webkit-hyphens: var(--content-title-hyphens);
+      -ms-hyphens: var(--content-title-hyphens);
+          hyphens: var(--content-title-hyphens);
+  line-height: var(--content-title-line-height);
+  color: var(--content-title-color);
   -webkit-text-decoration: var(--content-title-text-decoration);
           text-decoration: var(--content-title-text-decoration);
   text-transform: var(--content-title-text-transform);
-  color: var(--content-title-color);
 }
 
 @media screen and (min-width: 640px) {
@@ -219,30 +243,39 @@ body {
 }
 
 .sub-menu li a {
-  color: var(--content-submenu-color);
   font-size: var(--content-submenu-font-size);
   font-style: var(--content-submenu-font-style);
   font-weight: var(--content-submenu-font-weight);
+  -webkit-hyphens: var(--content-submenu-hyphens);
+      -ms-hyphens: var(--content-submenu-hyphens);
+          hyphens: var(--content-submenu-hyphens);
   line-height: var(--content-submenu-line-height);
+  color: var(--content-submenu-color);
   -webkit-text-decoration: var(--content-submenu-text-decoration);
           text-decoration: var(--content-submenu-text-decoration);
   text-transform: var(--content-submenu-text-transform);
 }
 .sub-menu li a:hover,
 .sub-menu li.active a:hover {
-  color: var(--content-submenu-hover-color);
   font-style: var(--content-submenu-hover-font-style);
   font-weight: var(--content-submenu-hover-font-weight);
+  -webkit-hyphens: var(--content-submenu-hyphens);
+      -ms-hyphens: var(--content-submenu-hyphens);
+          hyphens: var(--content-submenu-hyphens);
   line-height: var(--content-submenu-line-height);
+  color: var(--content-submenu-hover-color);
   -webkit-text-decoration: var(--content-submenu-hover-text-decoration);
           text-decoration: var(--content-submenu-hover-text-decoration);
   text-transform: var(--content-submenu-hover-text-transform);
 }
 .sub-menu li.active a {
-  color: var(--content-submenu-active-color);
   font-style: var(--content-submenu-active-font-style);
   font-weight: var(--content-submenu-active-font-weight);
+  -webkit-hyphens: var(--content-submenu-hyphens);
+      -ms-hyphens: var(--content-submenu-hyphens);
+          hyphens: var(--content-submenu-hyphens);
   line-height: var(--content-submenu-line-height);
+  color: var(--content-submenu-active-color);
   -webkit-text-decoration: var(--content-submenu-active-text-decoration);
           text-decoration: var(--content-submenu-active-text-decoration);
   text-transform: var(--content-submenu-active-text-transform);
@@ -282,6 +315,9 @@ body {
   font-style: var(--footer-font-style);
   font-weight: var(--footer-font-weight);
   line-height: var(--footer-line-height);
+  -webkit-hyphens: var(--footer-hyphens);
+      -ms-hyphens: var(--footer-hyphens);
+          hyphens: var(--footer-hyphens);
   -webkit-text-decoration: var(--footer-text-decoration);
           text-decoration: var(--footer-text-decoration);
   text-transform: var(--footer-text-transform);
@@ -355,9 +391,9 @@ body {
   font-size: var(--h3-font-size);
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);
-  -webkit-hyphens: var(--h2-hyphens);
-      -ms-hyphens: var(--h2-hyphens);
-          hyphens: var(--h2-hyphens);
+  -webkit-hyphens: var(--h3-hyphens);
+      -ms-hyphens: var(--h3-hyphens);
+          hyphens: var(--h3-hyphens);
   line-height: var(--h3-line-height);
   text-align: var(--h3-alignment);
   -webkit-text-decoration: var(--h3-text-decoration);
@@ -380,6 +416,9 @@ body {
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
   line-height: var(--button-line-height);
+  -webkit-hyphens: var(--button-hyphens);
+      -ms-hyphens: var(--button-hyphens);
+          hyphens: var(--button-hyphens);
   -webkit-text-decoration: var(--button-text-decoration);
           text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
@@ -427,15 +466,18 @@ body {
 .comment-form .form_field_select,
 .comment-form .form_field_file,
 .comment-form .form_field .edy-fe-label {
-  background-color: var(--color-bg);
-  color: var(--form-field-text-color);
   font-size: var(--form-field-text-font-size);
   font-style: var(--form-field-text-font-style);
   font-weight: var(--form-field-text-font-weight);
+  -webkit-hyphens: var(--form-field-text-hyphens);
+      -ms-hyphens: var(--form-field-text-hyphens);
+          hyphens: var(--form-field-text-hyphens);
   line-height: var(--form-field-text-line-height);
+  color: var(--form-field-text-color);
   -webkit-text-decoration: var(--form-field-text-text-decoration);
           text-decoration: var(--form-field-text-text-decoration);
   text-transform: var(--form-field-text-text-transform);
+  background-color: var(--color-bg);
 }
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_textfield,

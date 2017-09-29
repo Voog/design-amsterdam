@@ -95,6 +95,8 @@
     a {
       display: block;
       text-transform: uppercase;
+      word-break: break-word;
+      word-wrap: break-word;
 
       &.untranslated {
         color: #c33;
