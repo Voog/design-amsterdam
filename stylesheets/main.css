@@ -2288,16 +2288,18 @@ body {
 }
 
 .form_submit input {
-  padding: 5px 12px;
+  padding: .31em .75em;
   margin: 0;
   color: #888;
+  text-align: left;
+  white-space: normal;
   cursor: pointer;
   background: #dadada;
   border: 0;
 }
 .light-background .form_submit input {
-  background: #252525;
   color: rgba(255, 255, 255, 0.5);
+  background: #252525;
 }
 
 .comments {

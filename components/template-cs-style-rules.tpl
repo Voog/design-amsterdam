@@ -415,10 +415,10 @@ body {
   font-size: var(--button-font-size);
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
-  line-height: var(--button-line-height);
   -webkit-hyphens: var(--button-hyphens);
       -ms-hyphens: var(--button-hyphens);
           hyphens: var(--button-hyphens);
+  line-height: var(--button-line-height);
   -webkit-text-decoration: var(--button-text-decoration);
           text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
@@ -469,9 +469,6 @@ body {
   font-size: var(--form-field-text-font-size);
   font-style: var(--form-field-text-font-style);
   font-weight: var(--form-field-text-font-weight);
-  -webkit-hyphens: var(--form-field-text-hyphens);
-      -ms-hyphens: var(--form-field-text-hyphens);
-          hyphens: var(--form-field-text-hyphens);
   line-height: var(--form-field-text-line-height);
   color: var(--form-field-text-color);
   -webkit-text-decoration: var(--form-field-text-text-decoration);
@@ -516,4 +513,8 @@ body {
 .content-formatted form :-ms-input-placeholder {
   color: var(--form-field-text-color);
   opacity: .5;
+}
+
+.form_submit input {
+  font-family: var(--font-one);
 }

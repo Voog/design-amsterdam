@@ -50,8 +50,7 @@
       "--footer-hyphens",
       "--h1-hyphens",
       "--h2-hyphens",
-      "--h3-hyphens",
-      "--form-field-text-hyphens"
+      "--h3-hyphens"
     ]
   */
   --site-hyphens: auto;

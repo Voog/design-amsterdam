@@ -516,7 +516,6 @@ body {
 }
 
 // Button, table, form
-
 .content-formatted,
 .comment-form {
   .custom-btn,
@@ -526,8 +525,8 @@ body {
     font-size: var(--button-font-size);
     font-style: var(--button-font-style);
     font-weight: var(--button-font-weight);
-    line-height: var(--button-line-height);
     hyphens: var(--button-hyphens);
+    line-height: var(--button-line-height);
     text-decoration: var(--button-text-decoration);
     text-transform: var(--button-text-transform);
   }
@@ -570,7 +569,6 @@ form,
     font-size: var(--form-field-text-font-size);
     font-style: var(--form-field-text-font-style);
     font-weight: var(--form-field-text-font-weight);
-    hyphens: var(--form-field-text-hyphens);
     line-height: var(--form-field-text-line-height);
     color: var(--form-field-text-color);
     text-decoration: var(--form-field-text-text-decoration);
@@ -608,5 +606,11 @@ form,
   :-ms-input-placeholder {
     color: var(--form-field-text-color);
     opacity: .5;
+  }
+}
+
+.form_submit {
+  input {
+    font-family: var(--font-one);
   }
 }
