@@ -15,16 +15,16 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
     },
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
     },
     {
       "content_type": "blog",
@@ -43,86 +43,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/edicy-tools-variables.tpl",
-      "layout_name": "edicy-tools-variables",
-      "title": "edicy-tools-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools.tpl",
-      "layout_name": "edicy-tools",
-      "title": "edicy-tools"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/footer.tpl",
-      "layout_name": "footer",
-      "title": "footer"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/header.tpl",
-      "layout_name": "header",
-      "title": "header"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/html-head.tpl",
-      "layout_name": "html-head",
-      "title": "html-head"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/javascripts.tpl",
-      "layout_name": "javascripts",
-      "title": "javascripts"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/lang-menu.tpl",
-      "layout_name": "lang-menu",
-      "title": "lang-menu"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/nav-menu.tpl",
-      "layout_name": "nav-menu",
-      "title": "nav-menu"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/open-graph.tpl",
       "layout_name": "open-graph",
       "title": "open-graph"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/search.tpl",
-      "layout_name": "search",
-      "title": "search"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/sidebar-left.tpl",
-      "layout_name": "sidebar-left",
-      "title": "sidebar-left"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-article.tpl",
-      "layout_name": "tags-article",
-      "title": "tags-article"
     },
     {
       "content_type": "component",
@@ -134,37 +57,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-blog-article.tpl",
-      "layout_name": "template-cs-blog-article",
-      "title": "template-cs-blog-article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-blog-list.tpl",
-      "layout_name": "template-cs-blog-list",
-      "title": "template-cs-blog-list"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-button.tpl",
-      "layout_name": "template-cs-button",
-      "title": "template-cs-button"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-cs-focus-area.tpl",
       "layout_name": "template-cs-focus-area",
       "title": "template-cs-focus-area"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
     },
     {
       "content_type": "component",
@@ -176,9 +78,163 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/topbar.tpl",
+      "layout_name": "topbar",
+      "title": "topbar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/sidebar-left.tpl",
+      "layout_name": "sidebar-left",
+      "title": "sidebar-left"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog-article.tpl",
+      "layout_name": "template-cs-blog-article",
+      "title": "template-cs-blog-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-styles.tpl",
+      "layout_name": "edicy-tools-styles",
+      "title": "edicy-tools-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-button.tpl",
+      "layout_name": "template-cs-button",
+      "title": "template-cs-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/lang-menu.tpl",
+      "layout_name": "lang-menu",
+      "title": "lang-menu"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog-list.tpl",
+      "layout_name": "template-cs-blog-list",
+      "title": "template-cs-blog-list"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/comments-article.tpl",
+      "layout_name": "comments-article",
+      "title": "comments-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/footer.tpl",
+      "layout_name": "footer",
+      "title": "footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/nav-menu.tpl",
+      "layout_name": "nav-menu",
+      "title": "nav-menu"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/javascripts.tpl",
+      "layout_name": "javascripts",
+      "title": "javascripts"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-main-styles.tpl",
+      "layout_name": "template-cs-main-styles",
+      "title": "template-cs-main-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/header.tpl",
+      "layout_name": "header",
+      "title": "header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-variables.tpl",
+      "layout_name": "template-variables",
+      "title": "template-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-style-rules.tpl",
+      "layout_name": "template-cs-style-rules",
+      "title": "template-cs-style-rules"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools.tpl",
+      "layout_name": "edicy-tools",
+      "title": "edicy-tools"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/html-head.tpl",
+      "layout_name": "html-head",
+      "title": "html-head"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-article.tpl",
+      "layout_name": "tags-article",
+      "title": "tags-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-variables.tpl",
+      "layout_name": "blog-article-variables",
+      "title": "blog-article-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-form.tpl",
       "layout_name": "template-cs-form",
       "title": "template-cs-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/comment-form.tpl",
+      "layout_name": "comment-form",
+      "title": "comment-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-content.tpl",
+      "layout_name": "template-cs-content",
+      "title": "template-cs-content"
     },
     {
       "content_type": "component",
@@ -197,79 +253,17 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-main-styles.tpl",
-      "layout_name": "template-cs-main-styles",
-      "title": "template-cs-main-styles"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-style-rules.tpl",
-      "layout_name": "template-cs-style-rules",
-      "title": "template-cs-style-rules"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-cs-table.tpl",
       "layout_name": "template-cs-table",
       "title": "template-cs-table"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-variables.tpl",
-      "layout_name": "template-variables",
-      "title": "template-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/topbar.tpl",
-      "layout_name": "topbar",
-      "title": "topbar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-variables.tpl",
-      "layout_name": "blog-article-variables",
-      "title": "blog-article-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/comment-form.tpl",
-      "layout_name": "comment-form",
-      "title": "comment-form"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/comments-article.tpl",
-      "layout_name": "comments-article",
-      "title": "comments-article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-styles.tpl",
-      "layout_name": "edicy-tools-styles",
-      "title": "edicy-tools-styles"
     }
   ],
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
+      "file": "assets/search.svg",
       "kind": "assets",
-      "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-tags.svg",
-      "kind": "assets",
-      "filename": "ico-tags.svg"
+      "filename": "search.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -279,21 +273,39 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/search_close.svg",
+      "kind": "assets",
+      "filename": "search_close.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-tags.svg",
+      "kind": "assets",
+      "filename": "ico-tags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/loader.svg",
       "kind": "assets",
       "filename": "loader.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/search.svg",
+      "file": "assets/ico-flags.svg",
       "kind": "assets",
-      "filename": "search.svg"
+      "filename": "ico-flags.svg"
     },
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/search_close.svg",
-      "kind": "assets",
-      "filename": "search_close.svg"
+      "content_type": "image/png",
+      "file": "images/search-close.png",
+      "kind": "images",
+      "filename": "search-close.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-tags.png",
+      "kind": "images",
+      "filename": "ico-tags.png"
     },
     {
       "content_type": "image/jpeg",
@@ -302,10 +314,16 @@
       "filename": "front-page-header-bg.jpg"
     },
     {
-      "content_type": "image/jpeg",
-      "file": "images/front-page-header-bg_block.jpg",
+      "content_type": "image/png",
+      "file": "images/ico-voog-black.png",
       "kind": "images",
-      "filename": "front-page-header-bg_block.jpg"
+      "filename": "ico-voog-black.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/search.png",
+      "kind": "images",
+      "filename": "search.png"
     },
     {
       "content_type": "image/jpeg",
@@ -320,34 +338,10 @@
       "filename": "ico-flags.png"
     },
     {
-      "content_type": "image/png",
-      "file": "images/ico-tags.png",
+      "content_type": "image/jpeg",
+      "file": "images/front-page-header-bg_block.jpg",
       "kind": "images",
-      "filename": "ico-tags.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-voog-black.png",
-      "kind": "images",
-      "filename": "ico-voog-black.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/search-close.png",
-      "kind": "images",
-      "filename": "search-close.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/search.png",
-      "kind": "images",
-      "filename": "search.png"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/application.js",
-      "kind": "javascripts",
-      "filename": "application.js"
+      "filename": "front-page-header-bg_block.jpg"
     },
     {
       "content_type": "application/javascript",
@@ -357,21 +351,27 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/application.js",
+      "kind": "javascripts",
+      "filename": "application.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr-custom.min.js",
       "kind": "javascripts",
       "filename": "modernizr-custom.min.js"
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/main.css",
-      "kind": "stylesheets",
-      "filename": "main.css"
-    },
-    {
-      "content_type": "text/css",
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.css",
+      "kind": "stylesheets",
+      "filename": "main.css"
     }
   ]
 }
