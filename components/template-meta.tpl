@@ -47,7 +47,7 @@
 {% endif %}
 
 {% comment %}SEO pagination for blog articles.{% endcomment %}
-{% if blog_article %}
+{% if article %}
   {% if article.older %}
     <link rel="prev" href="{{ article.older.url }}">
   {% endif %}
