@@ -43,13 +43,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/open-graph.tpl",
-      "layout_name": "open-graph",
-      "title": "open-graph"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/tags-blog.tpl",
       "layout_name": "tags-blog",
       "title": "tags-blog"
@@ -256,6 +249,13 @@
       "file": "components/template-cs-table.tpl",
       "layout_name": "template-cs-table",
       "title": "template-cs-table"
+    },
+    {
+      "title": "template-meta",
+      "layout_name": "template-meta",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-meta.tpl"
     }
   ],
   "assets": [
