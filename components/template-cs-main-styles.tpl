@@ -38,7 +38,6 @@
     "list": {{ base_hyphens_toggle_set }},
     "scope": "global",
     "boundVariables": [
-      "--site-hyphens",
       "--focus-area-hyphens",
       "--header-site-title-hyphens",
       "--header-mainmenu-hyphens",
