@@ -95,6 +95,11 @@
 
 .form_submit {
   margin-top: 16px;
+
+  input {
+    word-break: break-word;
+    word-wrap: break-word;
+  }
 }
 
 .form_field_textarea,

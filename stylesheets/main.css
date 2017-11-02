@@ -2252,6 +2252,10 @@ body {
 .form_submit {
   margin-top: 16px;
 }
+.form_submit input {
+  word-break: break-word;
+  word-wrap: break-word;
+}
 
 .form_field_textarea,
 .form_field_textfield,
