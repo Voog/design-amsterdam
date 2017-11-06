@@ -273,9 +273,6 @@ body {
 .content-formatted {
   word-break: break-word;
   word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 .content-formatted:empty {
   display: none;
@@ -294,7 +291,6 @@ body {
 .content-formatted pre:first-child,
 .content-formatted code:first-child,
 .content-formatted iframe:first-child,
-.content-formatted table:first-child,
 .content-formatted form:first-child,
 .content-formatted .table-container:first-child,
 .content-formatted .edy-positionable-container-left-block:first-child,
@@ -320,7 +316,6 @@ body {
 .content-formatted pre:last-child,
 .content-formatted code:last-child,
 .content-formatted iframe:last-child,
-.content-formatted table:last-child,
 .content-formatted form:last-child,
 .content-formatted .table-container:last-child,
 .content-formatted .edy-positionable-container-left-block:last-child,
@@ -405,11 +400,11 @@ body {
 .content-formatted iframe,
 .content-formatted table,
 .content-formatted form {
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
   word-break: normal;
   word-wrap: normal;
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
 }
 .content-formatted pre, .content-formatted code {
   font-size: 14px;
@@ -613,6 +608,8 @@ body {
 .main-menu li a {
   display: block;
   text-transform: uppercase;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 .main-menu li a.untranslated {
   color: #c33;
@@ -643,11 +640,6 @@ body {
   text-transform: uppercase;
 }
 .sub-menu li a {
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   font-size: 16px;
   font-weight: 300;
   color: #888;
@@ -1273,11 +1265,6 @@ body {
   }
 }
 .header .header-inner .header-title {
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   margin: 0;
   font-size: 24px;
   font-weight: 700;
@@ -1298,10 +1285,8 @@ body {
 }
 .flexbox .header .header-left {
   -webkit-box-flex: 1;
-  box-flex: 1;
-  -moz-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+      -ms-flex: 1;
+          flex: 1;
 }
 .no-flexbox .header .header-left {
   float: left;
@@ -1476,11 +1461,6 @@ body {
     margin-bottom: 20px;
     margin-right: 0;
     margin-left: 20px;
-    word-break: break-word;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
     text-align: right;
     background: #e0e0e0;
   }
@@ -1584,6 +1564,8 @@ body {
   font-weight: 400;
   color: #333;
   text-transform: uppercase;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 .blog-page .post-title a {
   color: #333;
@@ -1676,6 +1658,8 @@ body {
   margin: 0 0 10px;
   font-size: 50px;
   line-height: 1;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 .post-page .post-date {
   font-size: 18px;
@@ -2075,11 +2059,6 @@ body {
 }
 
 .voog-search-modal-inner {
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   position: absolute;
   top: 30px;
   right: 0;
@@ -2273,6 +2252,10 @@ body {
 .form_submit {
   margin-top: 16px;
 }
+.form_submit input {
+  word-break: break-word;
+  word-wrap: break-word;
+}
 
 .form_field_textarea,
 .form_field_textfield,
@@ -2309,24 +2292,21 @@ body {
 }
 
 .form_submit input {
-  padding: 5px 12px;
+  padding: .31em .75em;
   margin: 0;
   color: #888;
+  text-align: left;
+  white-space: normal;
   cursor: pointer;
   background: #dadada;
   border: 0;
 }
 .light-background .form_submit input {
-  background: #252525;
   color: rgba(255, 255, 255, 0.5);
+  background: #252525;
 }
 
 .comments {
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   display: inline-block;
   width: 100%;
   max-width: 312px;
@@ -2387,11 +2367,6 @@ body {
 }
 
 .comment-body {
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   color: rgba(0, 0, 0, 0.5);
 }
 

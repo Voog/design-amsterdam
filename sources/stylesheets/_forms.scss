@@ -95,6 +95,11 @@
 
 .form_submit {
   margin-top: 16px;
+
+  input {
+    word-break: break-word;
+    word-wrap: break-word;
+  }
 }
 
 .form_field_textarea,
@@ -134,16 +139,21 @@
   width: 100%;
 }
 
-.form_submit input {
-  padding: 5px 12px;
-  margin: 0;
-  color: #888;
-  cursor: pointer;
-  background: #dadada;
-  border: 0;
+.form_submit {
+  input {
+    padding: .31em .75em;
+    margin: 0;
+    color: #888;
+    text-align: left;
+    white-space: normal;
+    cursor: pointer;
+    background: #dadada;
+    border: 0;
 
-  .light-background & {
-    background: #252525;
-    color: rgba(255,255,255,.5);
+
+    .light-background & {
+      color: rgba(255,255,255,.5);
+      background: #252525;
+    }
   }
 }

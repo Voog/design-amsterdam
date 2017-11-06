@@ -32,6 +32,28 @@
   */
   --font-two: "Crimson Text", serif;
   /* VoogStyle
+    "pathI18n": ["main_styles"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global",
+    "boundVariables": [
+      "--focus-area-hyphens",
+      "--header-site-title-hyphens",
+      "--header-mainmenu-hyphens",
+      "--button-hyphens",
+      "--blog-list-title-hyphens",
+      "--content-title-hyphens",
+      "--content-submenu-hyphens",
+      "--content-hyphens",
+      "--footer-hyphens",
+      "--h1-hyphens",
+      "--h2-hyphens",
+      "--h3-hyphens"
+    ]
+  */
+  --site-hyphens: auto;
+  /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "primary_color",
      "editor": "colorPicker",

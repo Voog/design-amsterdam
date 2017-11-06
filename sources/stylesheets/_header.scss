@@ -71,7 +71,6 @@
     }
 
     .header-title {
-      @include hyphenate(true);
       margin: 0;
       font-size: 24px;
       font-weight: 700;
@@ -97,7 +96,7 @@
 
   .header-left {
     .flexbox & {
-      @include flex(1 0 auto);
+      flex: 1;
     }
 
     .no-flexbox & {

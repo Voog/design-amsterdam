@@ -31,6 +31,14 @@
   --h1-alignment: left;
   /* VoogStyle
     "pathI18n": ["headings", "title"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --h1-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["headings", "title"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -122,6 +130,14 @@
   --h2-alignment: left;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --h2-hyphens: auto;
+  /* VoogStyle
+    "pathI18n": ["headings", "heading"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -211,6 +227,14 @@
      "scope": "global"
   */
   --h3-alignment: left;
+  /* VoogStyle
+    "pathI18n": ["headings", "subheading"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --h3-hyphens: auto;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "font_weight",

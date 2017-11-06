@@ -126,6 +126,19 @@
     ]
   {% endcapture %}
 
+  {% capture base_hyphens_toggle_set %}
+    [
+      {
+        "titleI18n": "off",
+        "value": "none"
+      },
+      {
+        "titleI18n": "on",
+        "value": "auto"
+      }
+    ]
+  {% endcapture %}
+
   {% capture base_border_style_set %}
     [
       {

@@ -10,4 +10,12 @@
      "scope": "global"
   */
   --focus-area-width: 1800px;
+  /* VoogStyle
+    "pathI18n": ["focus_area"],
+    "titleI18n": "hyphens",
+    "editor": "listPicker",
+    "list": {{ base_hyphens_toggle_set }},
+    "scope": "global"
+  */
+  --focus-area-hyphens: auto;
 }

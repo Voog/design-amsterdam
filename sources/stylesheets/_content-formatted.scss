@@ -1,6 +1,7 @@
 // FORMATTED CONTENT
 .content-formatted {
-  @include hyphenate(true);
+  word-break: break-word;
+  word-wrap: break-word;
 
   &:empty {
     display: none;
@@ -20,7 +21,6 @@
   pre,
   code,
   iframe,
-  table,
   form,
   .table-container,
   .edy-positionable-container-left-block,
@@ -127,7 +127,9 @@
   iframe,
   table,
   form {
-    @include hyphenate(false);
+    hyphens: none;
+    word-break: normal;
+    word-wrap: normal;
   }
 
   pre,
