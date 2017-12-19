@@ -149,9 +149,9 @@ body {
   background-position: center center;
 
   .flexbox & {
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(center);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @include query($mobile) {

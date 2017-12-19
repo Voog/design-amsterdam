@@ -61,9 +61,9 @@
     margin: 0 auto;
 
     .flexbox & {
-      @include display(flex);
-      @include flex-wrap(wrap);
-      @include justify-content(flex-end);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
 
       @include query($mobile) {
         display: block;
