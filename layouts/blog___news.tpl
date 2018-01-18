@@ -12,6 +12,7 @@
   <div class="container" data-search-indexing-allowed="false">
     {% include "header" %}
     <main class="content" role="main">
+      <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
       {% if editmode or site.has_language_tags? %}
         <div class="blog-header">
           {% include "tags-blog" %}
