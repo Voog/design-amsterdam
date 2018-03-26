@@ -896,7 +896,7 @@ MMCQ = (function() {
       event.stopPropagation();
     });
   };
- 
+
   // ===========================================================================
   // Binds site search functionality.
   // ===========================================================================
@@ -918,7 +918,7 @@ MMCQ = (function() {
         // String for feedback if no results are found.
         noResults: noResultsString
       });
-    } 
+    }
   };
 
   var handleWindowResize = function() {
@@ -1367,7 +1367,7 @@ var init = function() {
     bindFallbackHeaderLeftWidthCalculation();
   };
 };
-  
+
   window.site = $.extend(window.site || {}, {
     initFrontPage: initFrontPage,
     initCommonPage: initCommonPage,
