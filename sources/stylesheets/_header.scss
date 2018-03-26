@@ -96,7 +96,8 @@
 
   .header-left {
     .flexbox & {
-      flex: 1;
+      flex: 1 0 auto;
+      max-width: 100%;
     }
 
     .no-flexbox & {
