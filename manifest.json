@@ -141,9 +141,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
+      "file": "components/edicy-tools-styles.tpl",
+      "layout_name": "edicy-tools-styles",
+      "title": "edicy-tools-styles"
     },
     {
       "content_type": "component",
