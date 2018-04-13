@@ -19,6 +19,7 @@
     </main>
     {% include "footer" %}
   </div>
+  {% include "site-signout" %} 
   {% include "javascripts" %}
   {% include "edicy-tools" %}
   <script>site.initCommonPage({% if editmode %}false{% else %}true{% endif %});</script>

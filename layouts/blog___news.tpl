@@ -45,6 +45,7 @@
     </main>
     {% include "footer" %}
   </div>
+  {% include "site-signout" %} 
   {% include "javascripts" %}
   {% include "edicy-tools" %}
   <script type="text/javascript">site.initBlogPage({% if editmode %}false{% else %}true{% endif %});</script>
