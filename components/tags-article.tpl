@@ -5,7 +5,7 @@
     <div class="tag-icon"></div>
     <div class="tags-list">
       {% for tag in article.tags %}
-        <a class="tag-link" href="{{ site.url }}{{ site.blogs.first.page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+        <a class="tag-link" href="/{{ article.page.path_with_lang }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
       {% endfor %}
     </div>
   {% endif %}
