@@ -3,7 +3,7 @@
   <nav class="tags">
     <span>{{ 'filter_posts' | lc }}:</span>
     <a class="tag-link js-tags-all{% unless tags.size > 0 %} active{% endunless %}" href="/{{ blog.page.path_with_lang }}">{{ 'all_posts' | lc }}</a>
-    {% for tag in blog.has_tags? %}
+    {% for tag in blog.tags %}
       {% assign activestr = "" %}
       {% for tmptag in tags %}
         {% if tmptag.name == tag.name %}
