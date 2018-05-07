@@ -1,4 +1,4 @@
-{% for item in site.visible_menuitems %}
+{% for item in site.menuitems %}
   {% if item.selected? and item.children? or editmode %}
     <aside class="sidebar sidebar-left">
       <section class="content-formatted cfx">
