@@ -316,19 +316,19 @@ body {
 .content-formatted .edy-positionable-container-maxwidth:last-child {
   margin-bottom: 0;
 }
-.dark-background .content-formatted, .dark-background
-.content-formatted p, .dark-background
-.content-formatted h1, .dark-background
-.content-formatted h2, .dark-background
-.content-formatted h3, .dark-background
-.content-formatted h4, .dark-background
-.content-formatted h5, .dark-background
-.content-formatted h6, .dark-background
-.content-formatted ul, .dark-background
-.content-formatted ol, .dark-background
-.content-formatted table, .dark-background
-.content-formatted pre, .dark-background
-.content-formatted code {
+.dark-background .content-formatted,
+.dark-background .content-formatted p,
+.dark-background .content-formatted h1,
+.dark-background .content-formatted h2,
+.dark-background .content-formatted h3,
+.dark-background .content-formatted h4,
+.dark-background .content-formatted h5,
+.dark-background .content-formatted h6,
+.dark-background .content-formatted ul,
+.dark-background .content-formatted ol,
+.dark-background .content-formatted table,
+.dark-background .content-formatted pre,
+.dark-background .content-formatted code {
   color: rgba(255, 255, 255, 0.8);
 }
 .content-formatted h1,
@@ -395,13 +395,12 @@ body {
   word-break: normal;
   word-wrap: normal;
 }
-.content-formatted pre,
-.content-formatted code {
+.content-formatted pre, .content-formatted code {
   font-size: 14px;
   background-color: #fafafa;
 }
-.dark-background .content-formatted pre, .dark-background
-.content-formatted code {
+.dark-background .content-formatted pre,
+.dark-background .content-formatted code {
   background-color: #050505;
 }
 .content-formatted pre {
@@ -683,18 +682,16 @@ body {
   margin-left: 0;
 }
 
-.lang-menu-toggle:before, .lang-menu-toggle:after,
-.lang-menu li a.lang-flag:before,
-.lang-menu li a.lang-flag:after {
+.lang-menu-toggle:before, .lang-menu-toggle:after, .lang-menu li a.lang-flag:before, .lang-menu li a.lang-flag:after {
   position: absolute;
   top: 5px;
   display: block;
   width: 21px;
   height: 15px;
 }
-.flags-disabled .lang-menu-toggle:before, .flags-disabled .lang-menu-toggle:after, .flags-disabled
-.lang-menu li a.lang-flag:before, .flags-disabled
-.lang-menu li a.lang-flag:after {
+.flags-disabled .lang-menu-toggle:before, .flags-disabled .lang-menu-toggle:after,
+.flags-disabled .lang-menu li a.lang-flag:before,
+.flags-disabled .lang-menu li a.lang-flag:after {
   display: none;
 }
 .lang-menu-toggle:before,
@@ -702,17 +699,15 @@ body {
   background-color: black;
   content: '';
 }
-.lang-menu-toggle:after,
-.lang-menu li a.lang-flag:after {
+.lang-menu-toggle:after, .lang-menu li a.lang-flag:after {
   background-repeat: no-repeat;
   opacity: .95;
 }
-.no-svg .lang-menu-toggle:after, .no-svg
-.lang-menu li a.lang-flag:after {
+.no-svg .lang-menu-toggle:after,
+.no-svg .lang-menu li a.lang-flag:after {
   background-image: url("../images/ico-flags.png");
 }
-.svg .lang-menu-toggle:after, .svg
-.lang-menu li a.lang-flag:after {
+.svg .lang-menu-toggle:after, .svg .lang-menu li a.lang-flag:after {
   background-image: url("../assets/ico-flags.svg");
 }
 
@@ -1973,46 +1968,40 @@ body {
   opacity: 1;
 }
 
-.search-btn-submit,
-.search-btn-open {
+.search-btn-submit, .search-btn-open {
   position: relative;
   top: 1px;
   right: 0;
   display: inline-block;
   padding: 5px;
 }
-.voog-search-visible .search-btn-submit, .voog-search-visible
-.search-btn-open {
+.voog-search-visible .search-btn-submit,
+.voog-search-visible .search-btn-open {
   display: none;
 }
 @media screen and (max-width: 640px) {
-  .search-btn-submit,
-  .search-btn-open {
+  .search-btn-submit, .search-btn-open {
     top: 0;
     padding: 11px;
   }
-  .edy-checkout-button-visible .search-btn-submit, .edy-checkout-button-visible
-  .search-btn-open {
+  .edy-checkout-button-visible .search-btn-submit, .edy-checkout-button-visible .search-btn-open {
     top: 41px;
   }
 }
 
-.search-btn-reset,
-.search-btn-close {
+.search-btn-reset, .search-btn-close {
   display: none;
   padding: 9px;
 }
-.voog-search-visible .search-btn-reset, .voog-search-visible
-.search-btn-close {
+.voog-search-visible .search-btn-reset,
+.voog-search-visible .search-btn-close {
   display: inline-block;
 }
 @media screen and (max-width: 640px) {
-  .search-btn-reset,
-  .search-btn-close {
+  .search-btn-reset, .search-btn-close {
     padding: 13px 9px 9px;
   }
-  .search-btn-reset svg,
-  .search-btn-close svg {
+  .search-btn-reset svg, .search-btn-close svg {
     width: 18px;
     height: 18px;
   }
@@ -2023,15 +2012,15 @@ body {
   top: 41px;
 }
 
-.voog-search-visible .search-btn-submit, .voog-search-visible
-.search-btn-reset {
+.voog-search-visible .search-btn-submit,
+.voog-search-visible .search-btn-reset {
   position: absolute;
   top: 1px;
   right: 0;
 }
 @media screen and (max-width: 640px) {
-  .voog-search-visible .search-btn-submit, .voog-search-visible
-  .search-btn-reset {
+  .voog-search-visible .search-btn-submit,
+  .voog-search-visible .search-btn-reset {
     top: 0;
   }
 }
@@ -2197,18 +2186,16 @@ body {
 .form_field:last-child {
   padding-bottom: 0;
 }
-.form_field label,
-.form_field .edy-fe-label {
+.form_field label, .form_field .edy-fe-label {
   display: block;
   padding: 2px 0 1px;
   color: #919191;
 }
-.header-inner .form_field label, .header-inner
-.form_field .edy-fe-label {
+.header-inner .form_field label,
+.header-inner .form_field .edy-fe-label {
   color: rgba(0, 0, 0, 0.8);
 }
-.dark-background .form_field label, .dark-background
-.form_field .edy-fe-label {
+.dark-background .form_field label, .dark-background .form_field .edy-fe-label {
   color: white;
 }
 
@@ -2256,17 +2243,15 @@ body {
   -webkit-appearance: none;
 }
 
-.form_field_textarea,
-.form_field_textfield {
+.form_field_textarea, .form_field_textfield {
   border-bottom: 1px solid #dadada;
 }
-.header-inner .form_field_textarea, .header-inner
-.form_field_textfield {
+.header-inner .form_field_textarea,
+.header-inner .form_field_textfield {
   background: rgba(255, 255, 255, 0.5);
   border: none;
 }
-.light-background .form_field_textarea, .light-background
-.form_field_textfield {
+.light-background .form_field_textarea, .light-background .form_field_textfield {
   background: rgba(0, 0, 0, 0.5);
 }
 
