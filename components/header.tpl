@@ -16,7 +16,7 @@
 
           {% if editmode or site.has_many_languages? %}
             <nav class="lang-menu">
-              <button id="lang-menu-toggle" class="toggle-btn lang-menu-toggle lang-flag lang-flag-{{ page.language_code }}" data-lang-code="{{ page.language_code }}" {{ edy_intro_add_lang }}>
+              <button id="lang-menu-toggle" class="toggle-btn lang-menu-toggle lang-flag lang-flag-{{ page.language_code }}" data-lang-code="{{ page.language_locale }}" {{ edy_intro_add_lang }}>
                 {% if editmode or flags_state == false %}
                   <span class="lang-title">
                     {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
