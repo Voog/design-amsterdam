@@ -1034,8 +1034,8 @@ body {
   content: '';
 }
 
-[data-lang-code^="pt_PT"]:after {
-  background-position: -63px 0;
+[data-lang-code^="fr_CA"]:after {
+  background-position: -105px -60px;
   content: '';
 }
 
