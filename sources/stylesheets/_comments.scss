@@ -6,6 +6,9 @@
   margin-left: 42px;
   font-family: $font-one;
   vertical-align: top;
+  &.hide-article-comments {
+    display: none;
+  }
 }
 
 .comment-header {

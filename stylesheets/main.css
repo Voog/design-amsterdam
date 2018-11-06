@@ -1517,6 +1517,9 @@ body {
 .post-date {
   text-transform: uppercase;
 }
+.post-date.hide-article-date {
+  display: none;
+}
 
 .blog-page .post {
   position: relative;
@@ -1591,6 +1594,9 @@ body {
 }
 .blog-page .post-read-more-btn:hover {
   opacity: .75;
+}
+.blog-page .settings-editor-wrap {
+  padding-bottom: 16px;
 }
 
 .post-page .edy-padding-resizer-wrapper,
@@ -2292,6 +2298,9 @@ body {
   margin-left: 42px;
   font-family: "Montserrat", sans-serif;
   vertical-align: top;
+}
+.comments.hide-article-comments {
+  display: none;
 }
 
 .comment-header {

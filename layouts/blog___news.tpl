@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
+{% include "blog-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_list = true %}
@@ -16,7 +17,10 @@
       {% if editmode or site.has_language_tags? %}
         <div class="blog-header">
           {% include "tags-blog" %}
-          {% if editmode %}<div class="add-post-container">{% addbutton %}</div>{% endif %}
+          {% if editmode %}
+            <div class="add-post-container">{% addbutton %}</div>
+            {% include "blog-settings-editor" %}
+          {% endif %}
         </div>
       {% endif %}
 
@@ -32,7 +36,7 @@
               {% assign article_date_format = "long" %}
             {% endif %}
 
-            <time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+            <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
           </header>
 
           <section class="post-content">
@@ -45,7 +49,7 @@
     </main>
     {% include "footer" %}
   </div>
-  {% include "site-signout" %} 
+  {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" %}
   <script type="text/javascript">site.initBlogPage({% if editmode %}false{% else %}true{% endif %});</script>

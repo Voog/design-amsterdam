@@ -5,6 +5,9 @@
 
 .post-date {
   text-transform: uppercase;
+  &.hide-article-date {
+    display: none;
+  }
 }
 
 .blog-page {
@@ -96,6 +99,10 @@
     &:hover {
       opacity: .75;
     }
+  }
+
+  .settings-editor-wrap {
+    padding-bottom: 16px;
   }
 }
 

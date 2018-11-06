@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
+{% include "blog-settings-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_article = true %}
@@ -23,7 +24,10 @@
             {% assign article_date_format = "long" %}
           {% endif %}
 
-          <time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+          <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+          {% if editmode %}
+            {% include "article-settings-editor" %}
+          {% endif %}
         </header>
         <section class="post-content" data-search-indexing-allowed="true">
           <div class="post-excerpt content-formatted cfx" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
@@ -63,7 +67,7 @@
     </main>
     {% include "footer" %}
   </div>
-  {% include "site-signout" %} 
+  {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" %}
   <script type="text/javascript">site.initArticlePage({% if editmode %}false{% else %}true{% endif %});</script>
