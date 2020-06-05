@@ -49,7 +49,7 @@
           "titleI18n": "comments",
           "type": "toggle",
           "key": "show_comments",
-          "tooltipI18n": "toggle_current_article_comments",
+          "tooltipI18n": "toggle_all_articles_comments",
           "states": {
             "on": true,
             "off": false
