@@ -4,7 +4,7 @@
 <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
 {% if article %}{% assign og_url = article.url %}{% else %}{% assign og_url = page.url %}{% endif %}
 <meta property="og:url" content="{{ site.url }}{{ og_url | remove_first: '/' }}">
-<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:title" content="{% title %}">
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}

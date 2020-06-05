@@ -16,8 +16,8 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}STYLESHEETS{% endcomment %}
-{% stylesheet_link "main.min.css" %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
+{% stylesheet_link "main.min.css?v1" %}
+<!--[if lt IE 9]>{% stylesheet_link "ie8.min.css?v1" %}<![endif]-->
 {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
 
 {% comment %}Google fonts for Design Editor{% endcomment %}
@@ -50,11 +50,13 @@
 <script src="{{ javascripts_path }}/modernizr-custom.min.js"></script>
 
 {% comment %}SITE TITLE{% endcomment %}
-{% capture page_title %}{% if article %}{{ article.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% else %}{% if site.root_item.selected? and page.site_title != "" %}{{ page.site_title }}{% else %}{{ page.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% endif %}{% endif %}{% endcapture %}
-<title>{{ page_title }}</title>
+<title>{% title %}</title>
 
 {% comment %}MISC{% endcomment %}
 {% include "template-meta" %}
+
+{% comment %}BREADCRUMBS{% endcomment %}
+{% sd_breadcrumbs %}
 
 {% if blog %}{{ blog.rss_link }}{% endif %}
 {{ site.stats_header }}

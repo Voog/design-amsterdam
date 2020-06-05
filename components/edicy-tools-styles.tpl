@@ -11,8 +11,6 @@
           .header-banner {
             background-image: url("{{ imageSize.url }}");
           }
-        {% elsif forloop.last %}
-          {% break %}
         {% else %}
           @media screen and (max-width: {{ imageSize.width }}px) {
             .header-banner {
