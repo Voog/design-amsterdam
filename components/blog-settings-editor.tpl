@@ -75,8 +75,8 @@
       // Title for the button.
       buttonTitleI18n: "blog_settings",
 
-       preview: function(data) {
-       var $articleDate = $('.post-date');
+     preview: function(data) {
+       var $articleDate = $('.article-date.site-data');
         if (data.show_dates == true) {
           $articleDate.removeClass('hide-article-date');
           $articleDate.addClass('show-article-date');
@@ -87,7 +87,8 @@
       },
 
       commit: function(data) {
-        siteData.set('article_settings', data);
+        siteData.set('article_settings', data,
+        );
       }
     });
   </script>

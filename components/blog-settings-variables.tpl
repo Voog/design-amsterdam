@@ -1,5 +1,7 @@
+{% assign article_data_show_date_defined = false %}
 {% if article.data.article_settings.show_date == true or article.data.article_settings.show_date == false %}
   {% assign show_article_date = article.data.article_settings.show_date %}
+  {% assign article_data_show_date_defined = true %}
 {% elsif site.data.article_settings.show_dates == false %}
   {% assign show_article_date = false %}
 {% else %}

@@ -20,6 +20,7 @@
         </div>
       {% endif %}
       {% for article in site.latest_articles %}
+      {% include "blog-settings-variables" %}
         <article class="post">
           <header class="post-header">
             <h1 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h1>
@@ -31,7 +32,7 @@
               {% assign article_date_format = "long" %}
             {% endif %}
 
-            <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+            <time class="post-date{% if article_data_show_date_defined != true %} site-data{% endif %}{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
           </header>
 
           <section class="post-content">
