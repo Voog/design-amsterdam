@@ -19,7 +19,7 @@
           {% include "tags-blog" %}
           {% if editmode %}
             <div class="add-post-container">{% addbutton %}</div>
-            <div class="add-settingsBtn-container">{% include "blog-settings-editor" %}</div>          
+            {% include "blog-settings-editor" %}         
           {% endif %}
         </div>
       {% endif %}

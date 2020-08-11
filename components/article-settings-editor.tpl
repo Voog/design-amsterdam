@@ -1,7 +1,7 @@
 {% if editmode %}
-<div class="article-settings-wrap">
-  <button class="article-settings-editor"></button>
-</div>
+  <div class="article-settings-wrap">
+    <button class="article-settings-editor"></button>
+  </div>
 {% endif %}
 
 {% editorjsblock %}
@@ -63,18 +63,18 @@
           "states": {
             "on": true,
             "off": false
-          },
+          }
         },
-      {
-        "titleI18n": "publishing_date",
-        "type": "toggle",
-        "key": "show_date",
-        "tooltipI18n": "toggle_current_article_date",
-        "states": {
-          "on": true,
-          "off": false
-        },
-      },
+        {
+          "titleI18n": "publishing_date",
+          "type": "toggle",
+          "key": "show_date",
+          "tooltipI18n": "toggle_current_article_date",
+          "states": {
+            "on": true,
+            "off": false
+          }
+        } 
       ],
 
       // Binded data object which should contain custom data object.
