@@ -24,7 +24,10 @@
             {% assign article_date_format = "long" %}
           {% endif %}
 
-          <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+          {% if editmode or show_article_date != false %}
+            <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+          {% endif %}
+
           {% if editmode %}
             {% include "article-settings-editor" %}
           {% endif %}

@@ -41,7 +41,7 @@
 
     if (articleDataValues.show_date != null && articleDataValues.show_date !== '') {
       show_date = Boolean(articleDataValues.show_date)
-    } else if (globalDataValues.show_date != null && globalDataValues.show_date !== '') {
+    } else if (globalDataValues.show_dates != null && globalDataValues.show_dates !== '') {
       show_date = Boolean(globalDataValues.show_date)
     } else {
       show_date = true;
