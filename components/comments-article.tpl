@@ -15,6 +15,6 @@
         </div>
         <div class="comment-body">{{ comment.body_html }}</div>
       </div>
-    {% endfor %}
   </aside>
+  {% endfor %}
 {% endunless %}
