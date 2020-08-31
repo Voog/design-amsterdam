@@ -1,5 +1,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="{{ javascripts_path }}/application.min.js?v=1"></script>
+<script src="{{ javascripts_path }}/application.min.js?v=amsterdam-1"></script>
 {% sitejs_include %}
 
 {% comment %}Site search related javascript components.{% endcomment %}
