@@ -1,5 +1,7 @@
 {% unless article.new_record? %}
-  <aside class="comments cfx">
+  {% if editmode or show_article_comments != false %}
+  <aside class="comments cfx{% if show_article_comments == false %} hide-article-comments{% endif %}">
+  {% endif %}
     <h2 class="comments-title">{{ 'replies' | lcc : article.comments_count }}</h2>
 
     {% include "comment-form" %}
@@ -13,6 +15,6 @@
         </div>
         <div class="comment-body">{{ comment.body_html }}</div>
       </div>
-    {% endfor %}
   </aside>
+  {% endfor %}
 {% endunless %}
