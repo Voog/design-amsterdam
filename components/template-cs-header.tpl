@@ -301,20 +301,20 @@
     "featured": true
   */
   --header-mainmenu-color: #919191;
- /* VoogStyle
-  "pathI18n": ["header", "main_menu", "hover"],
-  "titleI18n": "color",
-  "type": "button",
-  "editor": "colorPicker",
-  "scope": "global"
-*/
+  /* VoogStyle
+    "pathI18n": ["header", "main_menu", "hover"],
+    "titleI18n": "color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
   --header-mainmenu-hover-color: #333;
- /* VoogStyle
-  "pathI18n": ["header", "main_menu", "active"],
-  "titleI18n": "color",
-  "type": "button",
-  "editor": "colorPicker",
-  "scope": "global"
-*/
+  /* VoogStyle
+    "pathI18n": ["header", "main_menu", "active"],
+    "titleI18n": "color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
   --header-mainmenu-active-color: #333;
 }
