@@ -1,4 +1,9 @@
 {% capture dont_render %}
+
+  {%- comment -%}Assign variables for ecommerce layouts{%- endcomment -%}
+  {% assign product_list_layout = "Product list" %}
+  {% assign product_layout = "Product" %}
+
   {% comment %}=================================================================
   | Design editor variables.
   ============================================================= {% endcomment %}
