@@ -14,10 +14,8 @@
       {% content name="slogan" %}
     </section>
     <main class="content" role="main">
-      {% include "sidebar-left" %}
       {% include "menu-breadcrumbs" %}
       {% include "product-list-block" %}
-      <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
     </main>
     {% include "footer" %}
   </div>

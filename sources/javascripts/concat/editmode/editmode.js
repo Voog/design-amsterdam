@@ -483,6 +483,54 @@
     toggleImageSettingsPopover();
   });
 
+    // ===========================================================================
+  // Toggles product categories visibility in main menu.
+  // ===========================================================================
+  var bindRootItemSettings = function(rootItemValuesObj) {
+    if (!('show_product_related_pages_in_main_menu' in rootItemValuesObj)) {
+      rootItemValuesObj.show_product_related_pages_in_main_menu = false;
+    }
+
+    $('.js-root-item-settings-toggle').each(function(index, languageMenuSettingsButton) {
+      var rootItemSettingsEditor = new Edicy.SettingsEditor(languageMenuSettingsButton, {
+        menuItems: [
+          {
+            "titleI18n": "show_in_main_menu",
+            "type": "checkbox",
+            "key": "show_product_related_pages_in_main_menu",
+            "states": {
+              "on": true,
+              "off": false
+            }
+          }
+        ],
+
+        buttonTitleI18n: "settings",
+
+        values: rootItemValuesObj,
+
+        containerClass: ['js-root-item-settings-popover', 'js-prevent-sideclick'],
+
+        preview: function(data) {
+          if (!data.show_product_related_pages_in_main_menu === true) {
+            $('.js-menu-item-products').addClass('is-hidden');
+          } else {
+            $('.js-menu-item-products').removeClass('is-hidden');
+          }
+        },
+
+        commit: function(data) {
+          siteData.set('settings_root_item', data);
+        }
+      });
+    });
+  };
+
+  // Enables the usage of the initiations outside this file
+  window.template = $.extend(window.template || {}, {
+    bindRootItemSettings: bindRootItemSettings
+  });
+
   var init = function () {
     bindCustomDataItem();
     handleDocument();

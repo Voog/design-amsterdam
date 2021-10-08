@@ -7,6 +7,12 @@
   font-family: $font-one;
   list-style: none;
 
+  .menu-item {
+    &.is-hidden {
+      display: none;
+    }
+  }
+
   li {
     a {
       font-size: 12px;

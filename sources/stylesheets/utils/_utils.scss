@@ -1,0 +1,18 @@
+.of- {
+  &hidden {
+    overflow: hidden;
+  }
+}
+
+.p-abs {
+  position: absolute;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.t-sticky {
+  position: sticky;
+  top: 32px;
+}

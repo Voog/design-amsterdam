@@ -1,18 +1,33 @@
 // MAIN STYLESHEET
 @import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
-@import 'mixins';
-@import 'variables';
+@import 'modules/mixins';
+@import 'modules/mixins-flexbox';
+@import 'modules/variables';
+
 @import 'general';
-@import 'content-formatted';
-@import 'buy-button';
-@import 'menus';
-@import 'header';
-@import 'topbar';
-@import 'sidebar';
-@import 'content';
-@import 'blog-and-article';
-@import 'search';
-@import 'forms';
-@import 'comments';
-@import 'footer';
-@import 'site-signout';
+
+@import 'components/comments';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/image-drop-area';
+@import 'components/menus';
+@import 'components/navigation-menus';
+@import 'components/search';
+@import 'components/settings';
+@import 'components/sidebar';
+@import 'components/site-signout';
+@import 'components/topbar';
+
+@import 'content/background-image';
+@import 'content/buy-button';
+@import 'content/content-formatted';
+@import 'content/content';
+@import 'content/forms';
+
+@import 'layouts/blog-and-article';
+@import 'layouts/product-list';
+
+@import 'utils/flex';
+@import 'utils/margins';
+@import 'utils/paddings';
+@import 'utils/utils';

@@ -30,5 +30,23 @@
     });
 
     site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
+
+    {%- if page.layout_title == product_layout -%}
+      {%- assign dropAreaPlaceholder = "drag_picture_for_product_here" | lce | escape -%}
+      site.bindProductListeners("{{ dropAreaPlaceholder }}", {{ page.id }});
+    {%- else -%}
+      {%- assign dropAreaPlaceholder = "drag_picture_here" | lce | escape -%}
+
+      {% if site.data.settings_root_item %}
+        rootItemValuesObj = {{ site.data.settings_root_item | json }};
+      {% else %}
+        rootItemValuesObj = {};
+      {% endif %}
+
+      template.bindRootItemSettings(rootItemValuesObj);
+    {%- endif -%}
+
+    site.bindContentItemImgDropAreas('{{ dropAreaPlaceholder }}', "item_image", "image_crop_state");
+    site.bindContentItemImageCropToggle("image_crop_state");
   </script>
 {% endeditorjsblock %}

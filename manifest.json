@@ -134,6 +134,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/menu-level-1-link.tpl",
+      "layout_name": "menu-level-1-link",
+      "title": "menu-level-1-link"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/nav-menu.tpl",
       "layout_name": "nav-menu",
       "title": "nav-menu"
@@ -358,6 +365,12 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-expand.svg",
+      "kind": "assets",
+      "filename": "ico-expand.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-voog-black.svg",
       "kind": "assets",
       "filename": "ico-voog-black.svg"
@@ -376,6 +389,12 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-settings.svg",
+      "kind": "assets",
+      "filename": "ico-settings.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/loader.svg",
       "kind": "assets",
       "filename": "loader.svg"
@@ -385,6 +404,18 @@
       "file": "assets/ico-flags.svg",
       "kind": "assets",
       "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-delete.svg",
+      "kind": "assets",
+      "filename": "ico-delete.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-placeholder.svg",
+      "kind": "assets",
+      "filename": "ico-placeholder.svg"
     },
     {
       "content_type": "image/png",
