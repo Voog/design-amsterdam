@@ -5,6 +5,7 @@
   {% assign common_page = true %}
   {% include "html-head" common_page: true %}
   {% include "edicy-tools-variables" %}
+  {% include "common-page-variables" %}
 </head>
 
 <body class="common-page content-page{% if site.search.enabled %} search-enabled{% endif %}{% if editmode or site.has_many_languages? %} lang-enabled{% endif %} {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
@@ -14,12 +15,14 @@
       {% content name="slogan" %}
     </section>
     <main class="content" role="main">
-      {% include "sidebar-left" %}
+      {%- if sidebar_active -%}
+        {% include "sidebar-left"%}
+      {%- endif -%}
       <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
     </main>
     {% include "footer" %}
   </div>
-  {% include "site-signout" %} 
+  {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" %}
   <script>site.initCommonPage({% if editmode %}false{% else %}true{% endif %});</script>

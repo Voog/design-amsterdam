@@ -65,4 +65,8 @@
   {% capture edy_intro_add_lang %}{% if editmode %}data-edy-intro-popover="edy-add-lang"{% endif %}{% endcapture %}
   {% capture edy_intro_edit_text %}{% if editmode %}data-edy-intro-popover="edy-edit-text"{% endif %}{% endcapture %}
 
+  {%- comment -%}Assign variables for ecommerce layouts{%- endcomment -%}
+  {% assign product_list_layout = "Product list" %}
+  {% assign product_layout = "Product" %}
+
 {% endcapture %}

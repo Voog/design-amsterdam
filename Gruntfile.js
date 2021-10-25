@@ -282,7 +282,7 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'copy:assets', 'copy:images', 'copy:javascripts', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove']);
+  grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'copy:javascripts', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy', 'clean:remove']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {

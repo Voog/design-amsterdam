@@ -1481,7 +1481,6 @@ body {
 }
 .menu-horizontal.menu-breadcrumbs {
   line-height: 16px;
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 .item-list-page .menu-horizontal.menu-breadcrumbs {
@@ -3147,7 +3146,7 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px, min-width) {
+@media screen and (min-width: 1024px) {
   .product_list .flex_row-3--item {
     width: var(--product-list-item__width);
   }
@@ -3224,4 +3223,8 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 32px;
+}
+
+.w-100 {
+  width: 100%;
 }

@@ -50,6 +50,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/common-page-variables.tpl",
+      "layout_name": "common-page-variables",
+      "title": "common-page-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/content-item.tpl",
       "layout_name": "content-item",
       "title": "content-item"
@@ -270,6 +277,13 @@
       "file": "components/template-cs-main-styles.tpl",
       "layout_name": "template-cs-main-styles",
       "title": "template-cs-main-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-product-list.tpl",
+      "layout_name": "template-cs-product-list",
+      "title": "template-cs-product-list"
     },
     {
       "content_type": "component",

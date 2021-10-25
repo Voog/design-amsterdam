@@ -38,7 +38,7 @@
         }
 
         .product_list & {
-          @include query(($desktop, 'min-width')) {
+          @include query($desktop, 'min-width') {
             width: var(--product-list-item__width);
           }
         }

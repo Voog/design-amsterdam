@@ -27,6 +27,6 @@
     "sass": "^1.38.0"
   },
   "dependencies": {
-    "npm": "^8.0.0"
+    "gifsicle": "^6.0.0"
   }
 }

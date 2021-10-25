@@ -38,6 +38,9 @@
   {% if common_page %}
     {% include "template-cs-content" %}
   {% endif %}
+  {%- if page.layout_title == product_list_layout -%}
+    {% include "template-cs-product-list" %}
+  {%- endif -%}
   {% include "template-cs-footer" %}
   {% include "template-cs-headings" %}
   {% include "template-cs-button" %}
