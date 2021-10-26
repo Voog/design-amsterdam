@@ -799,7 +799,7 @@ MMCQ = (function() {
     });
   };
 
-// ===========================================================================
+  // ===========================================================================
   // Load product cover images only when they are close or appearing in the
   // viewport.
   // ===========================================================================
@@ -1272,23 +1272,23 @@ MMCQ = (function() {
   });
 };
 
-var init = function() {
-  bindSideClicks();
-  toggleMainMenu();
-  toggleLangMenu();
-  handlePopoverMenuHide();
-  handleWindowResize();
-  handleSearch();
-  wrapTables();
-  focusCommentsWithErrors();
-  handleWindowScroll();
+  var init = function() {
+    bindSideClicks();
+    toggleMainMenu();
+    toggleLangMenu();
+    handlePopoverMenuHide();
+    handleWindowResize();
+    handleSearch();
+    wrapTables();
+    focusCommentsWithErrors();
+    handleWindowScroll();
 
-  $('.content form').edicyFormPlaceholders();
+    $('.content form').edicyFormPlaceholders();
 
-  if (!Modernizr.flexbox && editmode) {
-    bindFallbackHeaderLeftWidthCalculation();
+    if (!Modernizr.flexbox && editmode) {
+      bindFallbackHeaderLeftWidthCalculation();
+    };
   };
-};
 
   window.site = $.extend(window.site || {}, {
     initFrontPage: initFrontPage,

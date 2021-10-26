@@ -2428,6 +2428,12 @@ body {
   .container .content {
     position: relative;
     margin-bottom: 20px;
+    display: revert;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container .content {
+    display: revert;
   }
 }
 .blog-page .container .content-body {
