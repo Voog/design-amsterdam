@@ -65,7 +65,7 @@
           {%- if editmode or buy_button.product.out_of_stock? -%}
             {{ look_closer_btn }}
           {%- else -%}
-            <div class="product_item-btn js-cart-btn p-rel" data-product-id="{{ _buyButton.product.id }}">{{ "add_to_cart" | lc | escape_once }}</div>
+            <div class="product_item-btn js-cart-btn p-abs" data-product-id="{{ _buyButton.product.id }}">{{ "add_to_cart" | lc | escape_once }}</div>
           {%- endif -%}
           <div class="product_item-price">
             <span>
