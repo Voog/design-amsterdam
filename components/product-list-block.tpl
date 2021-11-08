@@ -1,7 +1,7 @@
 <div class="flex_col w-100">
   {% include "menu-breadcrumbs" %}
   <div class="product_list flex_row flex_row-3 mar_0-16-neg pad_16-0">
-    {%- assign level_str = "menuitems_on_level_" | append: page.level -%}
+    {%- assign level_str = "visible_menuitems_on_level_" | append: page.level -%}
     {% if site.root_item.selected? %}
       {% for level_1 in site.visible_menuitems_with_data %}
         {% if level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
