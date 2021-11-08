@@ -59,6 +59,7 @@
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,.1));
   }
   .top-inner {
     display: flex !important;

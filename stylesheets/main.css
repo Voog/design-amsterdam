@@ -680,6 +680,8 @@ body {
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
 }
 .item-top .top-inner {
   display: -webkit-box !important;
