@@ -1,0 +1,61 @@
+.flex_ {
+  &box {
+    display: flex;
+  }
+
+  &auto {
+    flex: auto;
+  }
+
+  &col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &row {
+    display: flex;
+    flex-direction: row;
+
+    @include query($tablet) {
+      &.reverse-col-tablet {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &-3 {
+      flex-wrap: wrap;
+
+      &--item {
+        width: 33%;
+        margin-bottom: 32px;
+
+        @include query($tablet) {
+          width: 50%;
+        }
+
+        @include query($mobile) {
+          width: 100%;
+        }
+
+        .product_list & {
+          @include query($desktop, 'min-width') {
+            width: var(--product-list-item__width);
+          }
+        }
+      }
+    }
+
+    &-2 {
+      flex-wrap: wrap;
+
+      &--item-50 {
+        width: 50%;
+        margin-bottom: 32px;
+
+        @include query($tablet) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

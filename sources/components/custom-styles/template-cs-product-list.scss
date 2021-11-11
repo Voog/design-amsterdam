@@ -1,0 +1,32 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+
+@import '../../stylesheets/modules/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+  // scss-lint:disable Comment, Indentation
+
+  /* VoogStyle
+    "pathI18n": ["product_list"],
+    "titleI18n": "max_nr_of_columns",
+    "editor": "listPicker",
+    "list": {{ base_number_of_columns_set }},
+    "featured": true,
+    "scope": "global"
+  */
+  #{--product-list-item__width}: 33.3%;
+}

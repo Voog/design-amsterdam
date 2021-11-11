@@ -111,7 +111,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --content-submenu-line-height: .85em;
+  --content-submenu-line-height: 0.85em;
   /* VoogStyle
     "pathI18n": ["content", "sub_menu", "normal"],
     "titleI18n": "hyphens",

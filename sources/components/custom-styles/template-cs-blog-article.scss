@@ -11,7 +11,7 @@
 // =============================================================================
 // Modules
 // =============================================================================
-@import '../../stylesheets/variables';
+@import '../../stylesheets/modules/variables';
 
 // =============================================================================
 // Design editor configuration.
@@ -267,7 +267,7 @@
   */
   #{--content-color}: $color-two;
 
-/* VoogStyle
+  /* VoogStyle
     "pathI18n": ["content", "link", "normal"],
     "titleI18n": "font_weight",
     "type": "button",

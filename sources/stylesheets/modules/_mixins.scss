@@ -73,14 +73,33 @@
 }
 
 // MEDIA QUERY
-@mixin query($value: $tablet-1) {
-  @media screen and (max-width: $value) {
+@mixin query($value: $tablet-1, $screen: 'max-width') {
+  @media screen and ($screen: $value) {
     @content;
   }
 }
 
-@mixin querymin($value: $tablet-1) {
+@mixin querymin($value: $tablet) {
   @media screen and (min-width: $value + 1px) {
     @content;
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    display: block;
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+    content: '';
+  }
+
+  > .aspect-ratio-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
