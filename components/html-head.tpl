@@ -38,6 +38,10 @@
   {% if common_page %}
     {% include "template-cs-content" %}
   {% endif %}
+  {% if product_page %}
+    {% include "template-cs-content" %}
+    {% include "template-cs-product" %}
+  {% endif %}
   {%- if page.layout_title == product_list_layout -%}
     {% include "template-cs-product-list" %}
   {%- endif -%}

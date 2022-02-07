@@ -2366,7 +2366,7 @@ body {
 .public .content-formatted .custom-btn {
   cursor: pointer;
 }
-.public .content-formatted .custom-btn-disabled {
+.public .content-formatted .custom-btn-disabled, .product-content .content-formatted .custom-btn-disabled {
   cursor: default;
   color: #919191;
   background-color: #dadada;
@@ -3098,6 +3098,35 @@ body {
 }
 .with-image .product_alt-attr {
   display: block;
+}
+
+.item-page .product-price {
+  padding-bottom: 24px;
+}
+.item-page .product-price-divider {
+  margin: 0 4px;
+}
+.item-page .content-product-description {
+  margin-bottom: 12px;
+}
+.item-page .product-content .without-image .item-top {
+  background-image: url("../assets/ico-placeholder.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F2F2F2;
+}
+.item-page .product-content .item-top .top-inner {
+  background-color: transparent;
+}
+.item-page .product-content .item-top .top-inner .item-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.item-page .product-content .buy-btn-content {
+  margin-bottom: 24px;
 }
 
 .flex_box {

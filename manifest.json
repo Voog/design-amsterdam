@@ -36,6 +36,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/buy-button.tpl",
+      "layout_name": "buy-button",
+      "title": "buy-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/comment-form.tpl",
       "layout_name": "comment-form",
       "title": "comment-form"
@@ -130,6 +137,13 @@
       "file": "components/lazy-image.tpl",
       "layout_name": "lazy-image",
       "title": "lazy-image"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-sd.tpl",
+      "layout_name": "menu-breadcrumbs-sd",
+      "title": "menu-breadcrumbs-sd"
     },
     {
       "content_type": "component",
@@ -288,6 +302,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/template-cs-product.tpl",
+      "layout_name": "template-cs-product",
+      "title": "template-cs-product"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-style-rules.tpl",
       "layout_name": "template-cs-style-rules",
       "title": "template-cs-style-rules"
@@ -319,6 +340,13 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
+    },
+    {
+      "content_type": "product",
+      "component": false,
+      "file": "layouts/auto_generated_product.tpl",
+      "layout_name": "auto_generated_product",
+      "title": "Auto-generated product"
     },
     {
       "content_type": "blog",
@@ -373,9 +401,9 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/search.svg",
+      "file": "assets/ico-delete.svg",
       "kind": "assets",
-      "filename": "search.svg"
+      "filename": "ico-delete.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -385,21 +413,15 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-voog-black.svg",
+      "file": "assets/ico-flags.svg",
       "kind": "assets",
-      "filename": "ico-voog-black.svg"
+      "filename": "ico-flags.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/search_close.svg",
+      "file": "assets/ico-placeholder.svg",
       "kind": "assets",
-      "filename": "search_close.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-tags.svg",
-      "kind": "assets",
-      "filename": "ico-tags.svg"
+      "filename": "ico-placeholder.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -409,39 +431,33 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-tags.svg",
+      "kind": "assets",
+      "filename": "ico-tags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-voog-black.svg",
+      "kind": "assets",
+      "filename": "ico-voog-black.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/loader.svg",
       "kind": "assets",
       "filename": "loader.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
+      "file": "assets/search.svg",
       "kind": "assets",
-      "filename": "ico-flags.svg"
+      "filename": "search.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-delete.svg",
+      "file": "assets/search_close.svg",
       "kind": "assets",
-      "filename": "ico-delete.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-placeholder.svg",
-      "kind": "assets",
-      "filename": "ico-placeholder.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/search-close.png",
-      "kind": "images",
-      "filename": "search-close.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-tags.png",
-      "kind": "images",
-      "filename": "ico-tags.png"
+      "filename": "search_close.svg"
     },
     {
       "content_type": "image/jpeg",
@@ -450,16 +466,10 @@
       "filename": "front-page-header-bg.jpg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/ico-voog-black.png",
+      "content_type": "image/jpeg",
+      "file": "images/front-page-header-bg_block.jpg",
       "kind": "images",
-      "filename": "ico-voog-black.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/search.png",
-      "kind": "images",
-      "filename": "search.png"
+      "filename": "front-page-header-bg_block.jpg"
     },
     {
       "content_type": "image/jpeg",
@@ -474,28 +484,28 @@
       "filename": "ico-flags.png"
     },
     {
-      "content_type": "image/jpeg",
-      "file": "images/front-page-header-bg_block.jpg",
+      "content_type": "image/png",
+      "file": "images/ico-tags.png",
       "kind": "images",
-      "filename": "front-page-header-bg_block.jpg"
+      "filename": "ico-tags.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/editmode.js",
-      "kind": "javascripts",
-      "filename": "editmode.js"
+      "content_type": "image/png",
+      "file": "images/ico-voog-black.png",
+      "kind": "images",
+      "filename": "ico-voog-black.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/application.min.js",
-      "kind": "javascripts",
-      "filename": "application.min.js"
+      "content_type": "image/png",
+      "file": "images/search-close.png",
+      "kind": "images",
+      "filename": "search-close.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/editmode.min.js",
-      "kind": "javascripts",
-      "filename": "editmode.min.js"
+      "content_type": "image/png",
+      "file": "images/search.png",
+      "kind": "images",
+      "filename": "search.png"
     },
     {
       "content_type": "application/javascript",
@@ -505,21 +515,39 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/application.min.js",
+      "kind": "javascripts",
+      "filename": "application.min.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/editmode.js",
+      "kind": "javascripts",
+      "filename": "editmode.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/editmode.min.js",
+      "kind": "javascripts",
+      "filename": "editmode.min.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr-custom.min.js",
       "kind": "javascripts",
       "filename": "modernizr-custom.min.js"
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/main.min.css",
-      "kind": "stylesheets",
-      "filename": "main.min.css"
-    },
-    {
-      "content_type": "text/css",
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.min.css",
+      "kind": "stylesheets",
+      "filename": "main.min.css"
     }
   ]
 }
