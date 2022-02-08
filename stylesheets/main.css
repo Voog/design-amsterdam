@@ -2427,14 +2427,14 @@ body {
   font-size: 0;
 }
 @media screen and (max-width: 999px) {
-  .container .content {
+  .container .content:not(.product-main) {
     position: relative;
     margin-bottom: 20px;
     display: revert;
   }
 }
 @media screen and (max-width: 640px) {
-  .container .content {
+  .container .content:not(.product-main) {
     display: revert;
   }
 }
@@ -3197,7 +3197,12 @@ body {
   margin-bottom: 32px;
 }
 @media screen and (max-width: 999px) {
-  .flex_row-2--item-50 {
+  .content:not(.product-main) .flex_row-2--item-50 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .content.product-main .flex_row-2--item-50 {
     width: 100%;
   }
 }

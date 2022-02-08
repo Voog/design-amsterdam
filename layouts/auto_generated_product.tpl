@@ -33,10 +33,7 @@
 
   <div class="container">
     {% include "header" %}
-    <section class="content-header content-formatted cfx" data-search-indexing-allowed="true">
-      {% content name="slogan" %}
-    </section>
-    <main class="content flex_box w-100" role="main">
+    <main class="content product-main flex_box w-100" role="main">
       <div class="flex_col w-100 product-content">
         {% include "menu-breadcrumbs-sd" %}
         <div class="flex_row flex_row-2 mar_0-32-neg" data-search-indexing-allowed="true">

@@ -850,7 +850,7 @@ MMCQ = (function() {
       var productRightContent = $('.js-product-content-right');
 
       if ($('.js-buy-btn-content .edy-buy-button-container').length >= 1) {
-        if ($(window).width() < 1000) {
+        if ($(window).width() < 640) {
           if ($('.js-product-content-right + .js-product-gallery').length === 0) {
             productRightContent.append(productGallery);
           }
