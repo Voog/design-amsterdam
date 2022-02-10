@@ -28,7 +28,7 @@
   </div>
   {% include "site-signout" %} 
   {% include "javascripts" %}
-  {% include "edicy-tools" %}
+  {% include "edicy-tools" feature_page: true %}
   <script>site.initFrontPage({% if editmode %}false{% else %}true{% endif %});</script>
 </body>
 </html>
