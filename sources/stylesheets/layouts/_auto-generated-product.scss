@@ -12,6 +12,12 @@
   }
 
   .product-content {
+    .product-image {
+      .editmode & {
+        cursor: pointer;
+      }
+    }
+    
     .without-image .item-top {
       background-image: url("../assets/ico-placeholder.svg");
       background-size: 40px;
