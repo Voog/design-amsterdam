@@ -26,8 +26,12 @@
 
 @import 'layouts/blog-and-article';
 @import 'layouts/product-list';
+@import 'layouts/auto-generated-product';
 
 @import 'utils/flex';
 @import 'utils/margins';
 @import 'utils/paddings';
 @import 'utils/utils';
+
+// Browser hacks
+@import 'utils/browser-hacks';

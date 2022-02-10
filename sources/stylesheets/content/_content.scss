@@ -4,14 +4,16 @@
     margin-bottom: 30px;
     font-size: 0;
 
-    @include query($tablet) {
-      position: relative;
-      margin-bottom: 20px;
-      display: revert;
-    }
+    &:not(.product-main) {
+      @include query($tablet) {
+        position: relative;
+        margin-bottom: 20px;
+        display: revert;
+      }
 
-    @include query($mobile) {
-      display: revert;
+      @include query($mobile) {
+        display: revert;
+      }
     }
   }
 

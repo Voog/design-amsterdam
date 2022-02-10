@@ -1,0 +1,45 @@
+.item-page {
+  .product-price {
+    padding-bottom: 24px;
+
+    &-divider {
+      margin: 0 4px;
+    }
+  }
+
+  .content-product-description {
+    margin-bottom: 12px;
+  }
+
+  .product-content {
+    .product-image {
+      .editmode & {
+        cursor: pointer;
+      }
+    }
+    
+    .without-image .item-top {
+      background-image: url("../assets/ico-placeholder.svg");
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F2F2F2;
+    }
+
+    .item-top {
+      .top-inner {
+      background-color: transparent;
+
+        .item-image {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .buy-btn-content {
+      margin-bottom: 24px;
+    }
+  }
+}

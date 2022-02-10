@@ -66,9 +66,7 @@ body {
   color: var(--color-secondary);
 }
 
-.header .header-inner .header-title,
-.header .header-inner .header-title a,
-.header .header-inner .header-title a:hover {
+.header .header-inner .header-title, .header .header-inner .header-title a, .header .header-inner .header-title a:hover {
   color: var(--header-site-title-color);
   font-size: var(--header-site-title-font-size);
   font-style: var(--header-site-title-font-style);
@@ -94,7 +92,7 @@ body {
     color: var(--header-mainmenu-color);
   }
   .main-menu li a:hover,
-  .main-menu li.active a:hover {
+.main-menu li.active a:hover {
     color: var(--header-mainmenu-hover-color);
   }
   .main-menu li.active a {
@@ -209,13 +207,13 @@ body {
 
 @media screen and (min-width: 640px) {
   .blog-page .post-excerpt,
-  .blog-page .post-body {
+.blog-page .post-body {
     margin-left: var(--blog-list-margin);
     margin-right: var(--blog-list-margin);
   }
 
   .post-page .post-excerpt,
-  .post-page .post-body {
+.post-page .post-body {
     margin-left: var(--blog-article-margin);
     margin-right: var(--blog-article-margin);
   }
@@ -518,4 +516,31 @@ body {
 
 .form_submit input {
   font-family: var(--font-one);
+}
+
+.product-page .content-header h1 {
+  font-size: var(--product-title-size);
+  font-weight: var(--product-title-font-weight);
+  font-style: var(--product-title-font-style);
+  -webkit-text-decoration: var(--product-title-font-text-decoration);
+          text-decoration: var(--product-title-font-text-decoration);
+  color: var(--product-title-color);
+}
+
+.product-page .content-formatted .content-product-description {
+  color: var(--product-description-color);
+  font-size: var(--product-description-size);
+  font-weight: var(--product-description-font-weight);
+  font-style: var(--product-description-font-style);
+  -webkit-text-decoration: var(--product-description-font-text-decoration);
+          text-decoration: var(--product-description-font-text-decoration);
+}
+
+.product-page .product-price {
+  color: var(--product-price-color);
+  font-size: var(--product-price-size);
+  font-weight: var(--product-price-font-weight);
+  font-style: var(--product-price-font-style);
+  -webkit-text-decoration: var(--product-price-font-text-decoration);
+          text-decoration: var(--product-price-font-text-decoration);
 }
