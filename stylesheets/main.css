@@ -3268,6 +3268,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 32px;
+  z-index: 10601;
 }
 
 .w-100 {
