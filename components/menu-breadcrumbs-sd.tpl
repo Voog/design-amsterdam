@@ -4,8 +4,8 @@
 <ul class="menu menu-horizontal menu-public menu-breadcrumbs">
   {%- for listItem in breadcrumbsObj.itemListElement %}
     <span class="menu-separator">/</span>
-    <li class="selected menu-item {% if forloop.last %}current{% endif %}">
-      <a href="/{{listItem.item.id}}">{{ listItem.item.name }}</a>
+    <li class="menu-item{% if forloop.last %} current{% endif %}">
+      <a class="menu-link" href="/{{listItem.item.id}}">{{ listItem.item.name }}</a>
     </li>
   {% endfor -%}
 </ul>
