@@ -1478,9 +1478,6 @@ body {
   margin-left: 4px;
   margin-right: 4px;
 }
-.menu-horizontal .menu-separator:first-child {
-  display: none;
-}
 .menu-horizontal.menu-breadcrumbs {
   line-height: 16px;
   margin-bottom: 8px;
@@ -3268,6 +3265,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 32px;
+  z-index: 10601;
 }
 
 .w-100 {
