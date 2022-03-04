@@ -2356,7 +2356,8 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-.content-formatted .custom-btn {
+.content-formatted .custom-btn,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   background: #dadada;
   border: 0;
   display: inline-block;
@@ -2364,10 +2365,13 @@ body {
   line-height: 1.7em;
   padding: 0.31em 0.75em;
 }
-.public .content-formatted .custom-btn {
+.public .content-formatted .custom-btn,
+.public .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   cursor: pointer;
 }
-.public .content-formatted .custom-btn-disabled, .product-content .content-formatted .custom-btn-disabled {
+.public .content-formatted .custom-btn-disabled, .product-content .content-formatted .custom-btn-disabled,
+.public .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled,
+.product-content .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled {
   cursor: default;
   color: #919191;
   background-color: #dadada;

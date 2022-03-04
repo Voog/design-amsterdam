@@ -519,20 +519,22 @@ body {
 .content-formatted,
 .comment-form {
   .custom-btn,
-  .custom-btn:hover,
   .form_submit input,
-  .form_submit input:hover {
-    font-size: var(--button-font-size);
-    font-style: var(--button-font-style);
-    font-weight: var(--button-font-weight);
-    hyphens: var(--button-hyphens);
-    line-height: var(--button-line-height);
-    text-decoration: var(--button-text-decoration);
-    text-transform: var(--button-text-transform);
+  .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
+    &, &:hover {
+      font-size: var(--button-font-size);
+      font-style: var(--button-font-style);
+      font-weight: var(--button-font-weight);
+      hyphens: var(--button-hyphens);
+      line-height: var(--button-line-height);
+      text-decoration: var(--button-text-decoration);
+      text-transform: var(--button-text-transform);
+    }
   }
 
   .custom-btn:not(.custom-btn-disabled),
-  .form_submit input {
+  .form_submit input,
+  .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn  {
     &,
     &:hover {
       color: var(--button-color);
@@ -542,7 +544,8 @@ body {
 
   // TODO: Move to main.css file.
   .custom-btn:not(.custom-btn-disabled):hover,
-  .form_submit input:hover {
+  .form_submit input:hover,
+  .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
     opacity: .75;
   }
 

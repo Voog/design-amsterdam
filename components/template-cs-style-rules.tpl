@@ -403,14 +403,17 @@ body {
 .content-formatted h3 {
   color: var(--h3-color);
 }
-.content-formatted .custom-btn,
-.content-formatted .custom-btn:hover,
+.content-formatted .custom-btn, .content-formatted .custom-btn:hover,
 .content-formatted .form_submit input,
 .content-formatted .form_submit input:hover,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover,
 .comment-form .custom-btn,
 .comment-form .custom-btn:hover,
 .comment-form .form_submit input,
-.comment-form .form_submit input:hover {
+.comment-form .form_submit input:hover,
+.comment-form .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn,
+.comment-form .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   font-size: var(--button-font-size);
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
@@ -425,17 +428,23 @@ body {
 .content-formatted .custom-btn:not(.custom-btn-disabled), .content-formatted .custom-btn:not(.custom-btn-disabled):hover,
 .content-formatted .form_submit input,
 .content-formatted .form_submit input:hover,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover,
 .comment-form .custom-btn:not(.custom-btn-disabled),
 .comment-form .custom-btn:not(.custom-btn-disabled):hover,
 .comment-form .form_submit input,
-.comment-form .form_submit input:hover {
+.comment-form .form_submit input:hover,
+.comment-form .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn,
+.comment-form .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   color: var(--button-color);
   background-color: var(--button-background-color);
 }
 .content-formatted .custom-btn:not(.custom-btn-disabled):hover,
 .content-formatted .form_submit input:hover,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover,
 .comment-form .custom-btn:not(.custom-btn-disabled):hover,
-.comment-form .form_submit input:hover {
+.comment-form .form_submit input:hover,
+.comment-form .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   opacity: 0.75;
 }
 .content-formatted table td,
