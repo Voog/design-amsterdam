@@ -186,7 +186,8 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .custom-btn {
+  .custom-btn,
+  .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
     background: #dadada;
     border: 0;
     display: inline-block;

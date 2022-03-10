@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% assign product_page = true %}
@@ -45,7 +46,7 @@
                     {%- if product.image != blank- %}
                       <div class="top-inner aspect-ratio-inner">
                         {%- assign image_class = "item-image not-cropped" -%}
-                        {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
+                        {% image product.image target_width: "600" class: image_class loading: "lazy" %}
                       </div>
                     {%- endif -%}
                   </div>
