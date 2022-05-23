@@ -13,7 +13,11 @@
   <div class="container" data-search-indexing-allowed="false">
     {% include "header" %}
     <main class="content" role="main">
-      <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
+      <section class="content-body content-formatted" data-search-indexing-allowed="true">
+        {%- assign content_default_title = "content" | lce -%}
+        {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+        {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+      </section>
       {% if editmode %}
         <div class="settings-editor-wrap">
           {% include "blog-settings-editor" %}
@@ -31,7 +35,7 @@
             {% else %}
               {% assign article_date_format = "long" %}
             {% endif %}
-            
+
             {% if editmode or show_article_date != false %}
               <time class="post-date{% if article_data_show_date_defined != true %} site-data{% endif %}{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
             {% endif %}

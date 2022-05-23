@@ -13,13 +13,17 @@
   <div class="container" data-search-indexing-allowed="false">
     {% include "header" %}
     <main class="content" role="main">
-      <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
+      <section class="content-body content-formatted" data-search-indexing-allowed="true">
+        {%- assign content_default_title = "content" | lce -%}
+        {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+        {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+      </section>
       {% if editmode or site.has_language_tags? %}
         <div class="blog-header">
           {% include "tags-blog" %}
           {% if editmode %}
             <div class="add-post-container">{% addbutton %}</div>
-            {% include "blog-settings-editor" %}         
+            {% include "blog-settings-editor" %}
           {% endif %}
         </div>
       {% endif %}

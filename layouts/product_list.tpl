@@ -13,7 +13,9 @@
   <div class="container">
     {% include "header" %}
     <section class="content-header content-formatted cfx" data-search-indexing-allowed="true">
-      {% content name="slogan" %}
+      {%- assign content_default_title = "content" | lce -%}
+      {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+      {% content name="slogan" title=content_default_title title_tooltip=content_default_title_tooltip %}
     </section>
     <main class="content flex_box" role="main">
       {%- if sidebar_active -%}
