@@ -12,8 +12,11 @@
 <body class="common-page content-page{% if site.search.enabled %} search-enabled{% endif %}{% if editmode or site.has_many_languages? %} lang-enabled{% endif %} {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
   <div class="container">
     {% include "header" %}
+    {%- assign content_default_title = "content" | lce -%}
+    {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+
     <section class="content-header content-formatted cfx" data-search-indexing-allowed="true">
-      {% content name="slogan" %}
+      {% content name="slogan" title=content_default_title title_tooltip=content_default_title_tooltip %}
     </section>
     <main class="content flex_box w-100" role="main">
       {%- if sidebar_active -%}
@@ -50,7 +53,9 @@
               {%- endif -%}
             </div>
             <section class="content-formatted mar_0-32" data-search-indexing-allowed="true">
-              {% content name="gallery" %}
+              {%- assign gallery_title = "gallery" | lce -%}
+              {%- assign gallery_title_tooltip = "content_tooltip_additional_images" | lce -%}
+              {% content name="gallery" title=gallery_title title_tooltip=gallery_title_tooltip %}
             </section>
           </div>
 
@@ -58,7 +63,9 @@
             <div class="mar_0-32 flex_col t-sticky">
               <section class="content-formatted js-buy-btn-content"
                 data-search-indexing-allowed="true">
-                {% contentblock %}{{ "write_product_description_here" | lc: editor_locale }}{% endcontentblock %}
+                {% contentblock title=content_default_title title_tooltip=content_default_title_tooltip %}
+                  {{ "write_product_description_here" | lc: editor_locale }}
+                {% endcontentblock %}
               </section>
             </div>
           </div>

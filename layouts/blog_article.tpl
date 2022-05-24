@@ -36,7 +36,16 @@
         <section class="post-content" data-search-indexing-allowed="true">
           <div class="post-excerpt content-formatted cfx" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
           <div class="post-body content-formatted cfx">{% editable article.body %}</div>
-          <div class="post-body content-formatted cfx">{% content name="additional_body" bind="Article" %}</div>
+          <div class="post-body content-formatted cfx">
+            {%- assign bottom_content_title = "additional_content" | lce -%}
+            {%- assign bottom_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
+            {% content
+              name="additional_body"
+              bind="Article"
+              title=bottom_content_title
+              title_tooltip=bottom_content_title_tooltip
+            %}
+          </div>
           <div class="tags" data-search-indexing-allowed="false">
             {% include "tags-article" %}
           </div>
