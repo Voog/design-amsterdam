@@ -7,6 +7,8 @@
   {% include "html-head" product_page: true %}
   {% include "edicy-tools-variables" %}
   {% include "common-page-variables" %}
+
+  {% sd_product %}
 </head>
 
 <body class="item-page product-page content-page{% if site.search.enabled %} search-enabled{% endif %}{% if editmode or site.has_many_languages? %} lang-enabled{% endif %} {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
