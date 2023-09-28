@@ -102,5 +102,5 @@
      "scope": "global",
      "featured": true
   */
-  --color-bg: white;
+  --color-bg: rgb(255, 255, 255);
 }

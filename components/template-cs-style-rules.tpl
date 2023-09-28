@@ -87,12 +87,11 @@ body {
   .lang-menu .lang-flag {
     color: var(--header-mainmenu-active-color);
   }
-
   .main-menu li a {
     color: var(--header-mainmenu-color);
   }
   .main-menu li a:hover,
-.main-menu li.active a:hover {
+  .main-menu li.active a:hover {
     color: var(--header-mainmenu-hover-color);
   }
   .main-menu li.active a {
@@ -207,13 +206,12 @@ body {
 
 @media screen and (min-width: 640px) {
   .blog-page .post-excerpt,
-.blog-page .post-body {
+  .blog-page .post-body {
     margin-left: var(--blog-list-margin);
     margin-right: var(--blog-list-margin);
   }
-
   .post-page .post-excerpt,
-.post-page .post-body {
+  .post-page .post-body {
     margin-left: var(--blog-article-margin);
     margin-right: var(--blog-article-margin);
   }
@@ -504,15 +502,13 @@ body {
 }
 .content-formatted form input :-moz-placeholder,
 .form_field label :-moz-placeholder,
-.content-formatted form :-moz-placeholder {
-  /* Firefox 18- */
+.content-formatted form :-moz-placeholder { /* Firefox 18- */
   color: var(--form-field-text-color);
   opacity: 0.5;
 }
 .content-formatted form input ::-moz-placeholder,
 .form_field label ::-moz-placeholder,
-.content-formatted form ::-moz-placeholder {
-  /* Firefox 19+ */
+.content-formatted form ::-moz-placeholder { /* Firefox 19+ */
   color: var(--form-field-text-color);
   opacity: 0.5;
 }
