@@ -549,6 +549,17 @@ body {
     opacity: .75;
   }
 
+  .edy-buy-button-price-container {
+    .edy-buy-button-effective-price,
+    .edy-buy-button-price-original {
+      color: var(--content-color);
+
+      .dark-background & {
+        color: var(--color-bg);
+      }
+    }
+  }
+
   table td {
     border-bottom-color: var(--table-border-color);
     border-bottom-style: var(--table-border-style);
@@ -642,7 +653,10 @@ form,
   font-size: var(--product-price-size);
   font-weight: var(--product-price-font-weight);
   font-style: var(--product-price-font-style);
-  text-decoration: var(--product-price-font-text-decoration);
+
+  .product-price-final {
+    text-decoration: var(--product-price-font-text-decoration);
+  }
 }
 
 .dark-background {
@@ -653,7 +667,6 @@ form,
         color: var(--color-bg);
       }
 
-      .edy-product-widget-item-price,
       .edy-product-widget-item-description {
         color: var(--color-bg);
         opacity: .7;
@@ -689,11 +702,6 @@ form,
         }
       }
 
-      .edy-product-widget-item-price {
-        color: var(--color-bg);
-        opacity: .7;
-      }
-
       .edy-product-widget-item-out-of-stock {
         color: var(--color-bg);
       }
@@ -715,10 +723,16 @@ form,
 }
 
 .dark-background {
+  .edy-product-widget-item-price-original,
+  .edy-product-widget-item-price-final,
   .edy-product-widget-filter-name,
   .edy-product-widget-filter-sort,
   .edy-product-widget-filter-label,
   .edy-product-widget-filter-search-input {
     color: var(--color-bg);
+  }
+
+  .edy-product-widget-item-price-original {
+    opacity: .4;
   }
 }
