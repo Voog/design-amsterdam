@@ -447,14 +447,18 @@ body {
 }
 .content-formatted .edy-buy-button-price-container .edy-buy-button-effective-price,
 .content-formatted .edy-buy-button-price-container .edy-buy-button-price-original,
+.content-formatted .edy-buy-button-price-container .edy-buy-button-price,
 .comment-form .edy-buy-button-price-container .edy-buy-button-effective-price,
-.comment-form .edy-buy-button-price-container .edy-buy-button-price-original {
+.comment-form .edy-buy-button-price-container .edy-buy-button-price-original,
+.comment-form .edy-buy-button-price-container .edy-buy-button-price {
   color: var(--content-color);
 }
 .dark-background .content-formatted .edy-buy-button-price-container .edy-buy-button-effective-price,
 .dark-background .content-formatted .edy-buy-button-price-container .edy-buy-button-price-original,
+.dark-background .content-formatted .edy-buy-button-price-container .edy-buy-button-price,
 .dark-background .comment-form .edy-buy-button-price-container .edy-buy-button-effective-price,
-.dark-background .comment-form .edy-buy-button-price-container .edy-buy-button-price-original {
+.dark-background .comment-form .edy-buy-button-price-container .edy-buy-button-price-original,
+.dark-background .comment-form .edy-buy-button-price-container .edy-buy-button-price {
   color: var(--color-bg);
 }
 .content-formatted table td,
