@@ -445,6 +445,22 @@ body {
 .comment-form .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   opacity: 0.75;
 }
+.content-formatted .edy-buy-button-price-container .edy-buy-button-effective-price,
+.content-formatted .edy-buy-button-price-container .edy-buy-button-price-original,
+.content-formatted .edy-buy-button-price-container .edy-buy-button-price,
+.comment-form .edy-buy-button-price-container .edy-buy-button-effective-price,
+.comment-form .edy-buy-button-price-container .edy-buy-button-price-original,
+.comment-form .edy-buy-button-price-container .edy-buy-button-price {
+  color: var(--content-color);
+}
+.dark-background .content-formatted .edy-buy-button-price-container .edy-buy-button-effective-price,
+.dark-background .content-formatted .edy-buy-button-price-container .edy-buy-button-price-original,
+.dark-background .content-formatted .edy-buy-button-price-container .edy-buy-button-price,
+.dark-background .comment-form .edy-buy-button-price-container .edy-buy-button-effective-price,
+.dark-background .comment-form .edy-buy-button-price-container .edy-buy-button-price-original,
+.dark-background .comment-form .edy-buy-button-price-container .edy-buy-button-price {
+  color: var(--color-bg);
+}
 .content-formatted table td,
 .comment-form table td {
   border-bottom-color: var(--table-border-color);
@@ -547,6 +563,8 @@ body {
   font-size: var(--product-price-size);
   font-weight: var(--product-price-font-weight);
   font-style: var(--product-price-font-style);
+}
+.product-page .product-price .product-price-final {
   -webkit-text-decoration: var(--product-price-font-text-decoration);
           text-decoration: var(--product-price-font-text-decoration);
 }
@@ -555,7 +573,6 @@ body {
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-link {
   color: var(--color-bg);
 }
-.dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-price,
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-description {
   color: var(--color-bg);
   opacity: 0.7;
@@ -575,10 +592,6 @@ body {
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-header .edy-product-widget-item-title .edy-product-widget-item-link {
   color: var(--color-bg);
 }
-.dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-header .edy-product-widget-item-price {
-  color: var(--color-bg);
-  opacity: 0.7;
-}
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-header .edy-product-widget-item-out-of-stock {
   color: var(--color-bg);
 }
@@ -594,9 +607,14 @@ body {
   color: var(--color-primary);
 }
 
+.dark-background .edy-product-widget-item-price-original,
+.dark-background .edy-product-widget-item-price-final,
 .dark-background .edy-product-widget-filter-name,
 .dark-background .edy-product-widget-filter-sort,
 .dark-background .edy-product-widget-filter-label,
 .dark-background .edy-product-widget-filter-search-input {
   color: var(--color-bg);
+}
+.dark-background .edy-product-widget-item-price-original {
+  opacity: 0.4;
 }
