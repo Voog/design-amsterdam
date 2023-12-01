@@ -1,3 +1,3 @@
 {
-  "version": "amsterdam-2.5.0"
+  "version": "amsterdam-2.5.1"
 }
